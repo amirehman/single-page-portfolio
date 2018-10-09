@@ -1,0 +1,14 @@
+.table.is-borderless {
+    border: none;
+    tr,td,th,thead,tfoot {
+        border: none;
+    }
+}
+
+.is-paddingless-left-right {
+    border: none;
+    tr,td,th,thead,tfoot {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
