@@ -160,7 +160,9 @@ class ProjectController extends Controller
      */
     public function destroy($pid)
     {
-        Project::where('id', '=', $pid)->first()->delete();
+        $project = Project::where('id', '=', $pid)->first();
+        File::delete(public_path('images/'. $project->image));
+        $project->delete();
         return response('null', Response::HTTP_NO_CONTENT);
     }
 

@@ -1,7 +1,9 @@
 <template>
     <div>
         <div class="container  m-t-0">
-            <div class="column is-8">
+            <div class="columns">
+
+                <div class="column is-8">
                 <p class="subtitle has-text-grey">Edit Project
                     <router-link to="/me/dashboard" class="is-small button is-pulled-right">Dashboard</router-link>
                 </p>
@@ -38,8 +40,8 @@
                                 <td>
                                     <span class="m-b-5 is-block has-text-weight-semibold">Elements</span>
                                     <label class="checkbox is-large m-r-15  is-capitalized" v-for="element in elements">
-                                        <input type="checkbox" :value="element.id" v-model="selectedElements"> <span class="checkbox-label"> {{element.name}} </span>
-                                    </label>
+                                            <input type="checkbox" :value="element.id" v-model="selectedElements"> <span class="checkbox-label"> {{element.name}} </span>
+                                        </label>
                                 </td>
                             </tr>
     
@@ -51,14 +53,18 @@
                             </tr>
                         </tbody>
                     </table>
-                    <hr >
-
-
+                    <hr>
+    
+    
                     <all-pages :project-id="project.id" :project-slug="project.slug"></all-pages>
-
+    
                 </form>
             </div>
-    
+            <div class="column is-3">
+                <img :src="`${baseURL}images/${project.image}`" class="is-block m-t-100">
+            </div>
+
+            </div>
             <!-- Adding Tags -->
     
     
@@ -79,8 +85,9 @@
                 project: {},
                 date: new Date(),
                 elements: [],
-                selectedElements: [11,12],
-                errors: {}
+                selectedElements: [11, 12],
+                errors: {},
+                baseURL: "http://127.0.0.1:8000/"
             }
         },
         created() {
@@ -120,12 +127,14 @@
                     })
                     .then(response => {
                         this.getElements()
+                        this.getProject()
                         this.$toast.open({
                             duration: 800,
                             message: 'Project Updated Successfully',
                             type: 'is-success'
                         });
                     })
+                    
             },
             confirmdelete(id) {
                 this.$dialog.confirm({

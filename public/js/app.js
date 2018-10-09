@@ -38877,7 +38877,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -38963,6 +38963,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 
@@ -38973,7 +38979,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             date: new Date(),
             elements: [],
             selectedElements: [11, 12],
-            errors: {}
+            errors: {},
+            baseURL: "http://127.0.0.1:8000/"
         };
     },
     created: function created() {
@@ -39019,6 +39026,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 elements: this.selectedElements
             }).then(function (response) {
                 _this3.getElements();
+                _this3.getProject();
                 _this3.$toast.open({
                     duration: 800,
                     message: 'Project Updated Successfully',
@@ -39410,280 +39418,302 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "container  m-t-0" }, [
-      _c("div", { staticClass: "column is-8" }, [
-        _c(
-          "p",
-          { staticClass: "subtitle has-text-grey" },
-          [
-            _vm._v("Edit Project\n                "),
-            _c(
-              "router-link",
-              {
-                staticClass: "is-small button is-pulled-right",
-                attrs: { to: "/me/dashboard" }
-              },
-              [_vm._v("Dashboard")]
-            )
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "form",
-          {
-            on: {
-              submit: function($event) {
-                $event.preventDefault()
-                return _vm.onSubmitProject($event)
+      _c("div", { staticClass: "columns" }, [
+        _c("div", { staticClass: "column is-8" }, [
+          _c(
+            "p",
+            { staticClass: "subtitle has-text-grey" },
+            [
+              _vm._v("Edit Project\n                "),
+              _c(
+                "router-link",
+                {
+                  staticClass: "is-small button is-pulled-right",
+                  attrs: { to: "/me/dashboard" }
+                },
+                [_vm._v("Dashboard")]
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "form",
+            {
+              on: {
+                submit: function($event) {
+                  $event.preventDefault()
+                  return _vm.onSubmitProject($event)
+                }
               }
-            }
-          },
-          [
-            _c(
-              "table",
-              { staticClass: "is-borderless table is-fullwidth is-bordered" },
-              [
-                _c("tbody", [
-                  _c("tr", [
-                    _c("td", [
-                      _c(
-                        "span",
-                        {
-                          staticClass: "m-b-5 is-block has-text-weight-semibold"
-                        },
-                        [_vm._v("Title")]
-                      ),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.project.title,
-                            expression: "project.title"
-                          }
-                        ],
-                        staticClass: "input is-radiusless is-shadowless",
-                        attrs: { type: "text" },
-                        domProps: { value: _vm.project.title },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.$set(_vm.project, "title", $event.target.value)
-                          }
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c(
-                      "td",
-                      [
+            },
+            [
+              _c(
+                "table",
+                { staticClass: "is-borderless table is-fullwidth is-bordered" },
+                [
+                  _c("tbody", [
+                    _c("tr", [
+                      _c("td", [
                         _c(
                           "span",
                           {
                             staticClass:
                               "m-b-5 is-block has-text-weight-semibold"
                           },
-                          [_vm._v("Date")]
+                          [_vm._v("Title")]
                         ),
                         _vm._v(" "),
-                        _c("datepicker", {
-                          attrs: {
-                            "input-class": "input is-radiusless is-shadowless"
-                          },
-                          model: {
-                            value: _vm.project.date,
-                            callback: function($$v) {
-                              _vm.$set(_vm.project, "date", $$v)
-                            },
-                            expression: "project.date"
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.project.title,
+                              expression: "project.title"
+                            }
+                          ],
+                          staticClass: "input is-radiusless is-shadowless",
+                          attrs: { type: "text" },
+                          domProps: { value: _vm.project.title },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.project,
+                                "title",
+                                $event.target.value
+                              )
+                            }
                           }
                         })
-                      ],
-                      1
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", { staticClass: "p-l-0" }, [
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
                       _c(
-                        "span",
-                        {
-                          staticClass: "m-b-5 is-block has-text-weight-semibold"
-                        },
-                        [_vm._v("Thumbnail")]
-                      ),
-                      _vm._v(" "),
-                      _c("input", {
-                        staticClass: "input is-radiusless is-shadowless",
-                        attrs: { name: "image", type: "file" },
-                        on: { change: _vm.addImage }
-                      }),
-                      _vm._v(" "),
-                      _vm.errors.thumbnail
-                        ? _c("p", { staticClass: "help is-danger" }, [
-                            _vm._v(_vm._s(_vm.errors.thumbnail[0]))
-                          ])
-                        : _vm._e()
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [
-                      _c(
-                        "span",
-                        {
-                          staticClass: "m-b-5 is-block has-text-weight-semibold"
-                        },
-                        [_vm._v("Detail")]
-                      ),
-                      _vm._v(" "),
-                      _c("textarea", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.project.detail,
-                            expression: "project.detail"
-                          }
-                        ],
-                        staticClass: "textarea is-radiusless is-shadowless",
-                        domProps: { value: _vm.project.detail },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.$set(_vm.project, "detail", $event.target.value)
-                          }
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c(
-                      "td",
-                      [
-                        _c(
-                          "span",
-                          {
-                            staticClass:
-                              "m-b-5 is-block has-text-weight-semibold"
-                          },
-                          [_vm._v("Elements")]
-                        ),
-                        _vm._v(" "),
-                        _vm._l(_vm.elements, function(element) {
-                          return _c(
-                            "label",
+                        "td",
+                        [
+                          _c(
+                            "span",
                             {
                               staticClass:
-                                "checkbox is-large m-r-15  is-capitalized"
+                                "m-b-5 is-block has-text-weight-semibold"
                             },
-                            [
-                              _c("input", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.selectedElements,
-                                    expression: "selectedElements"
-                                  }
-                                ],
-                                attrs: { type: "checkbox" },
-                                domProps: {
-                                  value: element.id,
-                                  checked: Array.isArray(_vm.selectedElements)
-                                    ? _vm._i(_vm.selectedElements, element.id) >
-                                      -1
-                                    : _vm.selectedElements
-                                },
-                                on: {
-                                  change: function($event) {
-                                    var $$a = _vm.selectedElements,
-                                      $$el = $event.target,
-                                      $$c = $$el.checked ? true : false
-                                    if (Array.isArray($$a)) {
-                                      var $$v = element.id,
-                                        $$i = _vm._i($$a, $$v)
-                                      if ($$el.checked) {
-                                        $$i < 0 &&
-                                          (_vm.selectedElements = $$a.concat([
-                                            $$v
-                                          ]))
-                                      } else {
-                                        $$i > -1 &&
-                                          (_vm.selectedElements = $$a
-                                            .slice(0, $$i)
-                                            .concat($$a.slice($$i + 1)))
-                                      }
-                                    } else {
-                                      _vm.selectedElements = $$c
-                                    }
-                                  }
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "checkbox-label" }, [
-                                _vm._v(" " + _vm._s(element.name) + " ")
-                              ])
-                            ]
-                          )
-                        })
-                      ],
-                      2
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button m-t-25 is-primary has-text-weight-semibold is-radiusless is-shadowless",
-                          attrs: { type: "submit" }
-                        },
-                        [_vm._v("Save")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        {
-                          staticClass:
-                            "button has-text-danger m-t-25 is-pulled-right is-radiusless is-shadowless",
-                          attrs: { href: "#" },
+                            [_vm._v("Date")]
+                          ),
+                          _vm._v(" "),
+                          _c("datepicker", {
+                            attrs: {
+                              "input-class": "input is-radiusless is-shadowless"
+                            },
+                            model: {
+                              value: _vm.project.date,
+                              callback: function($$v) {
+                                _vm.$set(_vm.project, "date", $$v)
+                              },
+                              expression: "project.date"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticClass: "p-l-0" }, [
+                        _c(
+                          "span",
+                          {
+                            staticClass:
+                              "m-b-5 is-block has-text-weight-semibold"
+                          },
+                          [_vm._v("Thumbnail")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "input is-radiusless is-shadowless",
+                          attrs: { name: "image", type: "file" },
+                          on: { change: _vm.addImage }
+                        }),
+                        _vm._v(" "),
+                        _vm.errors.thumbnail
+                          ? _c("p", { staticClass: "help is-danger" }, [
+                              _vm._v(_vm._s(_vm.errors.thumbnail[0]))
+                            ])
+                          : _vm._e()
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [
+                        _c(
+                          "span",
+                          {
+                            staticClass:
+                              "m-b-5 is-block has-text-weight-semibold"
+                          },
+                          [_vm._v("Detail")]
+                        ),
+                        _vm._v(" "),
+                        _c("textarea", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.project.detail,
+                              expression: "project.detail"
+                            }
+                          ],
+                          staticClass: "textarea is-radiusless is-shadowless",
+                          domProps: { value: _vm.project.detail },
                           on: {
-                            click: function($event) {
-                              $event.preventDefault()
-                              _vm.confirmdelete(_vm.project.id)
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.project,
+                                "detail",
+                                $event.target.value
+                              )
                             }
                           }
-                        },
-                        [_vm._v("Delete Permanently ")]
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c(
+                        "td",
+                        [
+                          _c(
+                            "span",
+                            {
+                              staticClass:
+                                "m-b-5 is-block has-text-weight-semibold"
+                            },
+                            [_vm._v("Elements")]
+                          ),
+                          _vm._v(" "),
+                          _vm._l(_vm.elements, function(element) {
+                            return _c(
+                              "label",
+                              {
+                                staticClass:
+                                  "checkbox is-large m-r-15  is-capitalized"
+                              },
+                              [
+                                _c("input", {
+                                  directives: [
+                                    {
+                                      name: "model",
+                                      rawName: "v-model",
+                                      value: _vm.selectedElements,
+                                      expression: "selectedElements"
+                                    }
+                                  ],
+                                  attrs: { type: "checkbox" },
+                                  domProps: {
+                                    value: element.id,
+                                    checked: Array.isArray(_vm.selectedElements)
+                                      ? _vm._i(
+                                          _vm.selectedElements,
+                                          element.id
+                                        ) > -1
+                                      : _vm.selectedElements
+                                  },
+                                  on: {
+                                    change: function($event) {
+                                      var $$a = _vm.selectedElements,
+                                        $$el = $event.target,
+                                        $$c = $$el.checked ? true : false
+                                      if (Array.isArray($$a)) {
+                                        var $$v = element.id,
+                                          $$i = _vm._i($$a, $$v)
+                                        if ($$el.checked) {
+                                          $$i < 0 &&
+                                            (_vm.selectedElements = $$a.concat([
+                                              $$v
+                                            ]))
+                                        } else {
+                                          $$i > -1 &&
+                                            (_vm.selectedElements = $$a
+                                              .slice(0, $$i)
+                                              .concat($$a.slice($$i + 1)))
+                                        }
+                                      } else {
+                                        _vm.selectedElements = $$c
+                                      }
+                                    }
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "checkbox-label" }, [
+                                  _vm._v(" " + _vm._s(element.name) + " ")
+                                ])
+                              ]
+                            )
+                          })
+                        ],
+                        2
                       )
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "button m-t-25 is-primary has-text-weight-semibold is-radiusless is-shadowless",
+                            attrs: { type: "submit" }
+                          },
+                          [_vm._v("Save")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "a",
+                          {
+                            staticClass:
+                              "button has-text-danger m-t-25 is-pulled-right is-radiusless is-shadowless",
+                            attrs: { href: "#" },
+                            on: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                _vm.confirmdelete(_vm.project.id)
+                              }
+                            }
+                          },
+                          [_vm._v("Delete Permanently ")]
+                        )
+                      ])
                     ])
                   ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c("hr"),
-            _vm._v(" "),
-            _c("all-pages", {
-              attrs: {
-                "project-id": _vm.project.id,
-                "project-slug": _vm.project.slug
-              }
-            })
-          ],
-          1
-        )
+                ]
+              ),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("all-pages", {
+                attrs: {
+                  "project-id": _vm.project.id,
+                  "project-slug": _vm.project.slug
+                }
+              })
+            ],
+            1
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "column is-3" }, [
+          _c("img", {
+            staticClass: "is-block m-t-100",
+            attrs: { src: _vm.baseURL + "images/" + _vm.project.image }
+          })
+        ])
       ])
     ])
   ])
