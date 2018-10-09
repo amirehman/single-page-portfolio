@@ -25,6 +25,8 @@ import General from '../components/backend/General/general'
 
 import Home from '../components/frontend/Home'
 import Work from '../components/frontend/Work'
+import SingleWork from '../components/frontend/SingleWork'
+import FrontAbout from '../components/frontend/About'
 
 
 
@@ -119,6 +121,16 @@ const routes = [
     path: '/work', 
     component: Work,
     name: 'work'
+  },
+  { //Single Work
+    path: '/work/:slug', 
+    component: SingleWork,
+    name: 'singlework'
+  },
+  { // About
+    path: '/about', 
+    component: FrontAbout,
+    name: 'frontabout'
   }
 
 

@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer is-paddingless">
+    <footer class="footer is-paddingless m-t-75">
         <div class="container">
             <div class="content">
                 <div class="getsocial">

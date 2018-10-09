@@ -39283,10 +39283,6 @@ body {
   line-height: 1.45;
 }
 
-p {
-  margin-bottom: 1.3em;
-}
-
 h1,
 h2,
 h3,
@@ -39549,6 +39545,7 @@ body.front:after {
 }
 
 .work-col .card .card-image:after {
+  display: none;
   content: "";
   position: absolute;
   left: 0px;
@@ -39588,15 +39585,41 @@ body.front:after {
   opacity: 1;
 }
 
+.work-col .card:hover {
+  border-color: #e67d2250;
+}
+
 .work-col .card-content a {
   color: rgba(0, 0, 0, 0.7);
 }
 
 .work-col .card-content time {
+  margin-top: 5px;
   display: block;
   font-size: 14px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
+}
+
+.work-col .card-content p {
+  margin-bottom: 0px;
+}
+
+.work-col .card-content p.elements {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.467);
+  margin-top: 5px;
+  padding: 0px;
+}
+
+.work-col .card-content p.elements span {
+  text-transform: capitalize;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.work-col .card-content p.elements span:after {
+  contain: ",";
 }
 
 .work-col.col-sm {
@@ -39655,6 +39678,11 @@ body.front:after {
   margin-top: 15px;
   font-size: 16px;
   line-height: 22px;
+}
+
+.single-wrapper .inner-wrapper .single-body p {
+  margin-bottom: 13px;
+  font-size: 18px !important;
 }
 
 .single-wrapper .inner-wrapper .single-body ul {

@@ -21,6 +21,7 @@
         "buefy": "^0.6.6",
         "bulma-extensions": "^2.2.1",
         "font-awesome": "^4.7.0",
+        "vue-moment": "^4.0.0",
         "vue-quill-editor": "^3.0.6",
         "vue-router": "^3.0.1",
         "vuejs-datepicker": "^1.5.3"

@@ -21,7 +21,9 @@ class ExperienceResource extends JsonResource
             'companylink' => $this->company_link,
             'startdate' => $this->start_date,
             'enddate' => $this->end_date,
-            'detail' => $this->detail
+            'detail' => $this->detail,
+            'items' => $this->items
+
         ];
     }
 }

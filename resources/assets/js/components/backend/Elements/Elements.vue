@@ -142,12 +142,14 @@
                             type: 'is-success'
                         });
                     })
+                this.element.name = ""
+                this.element.link = "http://"
                 this.getElements()
-                this.element = {}
             },
             cancelEdit() {
                 this.editing = false
-                this.element = {}
+                this.element.name = ""
+                this.element.link = "http://"
             },
             editElement(key, id, name, link) {
                 this.editing = true
@@ -164,6 +166,8 @@
                         this.getElements()
                         this.element.name = ""
                         this.element.link = ""
+                        this.elementId = ""
+                        this.editing = false
                         this.$toast.open({
                             duration: 800,
                             message: 'Element Updated Successfully',

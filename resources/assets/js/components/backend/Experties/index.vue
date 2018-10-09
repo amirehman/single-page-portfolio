@@ -201,6 +201,9 @@
                         this.element.name = ""
                         this.element.link = "http://"
                         this.element.type = "frontend"
+                        this.elementId = ""
+                        this.editing = false
+
                         this.$toast.open({
                             duration: 800,
                             message: 'Element Updated Successfully',

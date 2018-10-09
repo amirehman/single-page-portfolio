@@ -1,8 +1,8 @@
 <template>
     <div>
     
-        <top-navbar></top-navbar>    
-
+        <top-navbar></top-navbar>
+    
         <div class="container">
             <div class="work-header">
                 <div class="content text-center">
@@ -23,53 +23,56 @@
                         <div class="work-row">
     
                             <!--<div class="work-col col-lg">
-                                <div class="card">
-                                    <div class="card-image">
-    
-                                        <ul class="assets">
-                                            <li>HTML</li>
-                                            <li>Laravel</li>
-                                            <li>jQuery</li>
-                                            <li>Vuejs</li>
-                                            <li>AngularJs</li>
-                                        </ul>
-    
-                                        <figure class="image   is-1by3">
-                                            <img src="images/work/4.png" alt="Placeholder image">
-                                        </figure>
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="content">
-                                            <a href="">
-                                                <p>National Paints
-                                                    <time datetime="2016-1-1">1 Jan 2016</time>
-                                                </p>
-                                            </a>
-    
+                                    <div class="card">
+                                        <div class="card-image">
+        
+                                            <ul class="assets">
+                                                <li>HTML</li>
+                                                <li>Laravel</li>
+                                                <li>jQuery</li>
+                                                <li>Vuejs</li>
+                                                <li>AngularJs</li>
+                                            </ul>
+        
+                                            <figure class="image   is-1by3">
+                                                <img src="images/work/4.png" alt="Placeholder image">
+                                            </figure>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="content">
+                                                <a href="">
+                                                    <p>National Paints
+                                                        <time datetime="2016-1-1">1 Jan 2016</time>
+                                                    </p>
+                                                </a>
+        
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>-->
+                                </div>-->
                             <!-- work-col -->
     
                             <div class="work-col col-sm" v-for="project in projects">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <figure class="image is-4by3">
-                                            <img src="images/work/2.png" alt="Placeholder image">
-                                        </figure>
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="content">
-                                            <a href="">
-                                                <p>{{project.title}}
-                                                    <time datetime="2016-1-1">{{project.date}}</time>
-                                                </p>
-                                            </a>
+                                <router-link :to="`/work/${project.slug}`">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <figure class="image is-4by3">
+                                                <img :src="`${baseURL}images/${project.image}`" class="is-block">
+                                            </figure>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="content">
     
+                                                <p>{{project.title}}
+                                                    <!-- <time datetime="2016-1-1">{{project.date}}</time> -->
+                                                </p>
+                                                <p class="elements">
+                                                    <span v-for="element in project.elements">{{element.name}}</span>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </router-link>
                             </div>
                             <!-- work-col -->
     
@@ -80,7 +83,7 @@
             </div>
     
         </div>
-
+    
         <footer-bottom></footer-bottom>
     
     </div>
@@ -92,7 +95,8 @@
     export default {
         data() {
             return {
-                projects: {}
+                projects: {},
+                baseURL: "http://127.0.0.1:8000/"
     
             }
         },
@@ -100,7 +104,7 @@
             this.getProjects()
         },
         methods: {
-            getProjects () {
+            getProjects() {
                 axios.get('/api/projects').then(response => {
                     this.projects = response.data.data
                 });

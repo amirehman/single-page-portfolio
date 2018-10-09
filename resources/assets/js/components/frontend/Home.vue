@@ -35,14 +35,14 @@
                     <div class="intro dynamic-content" @click="handleClicks" v-html="general.intro"></div>
     
                     <!--<h4>
-                            <span class="br heighlight">Hey there,</span>
-                            <span class="br">I'm
-                                <a href="about.html" class="front-name">Amir Rehman!</a> a Pakistani full stack developer,</span>
-                            <span class="br">Specializing in building everything from small business sites to rich interactive web apps. Currently
-                                working for
-                                <a href="http://icon-ad.com">Icon Advertising LLC.</a>
-                            </span> Check out some of my
-                            <a href="work.html">latest work</a>. </h4>-->
+                                                <span class="br heighlight">Hey there,</span>
+                                                <span class="br">I'm
+                                                    <a href="about.html" class="front-name">Amir Rehman!</a> a Pakistani full stack developer,</span>
+                                                <span class="br">Specializing in building everything from small business sites to rich interactive web apps. Currently
+                                                    working for
+                                                    <a href="http://icon-ad.com">Icon Advertising LLC.</a>
+                                                </span> Check out some of my
+                                                <a href="work.html">latest work</a>. </h4>-->
                     <div class="social">
                         <a href="#">
                             <i class="fa fa-facebook"></i>
@@ -57,8 +57,8 @@
                             <i class="fa fa-instagram"></i>
                         </a>
                         <span class="has-text-grey"> or write to
-                                <a class="has-text-weight-semibold" href="mailto:hi@amirrehman.com">hi@amirrehman.com</a>
-                            </span>
+                                                    <a class="has-text-weight-semibold" href="mailto:hi@amirrehman.com">hi@amirrehman.com</a>
+                                                </span>
                     </div>
                 </div>
     
@@ -87,6 +87,15 @@
         },
         created() {
             this.getData();
+    
+        },
+        mounted() {
+            setTimeout(() => {
+                const targets = document.querySelectorAll('a');
+                targets.forEach(e => {
+                    e.removeAttribute('target')
+                })
+            }, 500)
         },
         methods: {
             applyTextEdit() {

@@ -172,7 +172,6 @@ body.work {
 }
 
 .work-wrapper {
-    // margin-top: -30px;
 }
 
 .work-row {
@@ -199,6 +198,7 @@ body.work {
         .card-image {
             position: relative;
             &:after {
+                display: none;
                 content: "";
                 position: absolute;
                 left: 0px;
@@ -243,16 +243,37 @@ body.work {
                 }
             }
         }
+        &:hover {
+            border-color: #e67d2250;
+        }
     }
     .card-content {
         a {
             color: rgba(0, 0, 0, 0.7);
         }
         time {
+            margin-top: 5px;
             display: block;
             font-size: 14px;
             font-weight: 400;
             color: rgba(0, 0, 0, 0.3);
+        }
+        p {
+            margin-bottom: 0px;
+        }
+        p.elements {
+            font-size: 13px;
+            color: rgba(0, 0, 0, 0.467);
+            margin-top: 5px;
+            padding: 0px;
+            span {
+                text-transform: capitalize;
+                display: inline-block;
+                margin-right: 5px;
+                &:after {
+                    contain: ",";
+                }
+            }
         }
     }
     &.col-sm {
@@ -297,6 +318,10 @@ body.work {
             }
         }
         .single-body {
+            p {
+                margin-bottom: 13px;
+                font-size: 18px!important;
+            }
             ul {
                 background-color: rgba(245, 246, 250, 0.1);
                 border: 1px solid rgba(245, 246, 250, 0.3);

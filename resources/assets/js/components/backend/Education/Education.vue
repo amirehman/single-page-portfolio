@@ -223,6 +223,9 @@
                         this.element.link = ""
                         this.element.date = ""
                         this.element.detail = ""
+                        this.elementId = ""
+                        this.editing = false
+
                         this.$toast.open({
                             duration: 800,
                             message: 'Education Updated Successfully',

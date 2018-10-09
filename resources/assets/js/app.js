@@ -15,7 +15,7 @@ import User from './Helpers/User'
 window.User = User
 
 Vue.use(Buefy);
-
+Vue.use(require('vue-moment'));
 
 User.hasToken();
 
