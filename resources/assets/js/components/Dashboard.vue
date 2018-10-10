@@ -95,6 +95,14 @@
 
 
                 </div>
+
+
+                <div class="navbar-menu m-t-75 dashboard-navbar">
+                        <div class="navbar-start">
+                            <router-link class="navbar-item is-radiusless" to="/"> Visit Site </router-link>
+                        </div>
+
+                    </div>
     
             </div>
         </div>
@@ -120,6 +128,5 @@
     }
 </script>
 
-<style>
-    
+<style scopped>
 </style>

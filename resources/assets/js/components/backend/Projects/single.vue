@@ -5,19 +5,20 @@
 
                 <div class="column is-8">
                 <p class="subtitle has-text-grey">Edit Project
-                    <router-link to="/me/dashboard" class="is-small button is-pulled-right">Dashboard</router-link>
+                    <a @click="$router.go(-1)" class="is-small button is-pulled-right  m-r-15">Go Back ↵</a>
+                    <router-link to="/me/dashboard" class="is-small button is-pulled-right m-r-5">Dashboard</router-link>
                 </p>
                 <form @submit.prevent="onSubmitProject">
                     <table class="is-borderless table is-fullwidth is-bordered">
                         <tbody>
                             <tr>
-                                <td>
+                                <td class="p-l-0">
                                     <span class="m-b-5 is-block has-text-weight-semibold">Title</span>
                                     <input type="text" class="input is-radiusless is-shadowless" v-model="project.title">
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td class="p-l-0">
                                     <span class="m-b-5 is-block has-text-weight-semibold">Date</span>
                                     <datepicker input-class="input is-radiusless is-shadowless" v-model="project.date"></datepicker>
                                 </td>
@@ -30,14 +31,14 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td class="p-l-0">
                                     <span class="m-b-5 is-block has-text-weight-semibold">Detail</span>
                                     <textarea class="textarea is-radiusless is-shadowless" v-model="project.detail"></textarea>
                                 </td>
                             </tr>
     
                             <tr>
-                                <td>
+                                <td class="p-l-0">
                                     <span class="m-b-5 is-block has-text-weight-semibold">Elements</span>
                                     <label class="checkbox is-large m-r-15  is-capitalized" v-for="element in elements">
                                             <input type="checkbox" :value="element.id" v-model="selectedElements"> <span class="checkbox-label"> {{element.name}} </span>

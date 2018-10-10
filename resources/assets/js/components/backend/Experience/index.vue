@@ -23,6 +23,9 @@
                         </tr>
                     </tbody>
                 </table>
+                <p class="subtitle has-text-grey">
+                    <router-link to="/me/experience/create" class="is-small is-primary button is-pulled-right">Add New</router-link>
+                </p>
             </div>
         </div>
     </div>

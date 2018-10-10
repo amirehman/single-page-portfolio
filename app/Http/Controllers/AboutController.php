@@ -81,8 +81,6 @@ class AboutController extends Controller
             'bio' => 'required'
         ]);
 
-        // if($request->name == $about->name && $request->email == $about->email && $request->bio == $about->bio){
-        // }
 
         $about->name = $request->name;
         $about->email = $request->email;

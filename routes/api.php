@@ -9,6 +9,7 @@ Route::apiResource('/about', 'AboutController');
 Route::apiResource('/general', 'GeneralController');
 Route::apiResource('/experiences/{experience}/items', 'ExperiencesListController');
 Route::apiResource('/experties', 'ExpertiesController');
+Route::post('/xigmig/addresume', 'MixController@addResume');
 
 
 

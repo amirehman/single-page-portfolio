@@ -31,3 +31,15 @@
         margin-bottom: 5px;
     }
 }
+.dashboard-navbar {
+    .navbar-start {
+        margin: auto;
+        a {
+            &:hover {
+                background: none;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.173);
+                color: black;
+            }
+        }
+    }
+}

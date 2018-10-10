@@ -10,7 +10,8 @@
     
                         <p class="subtitle has-text-grey">Update {{page.title}}
                         
-                            <router-link to="/me/dashboard" class="is-small button is-pulled-right">Dashboard</router-link>
+                        <a @click="$router.go(-1)" class="is-small button is-pulled-right  m-r-15">Go Back ↵</a>
+                        <router-link to="/me/dashboard" class="is-small button is-pulled-right m-r-5">Dashboard</router-link>
                         
                         </p>
     

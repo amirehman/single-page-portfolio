@@ -38219,7 +38219,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -38230,6 +38230,14 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -38544,6 +38552,24 @@ var render = function() {
             ],
             1
           )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "navbar-menu m-t-75 dashboard-navbar" }, [
+          _c(
+            "div",
+            { staticClass: "navbar-start" },
+            [
+              _c(
+                "router-link",
+                {
+                  staticClass: "navbar-item is-radiusless",
+                  attrs: { to: "/" }
+                },
+                [_vm._v(" Visit Site ")]
+              )
+            ],
+            1
+          )
         ])
       ])
     ])
@@ -38645,7 +38671,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -38656,6 +38682,9 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
 //
 //
 //
@@ -38774,7 +38803,23 @@ var render = function() {
               ])
             })
           )
-        ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "p",
+          { staticClass: "subtitle has-text-grey" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "is-small is-primary button is-pulled-right",
+                attrs: { to: "/me/projects/new" }
+              },
+              [_vm._v("Add New")]
+            )
+          ],
+          1
+        )
       ])
     ])
   ])
@@ -38892,7 +38937,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -38906,6 +38951,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuejs_datepicker__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Pages_index_vue__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Pages_index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__Pages_index_vue__);
+//
 //
 //
 //
@@ -39441,9 +39487,22 @@ var render = function() {
             [
               _vm._v("Edit Project\n                "),
               _c(
+                "a",
+                {
+                  staticClass: "is-small button is-pulled-right  m-r-15",
+                  on: {
+                    click: function($event) {
+                      _vm.$router.go(-1)
+                    }
+                  }
+                },
+                [_vm._v("Go Back ↵")]
+              ),
+              _vm._v(" "),
+              _c(
                 "router-link",
                 {
-                  staticClass: "is-small button is-pulled-right",
+                  staticClass: "is-small button is-pulled-right m-r-5",
                   attrs: { to: "/me/dashboard" }
                 },
                 [_vm._v("Dashboard")]
@@ -39469,7 +39528,7 @@ var render = function() {
                 [
                   _c("tbody", [
                     _c("tr", [
-                      _c("td", [
+                      _c("td", { staticClass: "p-l-0" }, [
                         _c(
                           "span",
                           {
@@ -39510,6 +39569,7 @@ var render = function() {
                     _c("tr", [
                       _c(
                         "td",
+                        { staticClass: "p-l-0" },
                         [
                           _c(
                             "span",
@@ -39563,7 +39623,7 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _c("tr", [
-                      _c("td", [
+                      _c("td", { staticClass: "p-l-0" }, [
                         _c(
                           "span",
                           {
@@ -39603,6 +39663,7 @@ var render = function() {
                     _c("tr", [
                       _c(
                         "td",
+                        { staticClass: "p-l-0" },
                         [
                           _c(
                             "span",
@@ -39829,7 +39890,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -39841,6 +39902,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuejs_datepicker__ = __webpack_require__(4);
+//
 //
 //
 //
@@ -39964,9 +40026,22 @@ var render = function() {
           [
             _vm._v("Add Project\n                "),
             _c(
+              "a",
+              {
+                staticClass: "is-small button is-pulled-right  m-r-15",
+                on: {
+                  click: function($event) {
+                    _vm.$router.go(-1)
+                  }
+                }
+              },
+              [_vm._v("Go Back ↵")]
+            ),
+            _vm._v(" "),
+            _c(
               "router-link",
               {
-                staticClass: "is-small button is-pulled-right",
+                staticClass: "is-small button is-pulled-right m-r-5",
                 attrs: { to: "/me/dashboard" }
               },
               [_vm._v("Dashboard")]
@@ -40930,7 +41005,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -40942,6 +41017,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuejs_datepicker__ = __webpack_require__(4);
+//
 //
 //
 //
@@ -41070,9 +41146,22 @@ var render = function() {
           [
             _vm._v("Add Page\n                "),
             _c(
+              "a",
+              {
+                staticClass: "is-small button is-pulled-right  m-r-15",
+                on: {
+                  click: function($event) {
+                    _vm.$router.go(-1)
+                  }
+                }
+              },
+              [_vm._v("Go Back ↵")]
+            ),
+            _vm._v(" "),
+            _c(
               "router-link",
               {
-                staticClass: "is-small button is-pulled-right",
+                staticClass: "is-small button is-pulled-right m-r-5",
                 attrs: { to: "/me/dashboard" }
               },
               [_vm._v("Dashboard")]
@@ -41323,7 +41412,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -41335,6 +41424,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuejs_datepicker__ = __webpack_require__(4);
+//
 //
 //
 //
@@ -41510,12 +41600,25 @@ var render = function() {
                 _vm._v(
                   "Update " +
                     _vm._s(_vm.page.title) +
-                    "\n                    \n                        "
+                    "\n                    \n                    "
                 ),
+                _c(
+                  "a",
+                  {
+                    staticClass: "is-small button is-pulled-right  m-r-15",
+                    on: {
+                      click: function($event) {
+                        _vm.$router.go(-1)
+                      }
+                    }
+                  },
+                  [_vm._v("Go Back ↵")]
+                ),
+                _vm._v(" "),
                 _c(
                   "router-link",
                   {
-                    staticClass: "is-small button is-pulled-right",
+                    staticClass: "is-small button is-pulled-right m-r-5",
                     attrs: { to: "/me/dashboard" }
                   },
                   [_vm._v("Dashboard")]
@@ -42688,7 +42791,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -42699,6 +42802,9 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
 //
 //
 //
@@ -42817,7 +42923,23 @@ var render = function() {
               ])
             })
           )
-        ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "p",
+          { staticClass: "subtitle has-text-grey" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "is-small is-primary button is-pulled-right",
+                attrs: { to: "/me/experience/create" }
+              },
+              [_vm._v("Add New")]
+            )
+          ],
+          1
+        )
       ])
     ])
   ])
@@ -42935,7 +43057,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -42947,6 +43069,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuejs_datepicker__ = __webpack_require__(4);
+//
 //
 //
 //
@@ -43077,11 +43200,24 @@ var render = function() {
           "p",
           { staticClass: "subtitle has-text-grey" },
           [
-            _vm._v("Add New Experience\n                "),
+            _vm._v("Add New Experience\n                    "),
+            _c(
+              "a",
+              {
+                staticClass: "is-small button is-pulled-right  m-r-15",
+                on: {
+                  click: function($event) {
+                    _vm.$router.go(-1)
+                  }
+                }
+              },
+              [_vm._v("Go Back ↵")]
+            ),
+            _vm._v(" "),
             _c(
               "router-link",
               {
-                staticClass: "is-small button is-pulled-right",
+                staticClass: "is-small button is-pulled-right m-r-5",
                 attrs: { to: "/me/dashboard" }
               },
               [_vm._v("Dashboard")]
@@ -43451,6 +43587,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuejs_datepicker__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__items__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__items___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__items__);
+//
+//
 //
 //
 //
@@ -44047,11 +44185,24 @@ var render = function() {
             "p",
             { staticClass: "subtitle has-text-grey" },
             [
-              _vm._v("Edit Experience\n                "),
+              _vm._v("Edit Experience\n                    "),
+              _c(
+                "a",
+                {
+                  staticClass: "is-small button is-pulled-right  m-r-15",
+                  on: {
+                    click: function($event) {
+                      _vm.$router.go(-1)
+                    }
+                  }
+                },
+                [_vm._v("Go Back ↵")]
+              ),
+              _vm._v(" "),
               _c(
                 "router-link",
                 {
-                  staticClass: "is-small button is-pulled-right",
+                  staticClass: "is-small button is-pulled-right m-r-5",
                   attrs: { to: "/me/dashboard" }
                 },
                 [_vm._v("Dashboard")]
@@ -45594,6 +45745,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -45604,7 +45760,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             profile: {
                 image: ""
             },
-            dropfile: "",
+            dropFiles: {},
             errors: {}
 
         };
@@ -45653,6 +45809,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             fileReader.onload = function (e) {
                 _this3.profile.image = e.target.result;
             };
+        },
+        addResume: function addResume() {
+            var _this4 = this;
+
+            this.dropFiles = event.target.files[0];
+            var formData = new FormData();
+            formData.append('resume', this.dropFiles, this.dropFiles.name);
+
+            axios.post('/api/xigmig/addresume/' + this.profile.id, {
+                data: formData,
+                _method: 'patch'
+            }).then(function (response) {
+                _this4.getImages();
+                _this4.$toast.open({
+                    duration: 5000,
+                    message: 'Image Uploaded',
+                    position: 'is-bottom',
+                    type: 'is-success'
+                });
+            });
         }
     },
     components: {
@@ -45672,181 +45848,213 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "container  m-t-0" }, [
-      _c("div", { staticClass: "column is-8" }, [
-        _c(
-          "p",
-          { staticClass: "subtitle has-text-grey" },
-          [
-            _vm._v("About\n                "),
-            _c(
-              "router-link",
-              {
-                staticClass: "is-small button is-pulled-right",
-                attrs: { to: "/me/dashboard" }
-              },
-              [_vm._v("Dashboard")]
-            )
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "form",
-          {
-            on: {
-              submit: function($event) {
-                $event.preventDefault()
-                return _vm.onUpdateAbout($event)
+      _c("div", { staticClass: "columns" }, [
+        _c("div", { staticClass: "column is-8" }, [
+          _c(
+            "p",
+            { staticClass: "subtitle has-text-grey" },
+            [
+              _vm._v("About\n                    "),
+              _c(
+                "router-link",
+                {
+                  staticClass: "is-small button is-pulled-right",
+                  attrs: { to: "/me/dashboard" }
+                },
+                [_vm._v("Dashboard")]
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "form",
+            {
+              on: {
+                submit: function($event) {
+                  $event.preventDefault()
+                  return _vm.onUpdateAbout($event)
+                }
               }
-            }
-          },
-          [
-            _c(
-              "table",
-              { staticClass: "is-borderless table is-fullwidth is-bordered" },
-              [
-                _c("tbody", [
-                  _c("tr", [
-                    _c("td", { staticClass: "p-l-0" }, [
-                      _c(
-                        "span",
-                        {
-                          staticClass: "m-b-5 is-block has-text-weight-semibold"
-                        },
-                        [_vm._v("Name")]
-                      ),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.profile.name,
-                            expression: "profile.name"
-                          }
-                        ],
-                        staticClass: "input is-radiusless is-shadowless",
-                        attrs: { type: "text", required: "" },
-                        domProps: { value: _vm.profile.name },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.$set(_vm.profile, "name", $event.target.value)
-                          }
-                        }
-                      }),
-                      _vm._v(" "),
-                      _vm.errors.name
-                        ? _c("p", { staticClass: "help is-danger" }, [
-                            _vm._v(_vm._s(_vm.errors.name[0]))
-                          ])
-                        : _vm._e()
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "p-l-0" }, [
-                      _c(
-                        "span",
-                        {
-                          staticClass: "m-b-5 is-block has-text-weight-semibold"
-                        },
-                        [_vm._v("Email")]
-                      ),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.profile.email,
-                            expression: "profile.email"
-                          }
-                        ],
-                        staticClass: "input is-radiusless is-shadowless",
-                        attrs: { type: "email" },
-                        domProps: { value: _vm.profile.email },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.$set(_vm.profile, "email", $event.target.value)
-                          }
-                        }
-                      }),
-                      _vm._v(" "),
-                      _vm.errors.email
-                        ? _c("p", { staticClass: "help is-danger" }, [
-                            _vm._v(_vm._s(_vm.errors.email[0]))
-                          ])
-                        : _vm._e()
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c(
-                      "td",
-                      { staticClass: "p-l-0", attrs: { colspan: "2" } },
-                      [
+            },
+            [
+              _c(
+                "table",
+                { staticClass: "is-borderless table is-fullwidth is-bordered" },
+                [
+                  _c("tbody", [
+                    _c("tr", [
+                      _c("td", { staticClass: "p-l-0" }, [
                         _c(
                           "span",
                           {
                             staticClass:
                               "m-b-5 is-block has-text-weight-semibold"
                           },
-                          [_vm._v("Photo")]
+                          [_vm._v("Name")]
                         ),
                         _vm._v(" "),
                         _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.profile.name,
+                              expression: "profile.name"
+                            }
+                          ],
                           staticClass: "input is-radiusless is-shadowless",
-                          attrs: { name: "image", type: "file" },
-                          on: { change: _vm.addImage }
-                        })
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c(
-                      "td",
-                      { staticClass: "p-l-0", attrs: { colspan: "2" } },
-                      [
+                          attrs: { type: "text", required: "" },
+                          domProps: { value: _vm.profile.name },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(_vm.profile, "name", $event.target.value)
+                            }
+                          }
+                        }),
+                        _vm._v(" "),
+                        _vm.errors.name
+                          ? _c("p", { staticClass: "help is-danger" }, [
+                              _vm._v(_vm._s(_vm.errors.name[0]))
+                            ])
+                          : _vm._e()
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "p-l-0" }, [
                         _c(
                           "span",
                           {
                             staticClass:
                               "m-b-5 is-block has-text-weight-semibold"
                           },
-                          [_vm._v("Bio")]
+                          [_vm._v("Email")]
                         ),
                         _vm._v(" "),
-                        _c("quill-editor", {
-                          model: {
-                            value: _vm.profile.bio,
-                            callback: function($$v) {
-                              _vm.$set(_vm.profile, "bio", $$v)
-                            },
-                            expression: "profile.bio"
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.profile.email,
+                              expression: "profile.email"
+                            }
+                          ],
+                          staticClass: "input is-radiusless is-shadowless",
+                          attrs: { type: "email" },
+                          domProps: { value: _vm.profile.email },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.profile,
+                                "email",
+                                $event.target.value
+                              )
+                            }
                           }
                         }),
                         _vm._v(" "),
-                        _vm.errors.bio
+                        _vm.errors.email
                           ? _c("p", { staticClass: "help is-danger" }, [
-                              _vm._v(_vm._s(_vm.errors.bio[0]))
+                              _vm._v(_vm._s(_vm.errors.email[0]))
                             ])
                           : _vm._e()
-                      ],
-                      1
-                    )
-                  ]),
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c(
+                        "td",
+                        { staticClass: "p-l-0", attrs: { colspan: "2" } },
+                        [
+                          _c(
+                            "span",
+                            {
+                              staticClass:
+                                "m-b-5 is-block has-text-weight-semibold"
+                            },
+                            [_vm._v("Photo")]
+                          ),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "input is-radiusless is-shadowless",
+                            attrs: { name: "image", type: "file" },
+                            on: { change: _vm.addImage }
+                          })
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c(
+                        "td",
+                        { staticClass: "p-l-0", attrs: { colspan: "2" } },
+                        [
+                          _c(
+                            "span",
+                            {
+                              staticClass:
+                                "m-b-5 is-block has-text-weight-semibold"
+                            },
+                            [_vm._v("Bio")]
+                          ),
+                          _vm._v(" "),
+                          _c("quill-editor", {
+                            model: {
+                              value: _vm.profile.bio,
+                              callback: function($$v) {
+                                _vm.$set(_vm.profile, "bio", $$v)
+                              },
+                              expression: "profile.bio"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _vm.errors.bio
+                            ? _c("p", { staticClass: "help is-danger" }, [
+                                _vm._v(_vm._s(_vm.errors.bio[0]))
+                              ])
+                            : _vm._e()
+                        ],
+                        1
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _vm._m(0)
+                  ])
+                ]
+              )
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "column is-3" }, [
+          _c(
+            "table",
+            { staticClass: "is-borderless table is-fullwidth m-t-60" },
+            [
+              _c("tr", [
+                _c("td", { staticClass: "p-l-0" }, [
+                  _c(
+                    "span",
+                    { staticClass: "m-b-5 is-block has-text-weight-semibold" },
+                    [_vm._v("Change Resume")]
+                  ),
                   _vm._v(" "),
-                  _vm._m(0)
+                  _c("input", {
+                    staticClass: "input is-radiusless is-shadowless",
+                    attrs: { name: "resume", type: "file" },
+                    on: { change: _vm.addResume }
+                  })
                 ])
-              ]
-            )
-          ]
-        )
+              ])
+            ]
+          )
+        ])
       ])
     ])
   ])
@@ -61366,15 +61574,19 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(235)
+}
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = null
+var __vue_script__ = __webpack_require__(237)
 /* template */
 var __vue_template__ = __webpack_require__(173)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = null
+var __vue_styles__ = injectStyle
 /* scopeId */
 var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
@@ -61427,13 +61639,39 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c(
-            "router-link",
+            "a",
             {
               staticClass: "is-size-7 has-text-grey is-pulled-right",
-              attrs: { to: "/" }
+              on: {
+                click: function($event) {
+                  _vm.$router.go(-1)
+                }
+              }
             },
             [_vm._v("Go Back ↵")]
-          )
+          ),
+          _vm._v(" "),
+          _vm.loginStatus
+            ? _c(
+                "router-link",
+                {
+                  staticClass: "is-size-7 has-text-grey is-pulled-right m-r-50",
+                  attrs: { to: "/me/dashboard" }
+                },
+                [_vm._v("Dashboard")]
+              )
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.loginStatus
+            ? _c(
+                "router-link",
+                {
+                  staticClass: "is-size-7 has-text-grey is-pulled-right m-r-50",
+                  attrs: { to: "/me/logout" }
+                },
+                [_vm._v("Logout")]
+              )
+            : _vm._e()
         ],
         1
       )
@@ -68476,6 +68714,85 @@ Object.defineProperty(exports, '__esModule', { value: true });
 })));
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
+
+/***/ }),
+/* 235 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(236);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("4dceeb95", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2efa4004\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./TopNav.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2efa4004\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./TopNav.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 236 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 237 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            loginStatus: false
+        };
+    },
+    created: function created() {
+        if (User.loggedIn()) {
+            this.loginStatus = true;
+        } else {
+            this.loggedIn = false;
+        }
+    }
+});
 
 /***/ })
 /******/ ]);
