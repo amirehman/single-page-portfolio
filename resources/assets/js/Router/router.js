@@ -27,7 +27,7 @@ import Home from '../components/frontend/Home'
 import Work from '../components/frontend/Work'
 import SingleWork from '../components/frontend/SingleWork'
 import FrontAbout from '../components/frontend/About'
-
+import Contacts from '../components/frontend/Contact.vue'
 
 
 
@@ -131,6 +131,11 @@ const routes = [
     path: '/about', 
     component: FrontAbout,
     name: 'frontabout'
+  },
+  { // About
+    path: '/contact', 
+    component: Contacts,
+    name: 'contact'
   }
 
 

@@ -2,32 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\About;
 use Image;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactEmail;
 
 
 class MixController extends Controller
 {
     
-    public function addResume(Request $request, $about)
+    public function contact(Request $request)
     {
-        if($request->hasFile('resume')) {
 
-            // $resume = $request->resume;
+        // Mail::to("hi@amirrehman.com")->send(new Contact($request));  
+        Mail::to("askamirrehman@gmail.com")->send(new ContactEmail($request));  
 
-            // $resumename = date('mdYHis') . uniqid() . '.' . $resume->getClientOriginalExtension();
-            // $location = public_path('/images/resume/' . $resumename);
-
-            // file_put_contents($location, $resumename);
-
-            // $about->resume = $resumename;
-            // $about->save();
-
-            return $about;
-    
-
-        }
     }
 
     

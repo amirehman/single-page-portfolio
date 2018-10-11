@@ -45,14 +45,26 @@
                 </div>
     
                 <div class="column is-3">
-                    <table class="is-borderless table is-fullwidth m-t-60">
-                        <tr>
-                            <td class="p-l-0">
-                                <span class="m-b-5 is-block has-text-weight-semibold">Change Resume</span>
-                                <input name="resume" type="file" class="input is-radiusless is-shadowless" @change="addResume">
-                            </td>
-                        </tr>
-                    </table>
+                        <table class="is-borderless table is-fullwidth m-t-60">
+                            <tr>
+                                <td class="p-l-0">
+                                    <span class="m-b-5 is-block has-text-weight-semibold">Change Resume</span>
+                                    <input name="resume" type="file" class="input is-radiusless is-shadowless" @change="addResume">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="m-b-5 is-block has-text-weight-semibold">Resume</span>
+                                    {{profile.resume}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="m-b-5 is-block has-text-weight-semibold">About Image</span>
+                                    <img :src="`${baseURL}images/${profile.image}`" />
+                                </td>
+                            </tr>
+                        </table>
                 </div>
             </div>
         </div>
@@ -72,7 +84,8 @@
                     image: ""
                 },
                 dropFiles: {},
-                errors: {}
+                errors: {},
+                baseURL: "http://127.0.0.1:8000/"
     
             }
         },
@@ -82,7 +95,7 @@
                     name: 'login'
                 })
             } else {
-                this.getData();
+                this.getData(); 
             }
         },
         methods: {
@@ -97,7 +110,8 @@
                         name: this.profile.name,
                         email: this.profile.email,
                         image: this.profile.image,
-                        bio: this.profile.bio
+                        bio: this.profile.bio,
+                        resume: this.dropFiles
                     })
                     .then(response => {
                         this.$toast.open({
@@ -115,27 +129,25 @@
                     this.profile.image = e.target.result;
                 }
             },
-            addResume() {
-    
-                this.dropFiles = event.target.files[0];
-                const formData = new FormData();
-                formData.append('resume', this.dropFiles, this.dropFiles.name);
-    
-                axios.post(`/api/xigmig/addresume/${this.profile.id}`, {
-                    data: formData,
-                    _method: 'patch'
-                }).then(response => {
-                    this.getImages();
-                    this.$toast.open({
-                        duration: 5000,
-                        message: `Image Uploaded`,
-                        position: 'is-bottom',
-                        type: 'is-success'
-                    });
-                })
-    
-    
-            }
+            addResume(e) {            
+                var fileReader = new FileReader()
+                fileReader.readAsDataURL(e.target.files[0]);
+                fileReader.onload = (e) => {
+                    this.dropFiles = e.target.result;
+                }
+
+            // axios.put(`/api/about/${this.profile.id}`, formData, {
+            // }).then(response => {
+            //   this.$toast.open({
+            //     duration: 5000,
+            //     message: `Resume Updated`,
+            //     position: 'is-bottom',
+            //     type: 'is-success'
+            //   }); 
+            // })
+
+
+          }
         },
         components: {
             Datepicker,

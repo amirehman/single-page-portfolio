@@ -34,31 +34,26 @@
     
                     <div class="intro dynamic-content" @click="handleClicks" v-html="general.intro"></div>
     
-                    <!--<h4>
-                                                <span class="br heighlight">Hey there,</span>
-                                                <span class="br">I'm
-                                                    <a href="about.html" class="front-name">Amir Rehman!</a> a Pakistani full stack developer,</span>
-                                                <span class="br">Specializing in building everything from small business sites to rich interactive web apps. Currently
-                                                    working for
-                                                    <a href="http://icon-ad.com">Icon Advertising LLC.</a>
-                                                </span> Check out some of my
-                                                <a href="work.html">latest work</a>. </h4>-->
                     <div class="social">
-                        <a href="#">
-                            <i class="fa fa-facebook"></i>
+                    
+                        <a class="nottarget" :href="general.linkedin" target="_blank">
+                            <i class="fa fa-linkedin"></i>
                         </a>
-                        <a href="#">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a href="#">
+                        <a class="nottarget" :href="general.github" target="_blank">
                             <i class="fa fa-github"></i>
                         </a>
-                        <a href="#">
+                        <a class="nottarget" :href="general.stackoverflow" target="_blank">
+                            <i class="fa fa-stack-overflow"></i>
+                        </a>
+                        <a class="nottarget" :href="general.instagram" target="_blank">
                             <i class="fa fa-instagram"></i>
                         </a>
-                        <span class="has-text-grey"> or write to
-                                                    <a class="has-text-weight-semibold" href="mailto:hi@amirrehman.com">hi@amirrehman.com</a>
-                                                </span>
+                        <a class="nottarget" :href="general.facebook" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <span class="has-text-grey"> or email me direct at
+                            <a class="has-text-weight-semibold" href="mailto:hi@amirrehman.com">{{profile.email}}</a>
+                        </span>
                     </div>
                 </div>
     
@@ -81,7 +76,8 @@
             return {
                 general: {
                     image: ""
-                }
+                },
+                profile: {}
     
             }
         },
@@ -91,7 +87,7 @@
         },
         mounted() {
             setTimeout(() => {
-                const targets = document.querySelectorAll('a');
+                const targets = document.querySelectorAll('a:not(.nottarget)');
                 targets.forEach(e => {
                     e.removeAttribute('target')
                 })
@@ -106,15 +102,16 @@
                     .then(response => {
                         this.general = response.data.data
                     });
+                axios.get(`/api/about`)
+                    .then(response => {
+                        this.profile = response.data.data
+                    });
             },
             handleClicks($event) {
                 const {
                     target
                 } = $event
-                // handle only links that occur inside the component and do not reference external resources
                 if (target && target.matches(".dynamic-content a:not([href*='://'])") && target.href) {
-                    // some sanity checks taken from vue-router:
-                    // https://github.com/vuejs/vue-router/blob/dev/src/components/link.js#L106
                     const {
                         altKey,
                         ctrlKey,

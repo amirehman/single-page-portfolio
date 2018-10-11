@@ -31,7 +31,9 @@
                                     <span class="vline"></span>
                                     <h4 class="is-size-4 is-marginless">{{page.title}}</h4>
                                     <p class="is-size-6">{{page.detail}}</p>
-                                    <img :src="`${baseURL}images/${page.image}`">
+                                    <template v-if="page.image">
+                                        <img :src="`${baseURL}images/${page.image}`">
+                                    </template>
                                 </li>
 
                             </ul>

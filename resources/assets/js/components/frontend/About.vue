@@ -118,7 +118,7 @@
     
                                 <div class="about-section">
                                     <div class="content has-text-centered">
-                                        <h3 class="button is-warning section-header is-medium">Download Resume</h3>
+                                        <a :href="`${backgroundImgUrl}resume/${profile.resume}`" download class="button is-warning section-header is-medium">Download Resume</a>
                                     </div>
                                 </div>
     

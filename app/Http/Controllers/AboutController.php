@@ -104,11 +104,29 @@ class AboutController extends Controller
             $about->image = $filename;
         }
 
+        if($request->resume != null){
 
-        
+            $explodedr = explode(',', $request->resume);
+            $decodedr = base64_decode($explodedr[1]);
+    
+            if(str_contains($explodedr[0], 'docx'))
+                $extensionr = "pdf";
+            else 
+                $extensionr = "docx";
+
+                $filenamer = time().'.'.$extensionr;
+                $pathr = public_path().'/images/resume/'.$filenamer;  
+                file_put_contents($pathr, $decodedr);
+    
+                File::delete(public_path('images/resume/'. $about->resume));
+    
+                $about->resume = $filenamer;
+        }
+
+
         $about->save();
-
         return response('Bio Updated', Response::HTTP_CREATED);
+
     }
 
     /**
