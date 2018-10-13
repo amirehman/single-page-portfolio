@@ -25,6 +25,7 @@
                                             <label class="label has-text-weight-semibold is-uppercase is-size-7">Full Name *</label>
                                             <div class="control">
                                                 <input class="input is-shadowless is-radiusless" v-model="contact.name" type="text">
+                                                <p class="help is-danger" v-if="errors.name">{{errors.name[0]}}</p>
                                             </div>
                                         </div>
     
@@ -32,6 +33,7 @@
                                             <label class="label has-text-weight-semibold is-uppercase is-size-7">Email *</label>
                                             <div class="control">
                                                 <input class="input is-shadowless is-radiusless" v-model="contact.email" type="email">
+                                                <p class="help is-danger" v-if="errors.email">{{errors.email[0]}}</p>
                                             </div>
                                         </div>
                                         <div class="field">
@@ -40,9 +42,12 @@
                                                 <div class="select">
                                                     <select class="is-shadowless is-radiusless" v-model="contact.subject">
                                                             <option value="select" selected disabled>Select dropdown</option>
-                                                            <option value="option">With options</option>
+                                                            <option value="hiring">Hiring for a project</option>
+                                                            <option value="question">Question </option>
+                                                            <option value="other">Other </option>
                                                         </select>
                                                 </div>
+                                                <p class="help is-danger" v-if="errors.subject">{{errors.subject[0]}}</p>
                                             </div>
                                         </div>
                                         <div class="field">
@@ -54,7 +59,7 @@
     
                                         <div class="field">
                                             <div class="control">
-                                                <button class="button  is-radiusless is-warning has-text-weight-semibold is-size-6">SUBMIT</button>
+                                                <button :disabled="isSubmitted" class="button is-radiusless is-warning has-text-weight-semibold is-size-6" :class="{ 'is-loading': isSubmitted}">SUBMIT</button>
                                             </div>
                                         </div>
     
@@ -94,13 +99,15 @@
         data() {
             return {
                 contact: {
-                    subject: "select"
+                    subject: "hiring"
                 },
-                errors: {}
+                errors: {},
+                isSubmitted: false
             }
         },
         methods: {
             onSubmitContact() {
+                this.isSubmitted = true;
                 axios.post(`/api/xigmig/contact`, {
                         name: this.contact.name,
                         email: this.contact.email,
@@ -108,12 +115,22 @@
                         message: this.contact.message
                     })
                     .then(response => {
+                        this.isSubmitted = false;
                         this.$toast.open({
                             duration: 8000,
                             message: 'Message send successfully',
                             type: 'is-success'
                         });
+                        this.contact.name = ""
+                        this.contact.email = ""
+                        this.contact.subject = "hiring"
+                        this.contact.message = ""
+
                     })
+                    .catch((error) => {
+                        this.isSubmitted = false;
+                        this.errors = error.response.data.errors
+                    });
     
     
             }

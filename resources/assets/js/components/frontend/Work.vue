@@ -19,45 +19,19 @@
             <div class="columns">
                 <div class="column">
                     <div class="work-wrapper">
-    
-                        <div class="work-row">
-    
-                            <!--<div class="work-col col-lg">
-                                    <div class="card">
-                                        <div class="card-image">
-        
-                                            <ul class="assets">
-                                                <li>HTML</li>
-                                                <li>Laravel</li>
-                                                <li>jQuery</li>
-                                                <li>Vuejs</li>
-                                                <li>AngularJs</li>
-                                            </ul>
-        
-                                            <figure class="image   is-1by3">
-                                                <img src="images/work/4.png" alt="Placeholder image">
-                                            </figure>
-                                        </div>
-                                        <div class="card-content">
-                                            <div class="content">
-                                                <a href="">
-                                                    <p>National Paints
-                                                        <time datetime="2016-1-1">1 Jan 2016</time>
-                                                    </p>
-                                                </a>
-        
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>-->
-                            <!-- work-col -->
+                    <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="5px"></ball-pulse-sync-loader>
+
+                        <div class="work-row" v-cloak>
     
                             <div class="work-col col-sm" v-for="project in projects">
                                 <router-link :to="`/work/${project.slug}`">
                                     <div class="card">
                                         <div class="card-image">
-                                            <figure class="image is-4by3">
-                                                <img :src="`${baseURL}images/${project.image}`" class="is-block">
+                                            <figure class="image">
+                                                <progressive-img 
+                                                    :src="`${baseURL}images/${project.image}`" class="is-block" 
+                                                    :placeholder="`${baseURL}images/${project.image}`" 
+                                                />
                                             </figure>
                                         </div>
                                         <div class="card-content">
@@ -84,7 +58,7 @@
     
         </div>
     
-        <footer-bottom></footer-bottom>
+        <footer-bottom  v-if="!loading"></footer-bottom>
     
     </div>
 </template>
@@ -96,7 +70,8 @@
         data() {
             return {
                 projects: {},
-                baseURL: "http://127.0.0.1:8000/"
+                baseURL: "http://127.0.0.1:8000/",
+                loading: true
     
             }
         },
@@ -107,6 +82,7 @@
             getProjects() {
                 axios.get('/api/projects').then(response => {
                     this.projects = response.data.data
+                    this.loading = false
                 });
             }
         },

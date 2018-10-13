@@ -18,11 +18,6 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    {{general.intro}}
-                                </td>
-                            </tr>
-                            <tr>
                                 <td class="p-l-0">
                                     <span class="m-b-5 is-block has-text-weight-semibold">Facebook</span>
                                     <input required type="url" required class="input is-radiusless is-shadowless" v-model="general.facebook">

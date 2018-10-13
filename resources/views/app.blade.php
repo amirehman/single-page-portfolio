@@ -8,7 +8,7 @@
 
 </head>
 
-<body>
+<body class="front">
 
 
       <div id="app">

@@ -8,6 +8,7 @@
 
 // //Buefy
 @import '~buefy/lib/buefy';
+@import '~vue-loaders/dist/vue-loaders.css';
 
 
 
@@ -19,3 +20,8 @@
 @import "queries";
 @import "light";
 
+
+
+[v-cloak] {
+    display: none;
+  }

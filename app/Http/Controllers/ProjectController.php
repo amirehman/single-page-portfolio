@@ -80,6 +80,7 @@ class ProjectController extends Controller
         $project->datee = $request->date;
         $project->detail = $request->detail;
         $project->image = $filename;
+        $project->likes = 0;
         $project->slug = $slug;
         $project->save();
  
@@ -139,10 +140,12 @@ class ProjectController extends Controller
             $project->image = $filename;
         }
 
+        $likes = $project->likes + 1;    
 
         $project->title = $request->title;
         $project->datee = $request->date;
         $project->detail = $request->detail;
+        $project->likes = $likes;
         $project->save();
         $project->elements()->sync($request->elements);    
         return response()->json(

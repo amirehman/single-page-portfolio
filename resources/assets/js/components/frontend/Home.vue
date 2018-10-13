@@ -1,38 +1,12 @@
 <template>
     <div>
     
-        <section class="front-cover">
+        <section class="front-cover" :style="{ 'background-image': 'url(' + backgroundImgUrl + bodyimage + ')'}">
             <div class="hero is-fullheight">
                 <div class="about-info">
     
-                    <div class="front-cards about-name-card">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image is-4by4">
-                                    <img src="images/about.jpg" alt="Placeholder image">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="front-cards about-compnay-card">
-                        <div class="card">
-                            <figure class="image is-4by4">
-                                <img src="http://icon-ad.com/wp-content/uploads/2018/04/da65a256168033.59a3dbf9a612a.jpg" alt="Placeholder image">
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="front-cards about-work-card">
-                        <div class="card">
-                            <div class="card-content">
-                                <h4>I have a pretty good portfolio</h4>
-                                <p>just check it out</p>
-                            </div>
-                        </div>
-                    </div>
-    
-    
-    
-                    <div class="intro dynamic-content" @click="handleClicks" v-html="general.intro"></div>
+                    <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="8px"></ball-pulse-sync-loader>
+                    <div v-cloak class="intro dynamic-content" @click="handleClicks" v-html="general.intro"></div>
     
                     <div class="social">
                     
@@ -51,7 +25,7 @@
                         <a class="nottarget" :href="general.facebook" target="_blank">
                             <i class="fa fa-facebook"></i>
                         </a>
-                        <span class="has-text-grey"> or email me direct at
+                        <span  v-if="!loading" class="has-text-grey"> or email me direct at
                             <a class="has-text-weight-semibold" href="mailto:hi@amirrehman.com">{{profile.email}}</a>
                         </span>
                     </div>
@@ -77,8 +51,10 @@
                 general: {
                     image: ""
                 },
-                profile: {}
-    
+                profile: {},
+                loading: true,
+                backgroundImgUrl: "http://127.0.0.1:8000/images/assets/",
+                bodyimage: 'round.png'
             }
         },
         created() {
@@ -91,7 +67,7 @@
                 targets.forEach(e => {
                     e.removeAttribute('target')
                 })
-            }, 500)
+            }, 900)
         },
         methods: {
             applyTextEdit() {
@@ -101,6 +77,7 @@
                 axios.get(`/api/general`)
                     .then(response => {
                         this.general = response.data.data
+                        this.loading = false
                     });
                 axios.get(`/api/about`)
                     .then(response => {
@@ -144,3 +121,8 @@
     
     }
 </script>
+
+
+<style scopped>
+    
+</style>

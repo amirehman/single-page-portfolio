@@ -19,6 +19,7 @@ class CreateProjectsTable extends Migration
             $table->string('slug');
             $table->text('detail');
             $table->string('image');
+            $table->integer('likes');
             $table->string('datee');
             $table->timestamps();
         });

@@ -4,25 +4,27 @@
         <top-navbar></top-navbar>
     
         <div class="single-wrapper">
+         
         <div class="container">
             <div class="columns">
                 <div class="column is-8">
-                    <div class="inner-wrapper">
+                    <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="5px"></ball-pulse-sync-loader>
+                    <div class="inner-wrapper" v-cloak>
                         <header class="single-header has-text-left">
-                            <span class="is-marginless is-size-7 has-text-grey">Project</span>
+                            <span class="is-marginless is-size-7 has-text-grey" v-if="!loading">Project</span>
                             <h3 class="is-marginless is-size-3">{{project.title}}</h3>
                             <p>{{project.detail}}</p>
 
-                            <div class="single-elemets">
-                                <h4 class="is-size-5">Elements Used In This Projects</h4>
+                            <div class="single-elemets" v-if="!loading">
+                                <h4 class="is-size-5" >Elemets used in this project</h4>
                                 <ul>
-                                    <li class="button is-radiusless" v-for="element in elements">
+                                    <li class="button m-r-5 is-radiusless" v-for="element in elements">
                                         <a target="_blank" :href="`${element.link}`">{{element.name}}</a>
                                     </li>
                                 </ul>
                             </div>
                         </header>
-                        <hr>
+                        <hr v-if="!loading">
 
                         <div class="single-body">
                             <ul>
@@ -32,7 +34,10 @@
                                     <h4 class="is-size-4 is-marginless">{{page.title}}</h4>
                                     <p class="is-size-6">{{page.detail}}</p>
                                     <template v-if="page.image">
-                                        <img :src="`${baseURL}images/${page.image}`">
+                                        <progressive-img 
+                                            :src="`${baseURL}images/${page.image}`"
+                                            :placeholder="`${baseURL}images/${page.image}`"
+                                             />
                                     </template>
                                 </li>
 
@@ -41,9 +46,9 @@
                     </div>
 
 
-                    <div class="single-like has-text-centered">
-                        <i class="fa fa-heart" title="git it a thumbs up"></i>
-                        <span class="like-counter">34</span> 
+                    <div class="single-like has-text-centered"  v-cloak>
+                        <i @click="likeProject"  v-if="!loading" class="fa fa-heart" title="git it a thumbs up"></i>
+                        <span class="like-counter">{{project.likes}}</span> 
                     </div>
 
 
@@ -52,7 +57,7 @@
         </div>
     </div>
     
-        <footer-bottom></footer-bottom>
+        <footer-bottom v-if="!loading"></footer-bottom>
     
     </div>
 </template>
@@ -66,12 +71,17 @@
                 project: {},
                 baseURL: "http://127.0.0.1:8000/",
                 elements: {},
-                pages: {}
+                pages: {},
+                loading: true,
+                messages: ['Sweet', 'WoW', 'Thank You', 'Ok, Thats Cool'],
+                selectedMessage: ""
     
             }
         },
         mounted() {
+            
             this.getProjects()
+            
         },
         methods: {
             getProjects() {
@@ -80,7 +90,27 @@
                         this.project = response.data.data
                         this.elements = response.data.data.elements
                         this.pages = response.data.data.pages
+                        this.loading = false    
+
                     });
+            },
+            likeProject () {
+                const idx = Math.floor(Math.random() * this.messages.length);
+                this.selectedMessage = this.messages[idx]
+               axios.put(`/api/projects/${this.project.id}`, {
+                        title: this.project.title,
+                        date: this.project.date,
+                        detail: this.project.detail,
+                        like: 1
+                    })
+                    .then(response => {
+                        this.project.likes += 1;
+                        this.$toast.open({
+                            duration: 2000,
+                            message: this.selectedMessage,
+                            type: 'is-success'
+                        });
+                    })
             }
         },
         components: {

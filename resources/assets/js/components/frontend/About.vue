@@ -9,14 +9,15 @@
                     <div class="column is-8">
                         <div class="inner-wrapper">
     
+                    <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="5px"></ball-pulse-sync-loader>
     
-                            <div class="about-header about-section">
+                            <div class="about-header about-section" v-cloak>
                                 <div class="content">
                                     <h3 class="button is-radiusless	">BIOGRAPHY</h3>
                                     <div v-html="profile.bio"></div>
                                 </div>
-                                <div class="content-img about-section image1" style="background-position: center ; background-repeat: no-repeat; background-size: cover;background-attachment: fixed;" :style="{ 'background-image': 'url(' + backgroundImgUrl + profile.image + ')' }">
-                                </div>
+                                <progressive-background class="content-img about-section image1" style="background-position: center ; background-repeat: no-repeat; background-size: cover;background-attachment: fixed;" :src="backgroundImgUrl+profile.image">
+                                </progressive-background>
                                 <div class="about-skills about-section">
                                     <div class="content">
                                         <h3 class="button is-radiusless	">EXPERTISE</h3>
@@ -142,7 +143,7 @@
             </div>
         </div>
     
-        <footer-bottom></footer-bottom>
+        <footer-bottom v-if="!loading"></footer-bottom>
     
     </div>
 </template>
@@ -162,7 +163,8 @@
                 expertiesTypes: {},
                 backgroundImgUrl: "http://127.0.0.1:8000/images/",
                 experiences: {},
-                educations: {}
+                educations: {},
+                loading: true
             }
         },
         created() {
@@ -176,6 +178,7 @@
                 axios.get(`/api/about`)
                     .then(response => {
                         this.profile = response.data.data
+                        this.loading = false
                     });
             },
             getExperties() {
@@ -207,3 +210,11 @@
 
 
 
+<style scropped>
+    .arZxkKg-w3Qec3gGdgaPh_0 {
+        background-position: center center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        background-attachment: fixed;
+    }
+</style>
