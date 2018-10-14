@@ -6,16 +6,14 @@ class User {
         axios.post('/api/auth/login', data)
             .then(res => this.responseAfterLogin(res))
             .catch(error => console.log(error.response.data))
-            console.log('here');
     }
 
     responseAfterLogin(res) {
         const access_token = res.data.access_token
         const username = res.data.user
-        console.log('here 2');
         if (Token.isValid(access_token)) {
             AppStorage.store(username, access_token)
-            //window.location = '/me/dashboard'
+            window.location = '/me/dashboard'
         }
     }
 
