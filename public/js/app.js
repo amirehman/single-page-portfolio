@@ -78881,7 +78881,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "container  m-t-0" }, [
+    _c("div", { staticClass: "container  m-t-15" }, [
       _c("div", { staticClass: "columns" }, [
         _c("div", { staticClass: "column is-8" }, [
           _c(
