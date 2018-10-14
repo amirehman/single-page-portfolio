@@ -53,7 +53,7 @@
                 },
                 profile: {},
                 loading: true,
-                backgroundImgUrl: "http://127.0.0.1:8000/images/assets/",
+                backgroundImgUrl: "http://45.32.60.134/images/assets/",
                 bodyimage: 'round.png'
             }
         },

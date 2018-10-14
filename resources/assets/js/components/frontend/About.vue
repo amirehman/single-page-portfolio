@@ -161,7 +161,7 @@
                 },
                 experties: {},
                 expertiesTypes: {},
-                backgroundImgUrl: "http://127.0.0.1:8000/images/",
+                backgroundImgUrl: "http://45.32.60.134/images/",
                 experiences: {},
                 educations: {},
                 loading: true

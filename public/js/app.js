@@ -37468,7 +37468,7 @@ var Token = function () {
         value: function isValid(token) {
             var payload = this.payload(token);
             if (payload) {
-                return payload.iss == "http://127.0.0.1:8000/api/auth/login" ? true : false;
+                return payload.iss == "http://45.32.60.134/api/auth/login" ? true : false;
             }
 
             return false;
@@ -46274,7 +46274,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             elements: [],
             selectedElements: [11, 12],
             errors: {},
-            baseURL: "http://127.0.0.1:8000/"
+            baseURL: "http://45.32.60.134/"
         };
     },
     created: function created() {
@@ -46525,7 +46525,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {
             project: "",
             pages: "",
-            baseURL: "http://127.0.0.1:8000/"
+            baseURL: "http://45.32.60.134/"
         };
     },
     created: function created() {
@@ -48726,7 +48726,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             page: {},
             dropfile: "",
             errors: {},
-            baseURL: "http://127.0.0.1:8000/"
+            baseURL: "http://45.32.60.134/"
 
         };
     },
@@ -53007,7 +53007,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             },
             dropFiles: {},
             errors: {},
-            baseURL: "http://127.0.0.1:8000/"
+            baseURL: "http://45.32.60.134/"
 
         };
     },
@@ -67773,7 +67773,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             },
             profile: {},
             loading: true,
-            backgroundImgUrl: "http://127.0.0.1:8000/images/assets/",
+            backgroundImgUrl: "http://45.32.60.134/images/assets/",
             bodyimage: 'round.png'
         };
     },
@@ -68086,7 +68086,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             projects: {},
-            baseURL: "http://127.0.0.1:8000/",
+            baseURL: "http://45.32.60.134/",
             loading: true
 
         };
@@ -68657,7 +68657,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             project: {},
-            baseURL: "http://127.0.0.1:8000/",
+            baseURL: "http://45.32.60.134/",
             elements: {},
             pages: {},
             loading: true,
@@ -69124,7 +69124,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             },
             experties: {},
             expertiesTypes: {},
-            backgroundImgUrl: "http://127.0.0.1:8000/images/",
+            backgroundImgUrl: "http://45.32.60.134/images/",
             experiences: {},
             educations: {},
             loading: true
