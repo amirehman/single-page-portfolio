@@ -15,8 +15,6 @@
                             </b-field>
 
                             <b-field
-                                        type="is-success"
-                                         message="This username is available">
                                 <b-input type="password"
                                          v-model="form.password"
                                          placeholder="Password"
@@ -26,7 +24,7 @@
                                 </b-input>
                             </b-field>
                             
-                            <button class="button is-block is-small">Login</button>
+                            <button class="button is-block is-small m-t-15">Login</button>
                         </form>
                     </div>
                     

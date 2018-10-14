@@ -274,7 +274,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(65)
+var listToStyles = __webpack_require__(67)
 
 /*
 type StyleObject = {
@@ -2310,9 +2310,9 @@ module.exports = g;
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(159)
+var __vue_script__ = __webpack_require__(163)
 /* template */
-var __vue_template__ = __webpack_require__(160)
+var __vue_template__ = __webpack_require__(164)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -2357,13 +2357,13 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(161)
+  __webpack_require__(165)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(163)
+var __vue_script__ = __webpack_require__(167)
 /* template */
-var __vue_template__ = __webpack_require__(164)
+var __vue_template__ = __webpack_require__(168)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -2417,7 +2417,7 @@ module.exports = nativeCreate;
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var freeGlobal = __webpack_require__(181);
+var freeGlobal = __webpack_require__(187);
 
 /** Detect free variable `self`. */
 var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
@@ -2432,7 +2432,7 @@ module.exports = root;
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var eq = __webpack_require__(195);
+var eq = __webpack_require__(201);
 
 /**
  * Gets the index at which the `key` is found in `array` of key-value pairs.
@@ -2459,7 +2459,7 @@ module.exports = assocIndexOf;
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isKeyable = __webpack_require__(201);
+var isKeyable = __webpack_require__(207);
 
 /**
  * Gets the data for `map`.
@@ -2587,8 +2587,8 @@ module.exports = defaults;
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsNative = __webpack_require__(178),
-    getValue = __webpack_require__(187);
+var baseIsNative = __webpack_require__(184),
+    getValue = __webpack_require__(193);
 
 /**
  * Gets the native function at `key` of `object`.
@@ -14037,13 +14037,13 @@ module.exports = Vue;
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(63)
+  __webpack_require__(65)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(66)
+var __vue_script__ = __webpack_require__(68)
 /* template */
-var __vue_template__ = __webpack_require__(67)
+var __vue_template__ = __webpack_require__(69)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -14127,7 +14127,7 @@ exports.push([module.i, "/*!\n * Quill Editor v1.3.6\n * https://quilljs.com/\n 
 /* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
-!function(t,e){ true?module.exports=e(__webpack_require__(143)):"function"==typeof define&&define.amd?define(["quill"],e):"object"==typeof exports?exports.VueQuillEditor=e(require("quill")):t.VueQuillEditor=e(t.Quill)}(this,function(t){return function(t){function e(i){if(n[i])return n[i].exports;var l=n[i]={i:i,l:!1,exports:{}};return t[i].call(l.exports,l,l.exports,e),l.l=!0,l.exports}var n={};return e.m=t,e.c=n,e.i=function(t){return t},e.d=function(t,n,i){e.o(t,n)||Object.defineProperty(t,n,{configurable:!1,enumerable:!0,get:i})},e.n=function(t){var n=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(n,"a",n),n},e.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},e.p="/",e(e.s=2)}([function(e,n){e.exports=t},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var i=n(4),l=n.n(i),o=n(6),r=n(5),u=r(l.a,o.a,!1,null,null,null);e.default=u.exports},function(t,e,n){"use strict";function i(t){return t&&t.__esModule?t:{default:t}}Object.defineProperty(e,"__esModule",{value:!0}),e.install=e.quillEditor=e.Quill=void 0;var l=n(0),o=i(l),r=n(1),u=i(r),s=window.Quill||o.default,a=function(t,e){e&&(u.default.props.globalOptions.default=function(){return e}),t.component(u.default.name,u.default)},c={Quill:s,quillEditor:u.default,install:a};e.default=c,e.Quill=s,e.quillEditor=u.default,e.install=a},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default={theme:"snow",boundary:document.body,modules:{toolbar:[["bold","italic","underline","strike"],["blockquote","code-block"],[{header:1},{header:2}],[{list:"ordered"},{list:"bullet"}],[{script:"sub"},{script:"super"}],[{indent:"-1"},{indent:"+1"}],[{direction:"rtl"}],[{size:["small",!1,"large","huge"]}],[{header:[1,2,3,4,5,6,!1]}],[{color:[]},{background:[]}],[{font:[]}],[{align:[]}],["clean"],["link","image","video"]]},placeholder:"Insert text here ...",readOnly:!1}},function(t,e,n){"use strict";function i(t){return t&&t.__esModule?t:{default:t}}Object.defineProperty(e,"__esModule",{value:!0});var l=n(0),o=i(l),r=n(3),u=i(r),s=window.Quill||o.default;"function"!=typeof Object.assign&&Object.defineProperty(Object,"assign",{value:function(t,e){if(null==t)throw new TypeError("Cannot convert undefined or null to object");for(var n=Object(t),i=1;i<arguments.length;i++){var l=arguments[i];if(null!=l)for(var o in l)Object.prototype.hasOwnProperty.call(l,o)&&(n[o]=l[o])}return n},writable:!0,configurable:!0}),e.default={name:"quill-editor",data:function(){return{_options:{},_content:"",defaultOptions:u.default}},props:{content:String,value:String,disabled:{type:Boolean,default:!1},options:{type:Object,required:!1,default:function(){return{}}},globalOptions:{type:Object,required:!1,default:function(){return{}}}},mounted:function(){this.initialize()},beforeDestroy:function(){this.quill=null,delete this.quill},methods:{initialize:function(){var t=this;this.$el&&(this._options=Object.assign({},this.defaultOptions,this.globalOptions,this.options),this.quill=new s(this.$refs.editor,this._options),this.quill.enable(!1),(this.value||this.content)&&this.quill.pasteHTML(this.value||this.content),this.disabled||this.quill.enable(!0),this.quill.on("selection-change",function(e){e?t.$emit("focus",t.quill):t.$emit("blur",t.quill)}),this.quill.on("text-change",function(e,n,i){var l=t.$refs.editor.children[0].innerHTML,o=t.quill,r=t.quill.getText();"<p><br></p>"===l&&(l=""),t._content=l,t.$emit("input",t._content),t.$emit("change",{html:l,text:r,quill:o})}),this.$emit("ready",this.quill))}},watch:{content:function(t,e){this.quill&&(t&&t!==this._content?(this._content=t,this.quill.pasteHTML(t)):t||this.quill.setText(""))},value:function(t,e){this.quill&&(t&&t!==this._content?(this._content=t,this.quill.pasteHTML(t)):t||this.quill.setText(""))},disabled:function(t,e){this.quill&&this.quill.enable(!t)}}}},function(t,e){t.exports=function(t,e,n,i,l,o){var r,u=t=t||{},s=typeof t.default;"object"!==s&&"function"!==s||(r=t,u=t.default);var a="function"==typeof u?u.options:u;e&&(a.render=e.render,a.staticRenderFns=e.staticRenderFns,a._compiled=!0),n&&(a.functional=!0),l&&(a._scopeId=l);var c;if(o?(c=function(t){t=t||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext,t||"undefined"==typeof __VUE_SSR_CONTEXT__||(t=__VUE_SSR_CONTEXT__),i&&i.call(this,t),t&&t._registeredComponents&&t._registeredComponents.add(o)},a._ssrRegister=c):i&&(c=i),c){var d=a.functional,f=d?a.render:a.beforeCreate;d?(a._injectStyles=c,a.render=function(t,e){return c.call(e),f(t,e)}):a.beforeCreate=f?[].concat(f,c):[c]}return{esModule:r,exports:u,options:a}}},function(t,e,n){"use strict";var i=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"quill-editor"},[t._t("toolbar"),t._v(" "),n("div",{ref:"editor"})],2)},l=[],o={render:i,staticRenderFns:l};e.a=o}])});
+!function(t,e){ true?module.exports=e(__webpack_require__(145)):"function"==typeof define&&define.amd?define(["quill"],e):"object"==typeof exports?exports.VueQuillEditor=e(require("quill")):t.VueQuillEditor=e(t.Quill)}(this,function(t){return function(t){function e(i){if(n[i])return n[i].exports;var l=n[i]={i:i,l:!1,exports:{}};return t[i].call(l.exports,l,l.exports,e),l.l=!0,l.exports}var n={};return e.m=t,e.c=n,e.i=function(t){return t},e.d=function(t,n,i){e.o(t,n)||Object.defineProperty(t,n,{configurable:!1,enumerable:!0,get:i})},e.n=function(t){var n=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(n,"a",n),n},e.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},e.p="/",e(e.s=2)}([function(e,n){e.exports=t},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var i=n(4),l=n.n(i),o=n(6),r=n(5),u=r(l.a,o.a,!1,null,null,null);e.default=u.exports},function(t,e,n){"use strict";function i(t){return t&&t.__esModule?t:{default:t}}Object.defineProperty(e,"__esModule",{value:!0}),e.install=e.quillEditor=e.Quill=void 0;var l=n(0),o=i(l),r=n(1),u=i(r),s=window.Quill||o.default,a=function(t,e){e&&(u.default.props.globalOptions.default=function(){return e}),t.component(u.default.name,u.default)},c={Quill:s,quillEditor:u.default,install:a};e.default=c,e.Quill=s,e.quillEditor=u.default,e.install=a},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default={theme:"snow",boundary:document.body,modules:{toolbar:[["bold","italic","underline","strike"],["blockquote","code-block"],[{header:1},{header:2}],[{list:"ordered"},{list:"bullet"}],[{script:"sub"},{script:"super"}],[{indent:"-1"},{indent:"+1"}],[{direction:"rtl"}],[{size:["small",!1,"large","huge"]}],[{header:[1,2,3,4,5,6,!1]}],[{color:[]},{background:[]}],[{font:[]}],[{align:[]}],["clean"],["link","image","video"]]},placeholder:"Insert text here ...",readOnly:!1}},function(t,e,n){"use strict";function i(t){return t&&t.__esModule?t:{default:t}}Object.defineProperty(e,"__esModule",{value:!0});var l=n(0),o=i(l),r=n(3),u=i(r),s=window.Quill||o.default;"function"!=typeof Object.assign&&Object.defineProperty(Object,"assign",{value:function(t,e){if(null==t)throw new TypeError("Cannot convert undefined or null to object");for(var n=Object(t),i=1;i<arguments.length;i++){var l=arguments[i];if(null!=l)for(var o in l)Object.prototype.hasOwnProperty.call(l,o)&&(n[o]=l[o])}return n},writable:!0,configurable:!0}),e.default={name:"quill-editor",data:function(){return{_options:{},_content:"",defaultOptions:u.default}},props:{content:String,value:String,disabled:{type:Boolean,default:!1},options:{type:Object,required:!1,default:function(){return{}}},globalOptions:{type:Object,required:!1,default:function(){return{}}}},mounted:function(){this.initialize()},beforeDestroy:function(){this.quill=null,delete this.quill},methods:{initialize:function(){var t=this;this.$el&&(this._options=Object.assign({},this.defaultOptions,this.globalOptions,this.options),this.quill=new s(this.$refs.editor,this._options),this.quill.enable(!1),(this.value||this.content)&&this.quill.pasteHTML(this.value||this.content),this.disabled||this.quill.enable(!0),this.quill.on("selection-change",function(e){e?t.$emit("focus",t.quill):t.$emit("blur",t.quill)}),this.quill.on("text-change",function(e,n,i){var l=t.$refs.editor.children[0].innerHTML,o=t.quill,r=t.quill.getText();"<p><br></p>"===l&&(l=""),t._content=l,t.$emit("input",t._content),t.$emit("change",{html:l,text:r,quill:o})}),this.$emit("ready",this.quill))}},watch:{content:function(t,e){this.quill&&(t&&t!==this._content?(this._content=t,this.quill.pasteHTML(t)):t||this.quill.setText(""))},value:function(t,e){this.quill&&(t&&t!==this._content?(this._content=t,this.quill.pasteHTML(t)):t||this.quill.setText(""))},disabled:function(t,e){this.quill&&this.quill.enable(!t)}}}},function(t,e){t.exports=function(t,e,n,i,l,o){var r,u=t=t||{},s=typeof t.default;"object"!==s&&"function"!==s||(r=t,u=t.default);var a="function"==typeof u?u.options:u;e&&(a.render=e.render,a.staticRenderFns=e.staticRenderFns,a._compiled=!0),n&&(a.functional=!0),l&&(a._scopeId=l);var c;if(o?(c=function(t){t=t||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext,t||"undefined"==typeof __VUE_SSR_CONTEXT__||(t=__VUE_SSR_CONTEXT__),i&&i.call(this,t),t&&t._registeredComponents&&t._registeredComponents.add(o)},a._ssrRegister=c):i&&(c=i),c){var d=a.functional,f=d?a.render:a.beforeCreate;d?(a._injectStyles=c,a.render=function(t,e){return c.call(e),f(t,e)}):a.beforeCreate=f?[].concat(f,c):[c]}return{esModule:r,exports:u,options:a}}},function(t,e,n){"use strict";var i=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"quill-editor"},[t._t("toolbar"),t._v(" "),n("div",{ref:"editor"})],2)},l=[],o={render:i,staticRenderFns:l};e.a=o}])});
 
 /***/ }),
 /* 26 */
@@ -14207,7 +14207,7 @@ module.exports = setToArray;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(30);
-module.exports = __webpack_require__(231);
+module.exports = __webpack_require__(237);
 
 
 /***/ }),
@@ -14218,11 +14218,11 @@ module.exports = __webpack_require__(231);
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_buefy__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_buefy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_buefy__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_loaders__ = __webpack_require__(241);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_progressive_image__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_loaders__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_progressive_image__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_progressive_image___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue_progressive_image__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Helpers_User__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router_router_js__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Helpers_User__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router_router_js__ = __webpack_require__(63);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -14245,14 +14245,14 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_0_buefy___default.a);
 Vue.use(__WEBPACK_IMPORTED_MODULE_1_vue_loaders__);
 Vue.use(__WEBPACK_IMPORTED_MODULE_2_vue_progressive_image___default.a);
 
-Vue.use(__webpack_require__(60));
+Vue.use(__webpack_require__(62));
 
 __WEBPACK_IMPORTED_MODULE_3__Helpers_User__["a" /* default */].hasToken();
 
 
 
-Vue.component('AppHome', __webpack_require__(221));
-Vue.component('SideNav', __webpack_require__(226));
+Vue.component('AppHome', __webpack_require__(227));
+Vue.component('SideNav', __webpack_require__(232));
 //  Vue.component('AddProjectElement', require('./components/backend/Projects/AddProjectElements.vue'));
 
 
@@ -35161,8 +35161,2208 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Token__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__AppStorage__ = __webpack_require__(59);
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "install", function() { return install; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallBeatLoader", function() { return ballBeat; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallClipRotateLoader", function() { return ballClipRotate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallClipRotateMultipleLoader", function() { return ballClipRotateMultiple; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallClipRotatePulseLoader", function() { return ballClipRotatePulse; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallGridBeatLoader", function() { return ballGridBeat; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallGridPulseLoader", function() { return ballGridPulse; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallPulseLoader", function() { return ballPulse; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallPulseRiseLoader", function() { return ballPulseRise; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallPulseSyncLoader", function() { return ballPulseSync; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallRotateLoader", function() { return ballRotate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallScaleLoader", function() { return ballScale; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallScaleMultipleLoader", function() { return ballScaleMultiple; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallScaleRippleLoader", function() { return ballScaleRipple; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallScaleRippleMultipleLoader", function() { return ballScaleRippleMultiple; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallSpinFadeLoader", function() { return ballSpinFade; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallTrianglePathLoader", function() { return ballTrianglePath; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallZigZagLoader", function() { return ballZigZag; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallZigZagDeflectLoader", function() { return ballZigZagDeflect; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CubeTransitionLoader", function() { return cubeTransition; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineScaleLoader", function() { return lineScale; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineScalePartyLoader", function() { return lineScaleParty; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineScalePulseOutLoader", function() { return lineScalePulseOut; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineScalePulseOutRapidLoader", function() { return lineScalePulseOutRapid; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineSpinFadeLoader", function() { return lineSpinFade; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PacmanLoader", function() { return pacman; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SemiCircleSpinLoader", function() { return semiCircleSpin; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SquareSpinLoader", function() { return squareSpin; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TriangleSkewSpinLoader", function() { return triangleSkewSpin; });
+var _isObject = function (it) {
+  return typeof it === 'object' ? it !== null : typeof it === 'function';
+};
+
+var _anObject = function (it) {
+  if (!_isObject(it)) throw TypeError(it + ' is not an object!');
+  return it;
+};
+
+var _fails = function (exec) {
+  try {
+    return !!exec();
+  } catch (e) {
+    return true;
+  }
+};
+
+// Thank's IE8 for his funny defineProperty
+var _descriptors = !_fails(function () {
+  return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
+});
+
+function createCommonjsModule(fn, module) {
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
+}
+
+var _global = createCommonjsModule(function (module) {
+// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
+var global = module.exports = typeof window != 'undefined' && window.Math == Math
+  ? window : typeof self != 'undefined' && self.Math == Math ? self
+  // eslint-disable-next-line no-new-func
+  : Function('return this')();
+if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
+});
+
+var document = _global.document;
+// typeof document.createElement is 'object' in old IE
+var is = _isObject(document) && _isObject(document.createElement);
+var _domCreate = function (it) {
+  return is ? document.createElement(it) : {};
+};
+
+var _ie8DomDefine = !_descriptors && !_fails(function () {
+  return Object.defineProperty(_domCreate('div'), 'a', { get: function () { return 7; } }).a != 7;
+});
+
+// 7.1.1 ToPrimitive(input [, PreferredType])
+
+// instead of the ES6 spec version, we didn't implement @@toPrimitive case
+// and the second argument - flag - preferred type is a string
+var _toPrimitive = function (it, S) {
+  if (!_isObject(it)) return it;
+  var fn, val;
+  if (S && typeof (fn = it.toString) == 'function' && !_isObject(val = fn.call(it))) return val;
+  if (typeof (fn = it.valueOf) == 'function' && !_isObject(val = fn.call(it))) return val;
+  if (!S && typeof (fn = it.toString) == 'function' && !_isObject(val = fn.call(it))) return val;
+  throw TypeError("Can't convert object to primitive value");
+};
+
+var dP = Object.defineProperty;
+
+var f = _descriptors ? Object.defineProperty : function defineProperty(O, P, Attributes) {
+  _anObject(O);
+  P = _toPrimitive(P, true);
+  _anObject(Attributes);
+  if (_ie8DomDefine) try {
+    return dP(O, P, Attributes);
+  } catch (e) { /* empty */ }
+  if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported!');
+  if ('value' in Attributes) O[P] = Attributes.value;
+  return O;
+};
+
+var _objectDp = {
+	f: f
+};
+
+var dP$1 = _objectDp.f;
+var FProto = Function.prototype;
+var nameRE = /^\s*function ([^ (]*)/;
+var NAME = 'name';
+
+// 19.2.4.2 name
+NAME in FProto || _descriptors && dP$1(FProto, NAME, {
+  configurable: true,
+  get: function () {
+    try {
+      return ('' + this).match(nameRE)[1];
+    } catch (e) {
+      return '';
+    }
+  }
+});
+
+var ballBeat = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "ball-beat vue-loaders"
+    }, [_c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'BallBeatLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var BORDER_RATION = 2 / 15;
+var ballClipRotate = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "ball-clip-rotate vue-loaders"
+    }, [_c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'BallClipRotateLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+        styles.borderWidth = "calc(".concat(size, " * ").concat(BORDER_RATION, ")");
+      }
+
+      if (color) {
+        styles.borderTopColor = styles.borderRightColor = styles.borderLeftColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var BASE_SIZE_PX = '35px';
+var BORDER_RATION$1 = 2 / 35;
+var INNER_BALL_SIZE_RATION = 15 / 30;
+var ballClipRotateMultiple = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "ball-clip-rotate-multiple vue-loaders",
+      style: _vm.rootStyles
+    }, [_c('div', {
+      style: _vm.outerBallStyles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.innerBallStyles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'BallClipRotateMultipleLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    rootStyles: function rootStyles() {
+      var size = this.size ? String(this.size) : BASE_SIZE_PX;
+      var styles = {
+        width: size,
+        height: size
+      };
+      return styles;
+    },
+    outerBallStyles: function outerBallStyles() {
+      var size = this.size ? String(this.size) : BASE_SIZE_PX;
+      var color = this.color ? String(this.color) : null;
+      var styles = {
+        width: size,
+        height: size,
+        borderWidth: "calc(".concat(size, " * ").concat(BORDER_RATION$1, ")"),
+        top: "calc(".concat(size, " * -1 * ").concat(BORDER_RATION$1, ")"),
+        left: "calc(".concat(size, " * -1 * ").concat(BORDER_RATION$1, ")")
+      };
+
+      if (color) {
+        styles.borderLeftColor = color;
+        styles.borderRightColor = color;
+      }
+
+      return styles;
+    },
+    innerBallStyles: function innerBallStyles() {
+      var size = this.size ? String(this.size) : BASE_SIZE_PX;
+      var color = this.color ? String(this.color) : null;
+      var styles = {
+        width: "calc(".concat(size, " * ").concat(INNER_BALL_SIZE_RATION, ")"),
+        height: "calc(".concat(size, " * ").concat(INNER_BALL_SIZE_RATION, ")"),
+        borderWidth: "calc(".concat(size, " * ").concat(BORDER_RATION$1, ")"),
+        top: "calc((".concat(size, " - (").concat(size, " * ").concat(INNER_BALL_SIZE_RATION, ")) / 2 - ").concat(size, " * ").concat(BORDER_RATION$1),
+        left: "calc((".concat(size, " - (").concat(size, " * ").concat(INNER_BALL_SIZE_RATION, ")) / 2 - ").concat(size, " * ").concat(BORDER_RATION$1)
+      };
+
+      if (color) {
+        styles.borderTopColor = color;
+        styles.borderBottomColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var BASE_SIZE_PX$1 = '30px';
+var BORDER_RATION$2 = 2 / 30;
+var INNER_BALL_SIZE_RATION$1 = 16 / 30;
+var INNER_BALL_OFFSET_RATION = 7 / 30;
+var ballClipRotatePulse = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "ball-clip-rotate-pulse vue-loaders",
+      style: _vm.rootStyles
+    }, [_c('div', {
+      style: _vm.innerBallStyles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.outerBallStyles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'BallClipRotatePulseLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    rootStyles: function rootStyles() {
+      var size = this.size ? String(this.size) : BASE_SIZE_PX$1;
+      var styles = {
+        width: "calc(".concat(size, " / 2)"),
+        marginLeft: "calc(".concat(size, " / 2)"),
+        height: size
+      };
+      return styles;
+    },
+    outerBallStyles: function outerBallStyles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+        styles.top = "calc(".concat(size, " * -1 * ").concat(BORDER_RATION$2, ")");
+        styles.borderWidth = "calc(".concat(size, " * ").concat(BORDER_RATION$2, ")");
+        styles.left = "calc(".concat(size, " * -1 * ").concat(INNER_BALL_SIZE_RATION$1, ")");
+      }
+
+      if (color) {
+        styles.borderTopColor = color;
+        styles.borderBottomColor = color;
+      }
+
+      return styles;
+    },
+    innerBallStyles: function innerBallStyles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = "calc(".concat(size, " * ").concat(INNER_BALL_SIZE_RATION$1, ")");
+        styles.top = "calc(".concat(size, " * ").concat(INNER_BALL_OFFSET_RATION, ")");
+        styles.left = "calc(".concat(size, " * -1 * ").concat(INNER_BALL_OFFSET_RATION, ")");
+      }
+
+      if (color) {
+        styles.background = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var ballGridBeat = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "ball-grid-beat vue-loaders",
+      style: _vm.rootStyles
+    }, [_c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'BallGridBeatLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    rootStyles: function rootStyles() {
+      return {
+        width: "calc(3 * (".concat(this.size || '15px', " + 4px))")
+      };
+    },
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var ballGridPulse = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "ball-grid-pulse vue-loaders",
+      style: _vm.rootStyles
+    }, [_c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'BallGridPulseLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    rootStyles: function rootStyles() {
+      return {
+        width: "calc(3 * (".concat(this.size || '15px', " + 4px))")
+      };
+    },
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var ballPulse = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "ball-pulse vue-loaders"
+    }, [_c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'BallPulseLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var ballPulseRise = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "ball-pulse-rise vue-loaders"
+    }, [_c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'BallPulseRiseLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var ballPulseSync = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "ball-pulse-sync vue-loaders"
+    }, [_c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'BallPulseSyncLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var OFFSET = 10 / 15;
+var ballRotate = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "ball-rotate vue-loaders",
+      style: _vm.rootStyles
+    }, [_c('div', {
+      style: _vm.middle
+    }, [_c('div', {
+      style: _vm.innerLeft
+    }), _vm._v(" "), _c('div', {
+      style: _vm.innerRight
+    })])]);
+  },
+  staticRenderFns: [],
+  name: 'BallRotateLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    rootStyles: function rootStyles() {
+      var size = this.size ? String(this.size) : null;
+
+      if (size) {
+        return {
+          width: size,
+          height: size,
+          padding: "calc(".concat(size, " + ").concat(size, " * ").concat(OFFSET, " + 2px)")
+        };
+      }
+    },
+    middle: function middle() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    },
+    innerLeft: function innerLeft() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+        styles.left = "calc((".concat(size, " + ").concat(size, " * ").concat(OFFSET, " + 2px) * -1)");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    },
+    innerRight: function innerRight() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+        styles.left = "calc(".concat(size, " + ").concat(size, " * ").concat(OFFSET, " + 2px)");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var ballScale = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "ball-scale vue-loaders"
+    }, [_c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'BallScaleLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var ballScaleMultiple = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "ball-scale-multiple vue-loaders",
+      style: _vm.rootStyle
+    }, [_c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'BallScaleMultipleLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    rootStyle: function rootStyle() {
+      var size = this.size ? String(this.size) : null;
+
+      if (size) {
+        return {
+          width: size,
+          height: size
+        };
+      }
+    },
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var ballScaleRipple = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "ball-scale-ripple vue-loaders"
+    }, [_c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'BallScaleRippleLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+      }
+
+      if (color) {
+        styles.borderColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var BORDER_RATION$3 = 2 / 50;
+var ballScaleRippleMultiple = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "ball-scale-ripple-multiple vue-loaders",
+      style: _vm.rootStyle
+    }, [_c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'BallScaleRippleMultipleLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    rootStyle: function rootStyle() {
+      var size = this.size ? String(this.size) : null;
+
+      if (size) {
+        return {
+          width: "calc(".concat(size, " + ").concat(size, " * ").concat(BORDER_RATION$3, ")"),
+          height: "calc(".concat(size, " + ").concat(size, " * ").concat(BORDER_RATION$3, ")")
+        };
+      }
+    },
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+        styles.borderWidth = "calc(".concat(size, " * ").concat(BORDER_RATION$3, ")");
+      }
+
+      if (color) {
+        styles.borderColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var TO_CORNER_RATIO = 17.05 / 15;
+var TO_SIDE_RATIO = 25 / 15;
+var ballSpinFade = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "ball-spin-fade-loader vue-loaders",
+      style: _vm.root
+    }, [_c('div', {
+      style: _vm.bottom
+    }), _vm._v(" "), _c('div', {
+      style: _vm.bottomRight
+    }), _vm._v(" "), _c('div', {
+      style: _vm.right
+    }), _vm._v(" "), _c('div', {
+      style: _vm.topRight
+    }), _vm._v(" "), _c('div', {
+      style: _vm.top
+    }), _vm._v(" "), _c('div', {
+      style: _vm.topLeft
+    }), _vm._v(" "), _c('div', {
+      style: _vm.left
+    }), _vm._v(" "), _c('div', {
+      style: _vm.bottomLeft
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'BallSpinFadeLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    root: function root() {
+      var size = this.size ? String(this.size) : null;
+
+      if (size) {
+        return {
+          width: size,
+          height: size,
+          borderWidth: "calc(".concat(size, " * ").concat(TO_SIDE_RATIO, ")")
+        };
+      }
+    },
+    top: function top() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+        styles.top = "calc(".concat(size, " * ").concat(TO_SIDE_RATIO, " * -1)");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    },
+    topRight: function topRight() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+        styles.top = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO, " * -1)");
+        styles.left = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO, ")");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    },
+    right: function right() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+        styles.left = "calc(".concat(size, " * ").concat(TO_SIDE_RATIO, ")");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    },
+    bottomRight: function bottomRight() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+        styles.top = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO, ")");
+        styles.left = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO, ")");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    },
+    bottom: function bottom() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+        styles.top = "calc(".concat(size, " * ").concat(TO_SIDE_RATIO, ")");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    },
+    bottomLeft: function bottomLeft() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+        styles.top = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO, ")");
+        styles.left = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO, " * -1)");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    },
+    left: function left() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+        styles.left = "calc(".concat(size, " * ").concat(TO_SIDE_RATIO, " * -1)");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    },
+    topLeft: function topLeft() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+        styles.top = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO, " * -1)");
+        styles.left = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO, " * -1)");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var BORDER_RATION$4 = 1 / 10;
+var ballTrianglePath = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "ball-triangle-path vue-loaders",
+      style: _vm.rootStyle
+    }, [_c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'BallTrianglePathLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    rootStyle: function rootStyle() {
+      var size = this.size ? String(this.size) : null;
+
+      if (size) {
+        return {
+          width: "calc(".concat(size, " + 50px)"),
+          height: "calc(".concat(size, " + 50px)")
+        };
+      }
+    },
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+        styles.borderWidth = "calc(".concat(size, " * ").concat(BORDER_RATION$4, ")");
+      }
+
+      if (color) {
+        styles.borderColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var ballZigZag = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "ball-zig-zag vue-loaders",
+      style: _vm.rootStyle
+    }, [_c('div', {
+      style: _vm.top
+    }), _vm._v(" "), _c('div', {
+      style: _vm.bottom
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'BallZigZagLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    rootStyle: function rootStyle() {
+      var size = this.size ? String(this.size) : null;
+
+      if (size) {
+        return {
+          width: size,
+          height: size
+        };
+      }
+    },
+    top: function top() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    },
+    bottom: function bottom() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var ballZigZagDeflect = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "ball-zig-zag-deflect vue-loaders",
+      style: _vm.rootStyle
+    }, [_c('div', {
+      style: _vm.top
+    }), _vm._v(" "), _c('div', {
+      style: _vm.bottom
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'BallZigZagDeflectLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    rootStyle: function rootStyle() {
+      var size = this.size ? String(this.size) : null;
+
+      if (size) {
+        return {
+          width: size,
+          height: size
+        };
+      }
+    },
+    top: function top() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    },
+    bottom: function bottom() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var cubeTransition = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "cube-transition vue-loaders",
+      style: _vm.rootStyle
+    }, [_c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'CubeTransitionLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    rootStyle: function rootStyle() {
+      var size = this.size ? String(this.size) : null;
+
+      if (size) {
+        return {
+          width: "calc(".concat(size, " + 50px)"),
+          height: "calc(".concat(size, " + 50px)")
+        };
+      }
+    },
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var WIDTH_RATIO = 4 / 35;
+var BORDER_RATIO = 2 / 4;
+var lineScale = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "line-scale vue-loaders"
+    }, [_c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'LineScaleLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO, ")");
+        styles.height = size;
+        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO, ")");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var WIDTH_RATIO$1 = 4 / 35;
+var BORDER_RATIO$1 = 2 / 4;
+var lineScaleParty = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "line-scale-party vue-loaders"
+    }, [_c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'LineScalePartyLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$1, ")");
+        styles.height = size;
+        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$1, ")");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var WIDTH_RATIO$2 = 4 / 35;
+var BORDER_RATIO$2 = 2 / 4;
+var lineScalePulseOut = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "line-scale-pulse-out vue-loaders"
+    }, [_c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'LineScalePulseOutLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$2, ")");
+        styles.height = size;
+        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$2, ")");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var WIDTH_RATIO$3 = 4 / 35;
+var BORDER_RATIO$3 = 2 / 4;
+var lineScalePulseOutRapid = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "line-scale-pulse-out-rapid vue-loaders"
+    }, [_c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    }), _vm._v(" "), _c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'LineScalePulseOutRapidLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$3, ")");
+        styles.height = size;
+        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$3, ")");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var TO_CORNER_RATIO$1 = 13.64 / 15;
+var TO_SIDE_RATIO$1 = 20 / 15;
+var WIDTH_RATIO$4 = 5 / 15;
+var BORDER_RATIO$4 = 2 / 15;
+var lineSpinFade = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "line-spin-fade-loader vue-loaders",
+      style: _vm.root
+    }, [_c('div', {
+      style: _vm.bottom
+    }), _vm._v(" "), _c('div', {
+      style: _vm.bottomRight
+    }), _vm._v(" "), _c('div', {
+      style: _vm.right
+    }), _vm._v(" "), _c('div', {
+      style: _vm.topRight
+    }), _vm._v(" "), _c('div', {
+      style: _vm.top
+    }), _vm._v(" "), _c('div', {
+      style: _vm.topLeft
+    }), _vm._v(" "), _c('div', {
+      style: _vm.left
+    }), _vm._v(" "), _c('div', {
+      style: _vm.bottomLeft
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'LineSpinFadeLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    root: function root() {
+      var size = this.size ? String(this.size) : null;
+
+      if (size) {
+        return {
+          width: size,
+          height: size,
+          borderWidth: "calc(".concat(size, " * ").concat(TO_SIDE_RATIO$1, ")")
+        };
+      }
+    },
+    top: function top() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.height = size;
+        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$4, ")");
+        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$4, ")");
+        styles.top = "calc(".concat(size, " * ").concat(TO_SIDE_RATIO$1, " * -1)");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    },
+    topRight: function topRight() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.height = size;
+        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$4, ")");
+        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$4, ")");
+        styles.top = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO$1, " * -1)");
+        styles.left = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO$1, ")");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    },
+    right: function right() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.height = size;
+        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$4, ")");
+        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$4, ")");
+        styles.left = "calc(".concat(size, " * ").concat(TO_SIDE_RATIO$1, ")");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    },
+    bottomRight: function bottomRight() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.height = size;
+        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$4, ")");
+        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$4, ")");
+        styles.top = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO$1, ")");
+        styles.left = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO$1, ")");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    },
+    bottom: function bottom() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.height = size;
+        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$4, ")");
+        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$4, ")");
+        styles.top = "calc(".concat(size, " * ").concat(TO_SIDE_RATIO$1, ")");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    },
+    bottomLeft: function bottomLeft() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.height = size;
+        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$4, ")");
+        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$4, ")");
+        styles.top = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO$1, ")");
+        styles.left = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO$1, " * -1)");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    },
+    left: function left() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.height = size;
+        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$4, ")");
+        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$4, ")");
+        styles.left = "calc(".concat(size, " * ").concat(TO_SIDE_RATIO$1, " * -1)");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    },
+    topLeft: function topLeft() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.height = size;
+        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$4, ")");
+        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$4, ")");
+        styles.top = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO$1, " * -1)");
+        styles.left = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO$1, " * -1)");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var CIRCLE_SIZE_RATIO = 10 / 50;
+var pacman = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "pacman vue-loaders",
+      style: _vm.root
+    }, [_c('div', {
+      style: _vm.bottom
+    }), _vm._v(" "), _c('div', {
+      style: _vm.top
+    }), _vm._v(" "), _c('div', {
+      style: _vm.circle
+    }), _vm._v(" "), _c('div', {
+      style: _vm.circle
+    }), _vm._v(" "), _c('div', {
+      style: _vm.circle
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'PacmanLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    root: function root() {
+      var size = this.size ? String(this.size) : null;
+
+      if (size) {
+        return {
+          borderRightWidth: "calc(70px + ".concat(CIRCLE_SIZE_RATIO, " * ").concat(size, " - ").concat(size, ")")
+        };
+      }
+    },
+    top: function top() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.borderWidth = styles.borderRadius = "calc(".concat(size, " / 2)");
+        styles.marginTop = "calc(".concat(size, " * -1)");
+      }
+
+      if (color) {
+        styles.borderTopColor = styles.borderLeftColor = styles.borderBottomColor = color;
+      }
+
+      return styles;
+    },
+    bottom: function bottom() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.borderWidth = styles.borderRadius = "calc(".concat(size, " / 2)");
+      }
+
+      if (color) {
+        styles.borderTopColor = styles.borderLeftColor = styles.borderBottomColor = color;
+      }
+
+      return styles;
+    },
+    circle: function circle() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+      var circleSize = "(".concat(size, " * ").concat(CIRCLE_SIZE_RATIO, ")");
+
+      if (size) {
+        styles.width = styles.height = "calc(".concat(circleSize, ")");
+        styles.top = "calc(".concat(size, " * 0.5 + ").concat(circleSize, " / -2 + 6.25px)");
+      }
+
+      if (color) {
+        styles.backgroundColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var semiCircleSpin = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "semi-circle-spin vue-loaders",
+      style: _vm.root
+    }, [_c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'SemiCircleSpinLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    root: function root() {
+      var size = this.size ? String(this.size) : null;
+
+      if (size) {
+        return {
+          width: size,
+          height: size
+        };
+      }
+    },
+    styles: function styles() {
+      var color = this.color ? String(this.color) : null;
+
+      if (color) {
+        return {
+          backgroundImage: "linear-gradient(transparent 0,transparent 70%,".concat(color, " 30%,").concat(color, " 100%)")
+        };
+      }
+    }
+  }
+};
+
+var squareSpin = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "square-spin vue-loaders"
+    }, [_c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'SquareSpinLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.width = styles.height = size;
+      }
+
+      if (color) {
+        styles.background = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+var triangleSkewSpin = {
+  render: function render() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      staticClass: "triangle-skew-spin vue-loaders"
+    }, [_c('div', {
+      style: _vm.styles
+    })]);
+  },
+  staticRenderFns: [],
+  name: 'TriangleSkewSpinLoader',
+  props: {
+    size: String,
+    color: String
+  },
+  computed: {
+    styles: function styles() {
+      var size = this.size ? String(this.size) : null;
+      var color = this.color ? String(this.color) : null;
+
+      if (!color && !size) {
+        return;
+      }
+
+      var styles = {};
+
+      if (size) {
+        styles.borderLeftWidth = styles.borderRightWidth = styles.borderBottomWidth = "calc(".concat(size, " / 2)");
+      }
+
+      if (color) {
+        styles.borderBottomColor = color;
+      }
+
+      return styles;
+    }
+  }
+};
+
+function install(Vue) {
+  var compKeys = Object.keys(this).filter(function (key) {
+    return key !== 'install';
+  });
+  var ln = compKeys.length;
+
+  while (ln--) {
+    var component = this[compKeys[ln]];
+    Vue.component(component.name, component);
+  }
+}
+
+
+
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * vue-progressive-image v3.1.0
+ * (c) 2018 Matteo Gabriele
+ * Released under the ISC License.
+ */
+!function(e,t){if(true)module.exports=t();else if("function"==typeof define&&define.amd)define([],t);else{var r=t();for(var n in r)("object"==typeof exports?exports:e)[n]=r[n]}}(this,function(){return function(e){function t(n){if(r[n])return r[n].exports;var i=r[n]={i:n,l:!1,exports:{}};return e[n].call(i.exports,i,i.exports,t),i.l=!0,i.exports}var r={};return t.m=e,t.c=r,t.d=function(e,r,n){t.o(e,r)||Object.defineProperty(e,r,{configurable:!1,enumerable:!0,get:n})},t.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(r,"a",r),r},t.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},t.p="",t(t.s=4)}([function(e,t){e.exports=function(){var e=[];return e.toString=function(){for(var e=[],t=0;t<this.length;t++){var r=this[t];r[2]?e.push("@media "+r[2]+"{"+r[1]+"}"):e.push(r[1])}return e.join("")},e.i=function(t,r){"string"==typeof t&&(t=[[null,t,""]]);for(var n={},i=0;i<this.length;i++){var a=this[i][0];"number"==typeof a&&(n[a]=!0)}for(i=0;i<t.length;i++){var o=t[i];"number"==typeof o[0]&&n[o[0]]||(r&&!o[2]?o[2]=r:r&&(o[2]="("+o[2]+") and ("+r+")"),e.push(o))}},e}},function(e,t,r){function n(e){for(var t=0;t<e.length;t++){var r=e[t],n=u[r.id];if(n){n.refs++;for(var i=0;i<n.parts.length;i++)n.parts[i](r.parts[i]);for(;i<r.parts.length;i++)n.parts.push(a(r.parts[i]));n.parts.length>r.parts.length&&(n.parts.length=r.parts.length)}else{for(var o=[],i=0;i<r.parts.length;i++)o.push(a(r.parts[i]));u[r.id]={id:r.id,refs:1,parts:o}}}}function i(){var e=document.createElement("style");return e.type="text/css",d.appendChild(e),e}function a(e){var t,r,n=document.querySelector('style[data-vue-ssr-id~="'+e.id+'"]');if(n){if(f)return g;n.parentNode.removeChild(n)}if(v){var a=h++;n=p||(p=i()),t=o.bind(null,n,a,!1),r=o.bind(null,n,a,!0)}else n=i(),t=s.bind(null,n),r=function(){n.parentNode.removeChild(n)};return t(e),function(n){if(n){if(n.css===e.css&&n.media===e.media&&n.sourceMap===e.sourceMap)return;t(e=n)}else r()}}function o(e,t,r,n){var i=r?"":n.css;if(e.styleSheet)e.styleSheet.cssText=m(t,i);else{var a=document.createTextNode(i),o=e.childNodes;o[t]&&e.removeChild(o[t]),o.length?e.insertBefore(a,o[t]):e.appendChild(a)}}function s(e,t){var r=t.css,n=t.media,i=t.sourceMap;if(n&&e.setAttribute("media",n),i&&(r+="\n/*# sourceURL="+i.sources[0]+" */",r+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(i))))+" */"),e.styleSheet)e.styleSheet.cssText=r;else{for(;e.firstChild;)e.removeChild(e.firstChild);e.appendChild(document.createTextNode(r))}}var l="undefined"!=typeof document;if("undefined"!=typeof DEBUG&&DEBUG&&!l)throw new Error("vue-style-loader cannot be used in a non-browser environment. Use { target: 'node' } in your Webpack config to indicate a server-rendering environment.");var c=r(8),u={},d=l&&(document.head||document.getElementsByTagName("head")[0]),p=null,h=0,f=!1,g=function(){},v="undefined"!=typeof navigator&&/msie [6-9]\b/.test(navigator.userAgent.toLowerCase());e.exports=function(e,t,r){f=r;var i=c(e,t);return n(i),function(t){for(var r=[],a=0;a<i.length;a++){var o=i[a],s=u[o.id];s.refs--,r.push(s)}t?(i=c(e,t),n(i)):i=[];for(var a=0;a<r.length;a++){var s=r[a];if(0===s.refs){for(var l=0;l<s.parts.length;l++)s.parts[l]();delete u[s.id]}}}};var m=function(){var e=[];return function(t,r){return e[t]=r,e.filter(Boolean).join("\n")}}()},function(e,t){e.exports=function(e,t,r,n){var i,a=e=e||{},o=typeof e.default;"object"!==o&&"function"!==o||(i=e,a=e.default);var s="function"==typeof a?a.options:a;if(t&&(s.render=t.render,s.staticRenderFns=t.staticRenderFns),r&&(s._scopeId=r),n){var l=Object.create(s.computed||null);Object.keys(n).forEach(function(e){var t=n[e];l[e]=function(){return t}}),s.computed=l}return{esModule:i,exports:a,options:s}}},function(e,t,r){"use strict";var n=r(10);t.a={props:{src:{type:null,required:!0},placeholder:{type:String},blur:{type:Number},aspectRatio:{type:Number},noRatio:{type:Boolean},fallback:{type:String},alt:{type:String}},data:function(){return{isRendered:!1,options:{cache:!0},defaultBlur:20,image:null,originalWidth:0,placeholderImage:null,aspectRatioDetect:.5625,isPollingKilled:!1,isImageCached:!1,imageError:!1}},watch:{src:function(){this.handleImageLoading()}},computed:{shouldPlaceholderRender:function(){return!!this.placeholderImage},shouldImageRender:function(){return this.isRendered},cached:function(){return this.options.cache&&this.isImageCached},calculatedRatio:function(){return this.aspectRatio||this.aspectRatioDetect},wrapperStyle:function(){return this.noRatio?{}:{paddingBottom:100*this.calculatedRatio+"%"}},componentStyle:function(){return{maxWidth:0===this.originalWidth?"100%":this.originalWidth+"px"}},blurStyle:function(){var e=this.defaultBlur;return Object(n.a)(this.blur)?this.getBlurStyle(this.blur):Object(n.a)(this.options.blur)?this.getBlurStyle(this.options.blur):this.getBlurStyle(e)}},mounted:function(){this.handleImageLoading()},methods:{getBlurStyle:function(e){if(0!==e)return{filter:"blur("+e+"px)"}},defineAspectRatio:function(e){var t=this,r=this.options.timeout||2500,n=this.options.pollInterval||10,i=setInterval(function(){if(e.naturalWidth){clearInterval(i);var r=e.naturalHeight,n=e.naturalWidth;t.aspectRatioDetect=r/n,t.originalWidth=n}},n);setTimeout(function(){e.naturalWidth||(clearInterval(i),t.isPollingKilled=!0)},r)},isCached:function(e){var t=new Image;return t.src=e,t.complete},loadImage:function(){var e=this,t=new Image,r=this.options.delay||0,n=this.fallback||this.options.fallback,i=this.imageError?n:this.src;this.options.cache&&this.isCached(i)?(this.image=i,this.placeholderImage=null,this.isImageCached=!0):(this.image=null,this.isImageCached=!1,this.isRendered=!1),this.aspectRatio||this.defineAspectRatio(t),t.onload=function(){if(!e.image){e.isPollingKilled&&!e.aspectRatio&&e.defineAspectRatio(t),e.image=i;var n=void 0;try{n=e.$refs.canvas.getContext("2d"),n.drawImage(e.$refs.main,0,0)}catch(e){}e.$nextTick(function(){setTimeout(function(){e.isRendered=!0,e.placeholderImage=null},r)}),e.imageError=!1,e.$emit("onLoad",t.src)}},t.onerror=function(t){e.$emit("onError",t),(e.fallback||e.options.fallback)&&(e.imageError=!0,e.handleImageLoading())},t.src=i},loadPlaceholder:function(){var e=this;if(this.placeholder||this.options.placeholder){var t=new Image,r=this.placeholder||this.options.placeholder;t.src=r,t.onload=function(){e.placeholderImage=r,e.$emit("onLoadPlaceholder",r)},t.onerror=function(t){e.$emit("onPlaceholderError",t)}}},handleImageLoading:function(){this.loadPlaceholder(),this.loadImage()}}}},function(e,t,r){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=r(5),i=r.n(n),a=r(12),o=r.n(a),s=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var n in r)Object.prototype.hasOwnProperty.call(r,n)&&(e[n]=r[n])}return e},l=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};return s({},e,{data:function(){return{options:t}}})},c=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};e.component("progressive-img",l(i.a,t)),e.component("progressive-background",l(o.a,t))};t.default={install:c}},function(e,t,r){r(6);var n=r(2)(r(9),r(11),null,null);e.exports=n.exports},function(e,t,r){var n=r(7);"string"==typeof n&&(n=[[e.i,n,""]]),n.locals&&(e.exports=n.locals),r(1)("c467ffae",n,!0)},function(e,t,r){t=e.exports=r(0)(),t.push([e.i,".progressive-image{position:relative;overflow:hidden;width:100%;display:inline-block}.canvas{visibility:hidden;position:absolute;top:0;left:0}.progressive-image-main{position:absolute;top:0;left:0;width:100%;height:auto;z-index:1;transition-duration:.3s;transition-property:all;transition-timing-function:ease-out;transform:translateZ(0)}.progressive-image-before-enter{opacity:1}.progressive-image-enter{opacity:0}.progressive-image-placeholder{position:absolute;top:0;left:0;z-index:0;overflow:hidden;transition-duration:.3s;transition-property:all;transition-timing-function:ease-out;backface-visibility:hidden;transform:translateZ(0) scale(1.1);width:100%;height:100%;background-size:cover}.progressive-image-placeholder-out{transition-duration:inherit;transition-property:all;transition-timing-function:ease-out;transition-delay:.4s;opacity:0}.progressive-image-preloader{pointer-events:none;position:absolute;top:0;left:0;width:100%;height:100%;z-index:2}",""])},function(e,t){e.exports=function(e,t){for(var r=[],n={},i=0;i<t.length;i++){var a=t[i],o=a[0],s=a[1],l=a[2],c=a[3],u={id:e+":"+i,css:s,media:l,sourceMap:c};n[o]?n[o].parts.push(u):r.push(n[o]={id:o,parts:[u]})}return r}},function(e,t,r){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=r(3),i=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var n in r)Object.prototype.hasOwnProperty.call(r,n)&&(e[n]=r[n])}return e};t.default={name:"progressive-img",props:{imageCustomClass:{type:String}},mixins:[n.a],computed:{placeholderStyle:function(){return i({},this.blurStyle,{"background-image":"url("+(this.placeholder||this.options.placeholder)+")"})}}}},function(e,t,r){"use strict";r.d(t,"a",function(){return n});var n=function(e){return void 0!==e&&null!==e}},function(e,t){e.exports={render:function(){var e=this,t=e.$createElement,r=e._self._c||t;return r("div",{ref:"image",staticClass:"progressive-image",style:e.componentStyle},[e.cached?r("div",{staticClass:"progressive-image-wrapper",style:e.wrapperStyle},[r("img",{class:["progressive-image-main",e.imageCustomClass],attrs:{src:e.image,alt:e.alt}})]):r("span",[e.shouldImageRender?e._e():r("canvas",{ref:"canvas",staticClass:"canvas",attrs:{width:"1",height:"1"}}),e._v(" "),r("div",{staticClass:"progressive-image-wrapper",style:e.wrapperStyle},[r("transition",{attrs:{"enter-class":"progressive-image-enter","enter-active-class":"progressive-image-before-enter"}},[r("img",{directives:[{name:"show",rawName:"v-show",value:e.shouldImageRender,expression:"shouldImageRender"}],ref:"main",class:["progressive-image-main",e.imageCustomClass],attrs:{src:e.image,alt:e.alt}})]),e._v(" "),r("transition",{attrs:{"enter-class":"progressive-image-enter","enter-active-class":"progressive-image-before-enter"}},[e.shouldPlaceholderRender?r("div",{staticClass:"progressive-image-placeholder",class:{"progressive-image-placeholder-out":e.shouldImageRender},style:e.placeholderStyle}):e._e()])],1)])])},staticRenderFns:[]}},function(e,t,r){var n={};n.$style=r(13);var i=r(2)(r(15),r(16),null,n);e.exports=i.exports},function(e,t,r){var n=r(14);"string"==typeof n&&(n=[[e.i,n,""]]),n.locals&&(e.exports=n.locals),r(1)("b4050912",n,!0)},function(e,t,r){t=e.exports=r(0)(),t.push([e.i,"._2BthHRY48Qth9Ja9ecuFEQ_0{position:relative;width:100%;height:100%;overflow:hidden}._30VsZs3N14iSeemk3xHHZL_0{position:relative;z-index:1}._3em-Y1_N-m7q8CbVUFEIzb_0{visibility:hidden;position:absolute;top:0;left:0}.arZxkKg-w3Qec3gGdgaPh_0{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;transition:all .4s ease-out;background-position:50%;background-repeat:no-repeat;background-size:cover}._2WZ48QHYw0iFj9daPgvHd_0{transform:scale(1.1);z-index:0}._10rgjDNoIpLvLRaxZc7CL0_0{opacity:1}._2Dw5nQ56jB5hJmnsvE24Be_0{opacity:0}._2g5nJIWy9OjBBWk-StL8LD_0{pointer-events:none;position:absolute;top:0;left:0;width:100%;height:100%;z-index:2}",""]),t.locals={component:"_2BthHRY48Qth9Ja9ecuFEQ_0",slot:"_30VsZs3N14iSeemk3xHHZL_0",canvas:"_3em-Y1_N-m7q8CbVUFEIzb_0",image:"arZxkKg-w3Qec3gGdgaPh_0",placeholder:"_2WZ48QHYw0iFj9daPgvHd_0 arZxkKg-w3Qec3gGdgaPh_0",before:"_10rgjDNoIpLvLRaxZc7CL0_0",enter:"_2Dw5nQ56jB5hJmnsvE24Be_0","progressive-image-preloader":"_2g5nJIWy9OjBBWk-StL8LD_0"}},function(e,t,r){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=r(3),i=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var n in r)Object.prototype.hasOwnProperty.call(r,n)&&(e[n]=r[n])}return e};t.default={name:"progressive-background",props:{noRatio:{type:Boolean,required:!1}},mixins:[n.a],data:function(){return{applyRatio:!this.noRatio}},computed:{imageStyle:function(){return{backgroundImage:"url("+this.image+")"}},placeholderStyle:function(){return i({},this.blurStyle,{backgroundImage:"url("+this.placeholderImage+")"})}}}},function(e,t){e.exports={render:function(){var e=this,t=e.$createElement,r=e._self._c||t;return r("div",{class:e.$style.component},[e.cached?r("div",{style:e.wrapperStyle},[r("div",{class:e.$style.image,style:e.imageStyle}),e._v(" "),r("div",{class:e.$style.slot},[e._t("content")],2)]):r("span",[e.shouldImageRender?e._e():r("div",[r("canvas",{ref:"canvas",staticClass:"canvas",attrs:{width:"1",height:"1"}}),e._v(" "),r("img",{ref:"main",attrs:{src:e.image,hidden:""}})]),e._v(" "),r("div",{style:e.wrapperStyle},[r("transition",{attrs:{"enter-class":e.$style.enter,"enter-active-class":e.$style.before}},[e.shouldImageRender?r("div",{class:e.$style.image,style:e.imageStyle}):e._e()]),e._v(" "),r("div",{class:e.$style.slot},[e._t("content",null,{visible:!e.shouldImageRender})],2),e._v(" "),r("transition",{attrs:{"enter-class":e.$style.enter,"enter-active-class":e.$style.before}},[e.shouldPlaceholderRender?r("div",{class:e.$style.placeholder,style:e.placeholderStyle}):e._e()])],1)])])},staticRenderFns:[]}}])});
+
+/***/ }),
+/* 59 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Token__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__AppStorage__ = __webpack_require__(61);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -35185,16 +37385,17 @@ var User = function () {
             }).catch(function (error) {
                 return console.log(error.response.data);
             });
+            console.log('here');
         }
     }, {
         key: 'responseAfterLogin',
         value: function responseAfterLogin(res) {
             var access_token = res.data.access_token;
             var username = res.data.user;
-
+            console.log('here 2');
             if (__WEBPACK_IMPORTED_MODULE_0__Token__["a" /* default */].isValid(access_token)) {
                 __WEBPACK_IMPORTED_MODULE_1__AppStorage__["a" /* default */].store(username, access_token);
-                window.location = '/me/dashboard';
+                //window.location = '/me/dashboard'
             }
         }
     }, {
@@ -35240,7 +37441,7 @@ var User = function () {
     }, {
         key: 'admin',
         value: function admin() {
-            return this.id() == 19;
+            return this.id() == 1;
         }
     }]);
 
@@ -35250,7 +37451,7 @@ var User = function () {
 /* harmony default export */ __webpack_exports__["a"] = (User = new User());
 
 /***/ }),
-/* 58 */
+/* 60 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -35292,7 +37493,7 @@ var Token = function () {
 /* harmony default export */ __webpack_exports__["a"] = (Token = new Token());
 
 /***/ }),
-/* 59 */
+/* 61 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -35320,6 +37521,7 @@ var AppStorage = function () {
         value: function store(user, token) {
             this.storeToken(token);
             this.storeUser(user);
+            console.log('here 3');
         }
     }, {
         key: 'clear',
@@ -35345,7 +37547,7 @@ var AppStorage = function () {
 /* harmony default export */ __webpack_exports__["a"] = (AppStorage = new AppStorage());
 
 /***/ }),
-/* 60 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {(function (global, factory) {
@@ -40056,54 +42258,54 @@ Object.defineProperty(exports, '__esModule', { value: true });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
-/* 61 */
+/* 63 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Auth_Login__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Auth_Login___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_Auth_Login__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Auth_Logout__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Auth_Logout__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Auth_Logout___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_Auth_Logout__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Dashboard__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Dashboard__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Dashboard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_Dashboard__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_backend_Projects_AllProjects__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_backend_Projects_AllProjects__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_backend_Projects_AllProjects___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_backend_Projects_AllProjects__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_backend_Projects_single__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_backend_Projects_single__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_backend_Projects_single___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_backend_Projects_single__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_backend_Projects_create__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_backend_Projects_create__ = __webpack_require__(93);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_backend_Projects_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_backend_Projects_create__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_backend_Elements_Elements__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_backend_Elements_Elements__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_backend_Elements_Elements___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_backend_Elements_Elements__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_backend_Projects_Pages_create__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_backend_Projects_Pages_create__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_backend_Projects_Pages_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_backend_Projects_Pages_create__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_backend_Projects_Pages_single__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_backend_Projects_Pages_single__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_backend_Projects_Pages_single___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_backend_Projects_Pages_single__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_backend_Experties_index__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_backend_Experties_index__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_backend_Experties_index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_backend_Experties_index__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_backend_Experience_index__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_backend_Experience_index__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_backend_Experience_index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__components_backend_Experience_index__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_backend_Experience_create__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_backend_Experience_create__ = __webpack_require__(123);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_backend_Experience_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__components_backend_Experience_create__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_backend_Experience_single__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_backend_Experience_single__ = __webpack_require__(128);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_backend_Experience_single___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__components_backend_Experience_single__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_backend_Education_Education__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_backend_Education_Education__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_backend_Education_Education___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__components_backend_Education_Education__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_backend_About_about__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_backend_About_about__ = __webpack_require__(141);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_backend_About_about___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__components_backend_About_about__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_backend_General_general__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_backend_General_general__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_backend_General_general___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__components_backend_General_general__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_frontend_Home__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_frontend_Home__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_frontend_Home___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__components_frontend_Home__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_frontend_Work__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_frontend_Work__ = __webpack_require__(161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_frontend_Work___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__components_frontend_Work__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_frontend_SingleWork__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_frontend_SingleWork__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_frontend_SingleWork___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20__components_frontend_SingleWork__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_frontend_About__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_frontend_About__ = __webpack_require__(173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_frontend_About___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21__components_frontend_About__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_frontend_Contact_vue__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_frontend_Contact_vue__ = __webpack_require__(224);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_frontend_Contact_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22__components_frontend_Contact_vue__);
 
 
@@ -40231,7 +42433,7 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
 /* harmony default export */ __webpack_exports__["a"] = (router);
 
 /***/ }),
-/* 62 */
+/* 64 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42861,13 +45063,13 @@ if (inBrowser && window.Vue) {
 
 
 /***/ }),
-/* 63 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(64);
+var content = __webpack_require__(66);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -42887,7 +45089,7 @@ if(false) {
 }
 
 /***/ }),
-/* 64 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -42895,13 +45097,13 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 65 */
+/* 67 */
 /***/ (function(module, exports) {
 
 /**
@@ -42934,13 +45136,11 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 66 */
+/* 68 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
 //
 //
 //
@@ -43003,7 +45203,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 67 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -43046,36 +45246,24 @@ var render = function() {
                 1
               ),
               _vm._v(" "),
-              _c(
-                "b-field",
-                {
-                  attrs: {
-                    type: "is-success",
-                    message: "This username is available"
-                  }
+              _c("b-input", {
+                attrs: {
+                  type: "password",
+                  placeholder: "Password",
+                  value: "iwantmytreasure",
+                  size: "is-small",
+                  "password-reveal": ""
                 },
-                [
-                  _c("b-input", {
-                    attrs: {
-                      type: "password",
-                      placeholder: "Password",
-                      value: "iwantmytreasure",
-                      size: "is-small",
-                      "password-reveal": ""
-                    },
-                    model: {
-                      value: _vm.form.password,
-                      callback: function($$v) {
-                        _vm.$set(_vm.form, "password", $$v)
-                      },
-                      expression: "form.password"
-                    }
-                  })
-                ],
-                1
-              ),
+                model: {
+                  value: _vm.form.password,
+                  callback: function($$v) {
+                    _vm.$set(_vm.form, "password", $$v)
+                  },
+                  expression: "form.password"
+                }
+              }),
               _vm._v(" "),
-              _c("button", { staticClass: "button is-block is-small" }, [
+              _c("button", { staticClass: "button is-block is-small m-t-15" }, [
                 _vm._v("Login")
               ])
             ],
@@ -43097,15 +45285,15 @@ if (false) {
 }
 
 /***/ }),
-/* 68 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(69)
+var __vue_script__ = __webpack_require__(71)
 /* template */
-var __vue_template__ = __webpack_require__(70)
+var __vue_template__ = __webpack_require__(72)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -43144,7 +45332,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 69 */
+/* 71 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43161,7 +45349,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 70 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -43181,19 +45369,19 @@ if (false) {
 }
 
 /***/ }),
-/* 71 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(72)
+  __webpack_require__(74)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(74)
+var __vue_script__ = __webpack_require__(76)
 /* template */
-var __vue_template__ = __webpack_require__(75)
+var __vue_template__ = __webpack_require__(77)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -43232,13 +45420,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 72 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(73);
+var content = __webpack_require__(75);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -43258,7 +45446,7 @@ if(false) {
 }
 
 /***/ }),
-/* 73 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -43272,7 +45460,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 74 */
+/* 76 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43403,7 +45591,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 75 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -43633,19 +45821,19 @@ if (false) {
 }
 
 /***/ }),
-/* 76 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(77)
+  __webpack_require__(79)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(79)
+var __vue_script__ = __webpack_require__(81)
 /* template */
-var __vue_template__ = __webpack_require__(80)
+var __vue_template__ = __webpack_require__(82)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -43684,13 +45872,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 77 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(78);
+var content = __webpack_require__(80);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -43710,7 +45898,7 @@ if(false) {
 }
 
 /***/ }),
-/* 78 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -43724,7 +45912,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 79 */
+/* 81 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43793,7 +45981,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 80 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -43899,19 +46087,19 @@ if (false) {
 }
 
 /***/ }),
-/* 81 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(82)
+  __webpack_require__(84)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(84)
+var __vue_script__ = __webpack_require__(86)
 /* template */
-var __vue_template__ = __webpack_require__(90)
+var __vue_template__ = __webpack_require__(92)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -43950,13 +46138,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 82 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(83);
+var content = __webpack_require__(85);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -43976,7 +46164,7 @@ if(false) {
 }
 
 /***/ }),
-/* 83 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -43990,13 +46178,13 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 84 */
+/* 86 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuejs_datepicker__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Pages_index_vue__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Pages_index_vue__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Pages_index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__Pages_index_vue__);
 //
 //
@@ -44186,19 +46374,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 85 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(86)
+  __webpack_require__(88)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(88)
+var __vue_script__ = __webpack_require__(90)
 /* template */
-var __vue_template__ = __webpack_require__(89)
+var __vue_template__ = __webpack_require__(91)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -44237,13 +46425,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 86 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(87);
+var content = __webpack_require__(89);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -44263,7 +46451,7 @@ if(false) {
 }
 
 /***/ }),
-/* 87 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -44277,7 +46465,7 @@ exports.push([module.i, "\n.column[data-v-4bb2d338] {\n    padding: 5px;\n}\n.me
 
 
 /***/ }),
-/* 88 */
+/* 90 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44398,7 +46586,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 89 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -44517,7 +46705,7 @@ if (false) {
 }
 
 /***/ }),
-/* 90 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -44852,19 +47040,19 @@ if (false) {
 }
 
 /***/ }),
-/* 91 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(92)
+  __webpack_require__(94)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(94)
+var __vue_script__ = __webpack_require__(96)
 /* template */
-var __vue_template__ = __webpack_require__(95)
+var __vue_template__ = __webpack_require__(97)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -44903,13 +47091,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 92 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(93);
+var content = __webpack_require__(95);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -44929,7 +47117,7 @@ if(false) {
 }
 
 /***/ }),
-/* 93 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -44943,7 +47131,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 94 */
+/* 96 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -45057,7 +47245,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 95 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -45279,19 +47467,19 @@ if (false) {
 }
 
 /***/ }),
-/* 96 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(97)
+  __webpack_require__(99)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(99)
+var __vue_script__ = __webpack_require__(101)
 /* template */
-var __vue_template__ = __webpack_require__(100)
+var __vue_template__ = __webpack_require__(102)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -45330,13 +47518,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 97 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(98);
+var content = __webpack_require__(100);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -45356,7 +47544,7 @@ if(false) {
 }
 
 /***/ }),
-/* 98 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -45370,7 +47558,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 99 */
+/* 101 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -45584,7 +47772,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 100 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -45967,19 +48155,19 @@ if (false) {
 }
 
 /***/ }),
-/* 101 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(102)
+  __webpack_require__(104)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(104)
+var __vue_script__ = __webpack_require__(106)
 /* template */
-var __vue_template__ = __webpack_require__(105)
+var __vue_template__ = __webpack_require__(107)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -46018,13 +48206,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 102 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(103);
+var content = __webpack_require__(105);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -46044,7 +48232,7 @@ if(false) {
 }
 
 /***/ }),
-/* 103 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -46058,7 +48246,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 104 */
+/* 106 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -46177,7 +48365,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 105 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -46374,19 +48562,19 @@ if (false) {
 }
 
 /***/ }),
-/* 106 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(107)
+  __webpack_require__(109)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(109)
+var __vue_script__ = __webpack_require__(111)
 /* template */
-var __vue_template__ = __webpack_require__(110)
+var __vue_template__ = __webpack_require__(112)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -46425,13 +48613,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 107 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(108);
+var content = __webpack_require__(110);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -46451,7 +48639,7 @@ if(false) {
 }
 
 /***/ }),
-/* 108 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -46465,7 +48653,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 109 */
+/* 111 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -46628,7 +48816,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 110 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -46853,19 +49041,19 @@ if (false) {
 }
 
 /***/ }),
-/* 111 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(112)
+  __webpack_require__(114)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(114)
+var __vue_script__ = __webpack_require__(116)
 /* template */
-var __vue_template__ = __webpack_require__(115)
+var __vue_template__ = __webpack_require__(117)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -46904,13 +49092,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 112 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(113);
+var content = __webpack_require__(115);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -46930,7 +49118,7 @@ if(false) {
 }
 
 /***/ }),
-/* 113 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -46944,7 +49132,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 114 */
+/* 116 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47195,7 +49383,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 115 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -47753,19 +49941,19 @@ if (false) {
 }
 
 /***/ }),
-/* 116 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(117)
+  __webpack_require__(119)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(119)
+var __vue_script__ = __webpack_require__(121)
 /* template */
-var __vue_template__ = __webpack_require__(120)
+var __vue_template__ = __webpack_require__(122)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -47804,13 +49992,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 117 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(118);
+var content = __webpack_require__(120);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -47830,7 +50018,7 @@ if(false) {
 }
 
 /***/ }),
-/* 118 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -47844,7 +50032,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 119 */
+/* 121 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47913,7 +50101,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 120 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -48019,19 +50207,19 @@ if (false) {
 }
 
 /***/ }),
-/* 121 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(122)
+  __webpack_require__(124)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(124)
+var __vue_script__ = __webpack_require__(126)
 /* template */
-var __vue_template__ = __webpack_require__(125)
+var __vue_template__ = __webpack_require__(127)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -48070,13 +50258,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 122 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(123);
+var content = __webpack_require__(125);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -48096,7 +50284,7 @@ if(false) {
 }
 
 /***/ }),
-/* 123 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -48110,7 +50298,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 124 */
+/* 126 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48233,7 +50421,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 125 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -48579,15 +50767,15 @@ if (false) {
 }
 
 /***/ }),
-/* 126 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(127)
+var __vue_script__ = __webpack_require__(129)
 /* template */
-var __vue_template__ = __webpack_require__(133)
+var __vue_template__ = __webpack_require__(135)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -48626,13 +50814,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 127 */
+/* 129 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuejs_datepicker__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__items__ = __webpack_require__(128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__items__ = __webpack_require__(130);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__items___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__items__);
 //
 //
@@ -48789,19 +50977,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 128 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(129)
+  __webpack_require__(131)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(131)
+var __vue_script__ = __webpack_require__(133)
 /* template */
-var __vue_template__ = __webpack_require__(132)
+var __vue_template__ = __webpack_require__(134)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -48840,13 +51028,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 129 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(130);
+var content = __webpack_require__(132);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -48866,7 +51054,7 @@ if(false) {
 }
 
 /***/ }),
-/* 130 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -48880,7 +51068,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 131 */
+/* 133 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -49027,7 +51215,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 132 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -49215,7 +51403,7 @@ if (false) {
 }
 
 /***/ }),
-/* 133 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -49595,19 +51783,19 @@ if (false) {
 }
 
 /***/ }),
-/* 134 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(135)
+  __webpack_require__(137)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(137)
+var __vue_script__ = __webpack_require__(139)
 /* template */
-var __vue_template__ = __webpack_require__(138)
+var __vue_template__ = __webpack_require__(140)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -49646,13 +51834,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 135 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(136);
+var content = __webpack_require__(138);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -49672,7 +51860,7 @@ if(false) {
 }
 
 /***/ }),
-/* 136 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -49686,7 +51874,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 137 */
+/* 139 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -49966,7 +52154,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 138 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -50635,19 +52823,19 @@ if (false) {
 }
 
 /***/ }),
-/* 139 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(140)
+  __webpack_require__(142)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(142)
+var __vue_script__ = __webpack_require__(144)
 /* template */
-var __vue_template__ = __webpack_require__(148)
+var __vue_template__ = __webpack_require__(150)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -50686,13 +52874,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 140 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(141);
+var content = __webpack_require__(143);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -50712,7 +52900,7 @@ if(false) {
 }
 
 /***/ }),
-/* 141 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -50728,7 +52916,7 @@ exports.push([module.i, "\n.ql-editor {\n    min-height: 190px;\n    font-size: 
 
 
 /***/ }),
-/* 142 */
+/* 144 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50900,7 +53088,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 143 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {/*!
@@ -62392,10 +64580,10 @@ module.exports = __webpack_require__(63);
 /***/ })
 /******/ ])["default"];
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(144).Buffer))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(146).Buffer))
 
 /***/ }),
-/* 144 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62409,9 +64597,9 @@ module.exports = __webpack_require__(63);
 
 
 
-var base64 = __webpack_require__(145)
-var ieee754 = __webpack_require__(146)
-var isArray = __webpack_require__(147)
+var base64 = __webpack_require__(147)
+var ieee754 = __webpack_require__(148)
+var isArray = __webpack_require__(149)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -64192,7 +66380,7 @@ function isnan (val) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
-/* 145 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -64350,7 +66538,7 @@ function fromByteArray (uint8) {
 
 
 /***/ }),
-/* 146 */
+/* 148 */
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -64440,7 +66628,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 /***/ }),
-/* 147 */
+/* 149 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -64451,7 +66639,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 148 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -64730,19 +66918,19 @@ if (false) {
 }
 
 /***/ }),
-/* 149 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(150)
+  __webpack_require__(152)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(152)
+var __vue_script__ = __webpack_require__(154)
 /* template */
-var __vue_template__ = __webpack_require__(153)
+var __vue_template__ = __webpack_require__(155)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -64781,13 +66969,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 150 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(151);
+var content = __webpack_require__(153);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -64807,7 +66995,7 @@ if(false) {
 }
 
 /***/ }),
-/* 151 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -64823,7 +67011,7 @@ exports.push([module.i, "\n.ql-editor {\n    min-height: 190px;\n    font-size: 
 
 
 /***/ }),
-/* 152 */
+/* 154 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64997,7 +67185,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 153 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -65436,19 +67624,19 @@ if (false) {
 }
 
 /***/ }),
-/* 154 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(243)
+  __webpack_require__(157)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(155)
+var __vue_script__ = __webpack_require__(159)
 /* template */
-var __vue_template__ = __webpack_require__(156)
+var __vue_template__ = __webpack_require__(160)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -65487,7 +67675,47 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 155 */
+/* 157 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(158);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("b0c41526", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0c805055\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Home.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0c805055\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Home.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 158 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 159 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65612,7 +67840,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 156 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -65732,15 +67960,15 @@ if (false) {
 }
 
 /***/ }),
-/* 157 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(158)
+var __vue_script__ = __webpack_require__(162)
 /* template */
-var __vue_template__ = __webpack_require__(165)
+var __vue_template__ = __webpack_require__(169)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -65779,7 +68007,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 158 */
+/* 162 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65886,7 +68114,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 159 */
+/* 163 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65944,7 +68172,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 160 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -66024,13 +68252,13 @@ if (false) {
 }
 
 /***/ }),
-/* 161 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(162);
+var content = __webpack_require__(166);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -66050,7 +68278,7 @@ if(false) {
 }
 
 /***/ }),
-/* 162 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -66064,7 +68292,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 163 */
+/* 167 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66103,7 +68331,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 164 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -66171,7 +68399,7 @@ if (false) {
 }
 
 /***/ }),
-/* 165 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -66304,15 +68532,15 @@ if (false) {
 }
 
 /***/ }),
-/* 166 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(167)
+var __vue_script__ = __webpack_require__(171)
 /* template */
-var __vue_template__ = __webpack_require__(168)
+var __vue_template__ = __webpack_require__(172)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -66351,7 +68579,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 167 */
+/* 171 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66483,7 +68711,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 168 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -66633,19 +68861,19 @@ if (false) {
 }
 
 /***/ }),
-/* 169 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(248)
+  __webpack_require__(174)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(170)
+var __vue_script__ = __webpack_require__(176)
 /* template */
-var __vue_template__ = __webpack_require__(217)
+var __vue_template__ = __webpack_require__(223)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -66684,12 +68912,52 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 170 */
+/* 174 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(175);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("6567224c", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8fe1b9f2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./About.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8fe1b9f2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./About.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 175 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.arZxkKg-w3Qec3gGdgaPh_0 {\n    background-position: center center; \n    background-repeat: no-repeat; \n    background-size: cover; \n    background-attachment: fixed;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 176 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_uniq__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_uniq__ = __webpack_require__(177);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_uniq___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash_uniq__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Footer__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__Footer__);
@@ -66913,10 +69181,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 171 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseUniq = __webpack_require__(172);
+var baseUniq = __webpack_require__(178);
 
 /**
  * Creates a duplicate-free version of an array, using
@@ -66944,14 +69212,14 @@ module.exports = uniq;
 
 
 /***/ }),
-/* 172 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var SetCache = __webpack_require__(173),
-    arrayIncludes = __webpack_require__(207),
-    arrayIncludesWith = __webpack_require__(212),
-    cacheHas = __webpack_require__(213),
-    createSet = __webpack_require__(214),
+var SetCache = __webpack_require__(179),
+    arrayIncludes = __webpack_require__(213),
+    arrayIncludesWith = __webpack_require__(218),
+    cacheHas = __webpack_require__(219),
+    createSet = __webpack_require__(220),
     setToArray = __webpack_require__(28);
 
 /** Used as the size to enable large array optimizations. */
@@ -67022,12 +69290,12 @@ module.exports = baseUniq;
 
 
 /***/ }),
-/* 173 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var MapCache = __webpack_require__(174),
-    setCacheAdd = __webpack_require__(205),
-    setCacheHas = __webpack_require__(206);
+var MapCache = __webpack_require__(180),
+    setCacheAdd = __webpack_require__(211),
+    setCacheHas = __webpack_require__(212);
 
 /**
  *
@@ -67055,14 +69323,14 @@ module.exports = SetCache;
 
 
 /***/ }),
-/* 174 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var mapCacheClear = __webpack_require__(175),
-    mapCacheDelete = __webpack_require__(200),
-    mapCacheGet = __webpack_require__(202),
-    mapCacheHas = __webpack_require__(203),
-    mapCacheSet = __webpack_require__(204);
+var mapCacheClear = __webpack_require__(181),
+    mapCacheDelete = __webpack_require__(206),
+    mapCacheGet = __webpack_require__(208),
+    mapCacheHas = __webpack_require__(209),
+    mapCacheSet = __webpack_require__(210);
 
 /**
  * Creates a map cache object to store key-value pairs.
@@ -67093,12 +69361,12 @@ module.exports = MapCache;
 
 
 /***/ }),
-/* 175 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Hash = __webpack_require__(176),
-    ListCache = __webpack_require__(192),
-    Map = __webpack_require__(199);
+var Hash = __webpack_require__(182),
+    ListCache = __webpack_require__(198),
+    Map = __webpack_require__(205);
 
 /**
  * Removes all key-value entries from the map.
@@ -67120,14 +69388,14 @@ module.exports = mapCacheClear;
 
 
 /***/ }),
-/* 176 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var hashClear = __webpack_require__(177),
-    hashDelete = __webpack_require__(188),
-    hashGet = __webpack_require__(189),
-    hashHas = __webpack_require__(190),
-    hashSet = __webpack_require__(191);
+var hashClear = __webpack_require__(183),
+    hashDelete = __webpack_require__(194),
+    hashGet = __webpack_require__(195),
+    hashHas = __webpack_require__(196),
+    hashSet = __webpack_require__(197);
 
 /**
  * Creates a hash object.
@@ -67158,7 +69426,7 @@ module.exports = Hash;
 
 
 /***/ }),
-/* 177 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(8);
@@ -67179,13 +69447,13 @@ module.exports = hashClear;
 
 
 /***/ }),
-/* 178 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isFunction = __webpack_require__(179),
-    isMasked = __webpack_require__(184),
+var isFunction = __webpack_require__(185),
+    isMasked = __webpack_require__(190),
     isObject = __webpack_require__(27),
-    toSource = __webpack_require__(186);
+    toSource = __webpack_require__(192);
 
 /**
  * Used to match `RegExp`
@@ -67232,10 +69500,10 @@ module.exports = baseIsNative;
 
 
 /***/ }),
-/* 179 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(180),
+var baseGetTag = __webpack_require__(186),
     isObject = __webpack_require__(27);
 
 /** `Object#toString` result references. */
@@ -67275,12 +69543,12 @@ module.exports = isFunction;
 
 
 /***/ }),
-/* 180 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(26),
-    getRawTag = __webpack_require__(182),
-    objectToString = __webpack_require__(183);
+    getRawTag = __webpack_require__(188),
+    objectToString = __webpack_require__(189);
 
 /** `Object#toString` result references. */
 var nullTag = '[object Null]',
@@ -67309,7 +69577,7 @@ module.exports = baseGetTag;
 
 
 /***/ }),
-/* 181 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
@@ -67320,7 +69588,7 @@ module.exports = freeGlobal;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
-/* 182 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(26);
@@ -67372,7 +69640,7 @@ module.exports = getRawTag;
 
 
 /***/ }),
-/* 183 */
+/* 189 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -67400,10 +69668,10 @@ module.exports = objectToString;
 
 
 /***/ }),
-/* 184 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var coreJsData = __webpack_require__(185);
+var coreJsData = __webpack_require__(191);
 
 /** Used to detect methods masquerading as native. */
 var maskSrcKey = (function() {
@@ -67426,7 +69694,7 @@ module.exports = isMasked;
 
 
 /***/ }),
-/* 185 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var root = __webpack_require__(9);
@@ -67438,7 +69706,7 @@ module.exports = coreJsData;
 
 
 /***/ }),
-/* 186 */
+/* 192 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -67470,7 +69738,7 @@ module.exports = toSource;
 
 
 /***/ }),
-/* 187 */
+/* 193 */
 /***/ (function(module, exports) {
 
 /**
@@ -67489,7 +69757,7 @@ module.exports = getValue;
 
 
 /***/ }),
-/* 188 */
+/* 194 */
 /***/ (function(module, exports) {
 
 /**
@@ -67512,7 +69780,7 @@ module.exports = hashDelete;
 
 
 /***/ }),
-/* 189 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(8);
@@ -67548,7 +69816,7 @@ module.exports = hashGet;
 
 
 /***/ }),
-/* 190 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(8);
@@ -67577,7 +69845,7 @@ module.exports = hashHas;
 
 
 /***/ }),
-/* 191 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(8);
@@ -67606,14 +69874,14 @@ module.exports = hashSet;
 
 
 /***/ }),
-/* 192 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var listCacheClear = __webpack_require__(193),
-    listCacheDelete = __webpack_require__(194),
-    listCacheGet = __webpack_require__(196),
-    listCacheHas = __webpack_require__(197),
-    listCacheSet = __webpack_require__(198);
+var listCacheClear = __webpack_require__(199),
+    listCacheDelete = __webpack_require__(200),
+    listCacheGet = __webpack_require__(202),
+    listCacheHas = __webpack_require__(203),
+    listCacheSet = __webpack_require__(204);
 
 /**
  * Creates an list cache object.
@@ -67644,7 +69912,7 @@ module.exports = ListCache;
 
 
 /***/ }),
-/* 193 */
+/* 199 */
 /***/ (function(module, exports) {
 
 /**
@@ -67663,7 +69931,7 @@ module.exports = listCacheClear;
 
 
 /***/ }),
-/* 194 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(10);
@@ -67704,7 +69972,7 @@ module.exports = listCacheDelete;
 
 
 /***/ }),
-/* 195 */
+/* 201 */
 /***/ (function(module, exports) {
 
 /**
@@ -67747,7 +70015,7 @@ module.exports = eq;
 
 
 /***/ }),
-/* 196 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(10);
@@ -67772,7 +70040,7 @@ module.exports = listCacheGet;
 
 
 /***/ }),
-/* 197 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(10);
@@ -67794,7 +70062,7 @@ module.exports = listCacheHas;
 
 
 /***/ }),
-/* 198 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(10);
@@ -67826,7 +70094,7 @@ module.exports = listCacheSet;
 
 
 /***/ }),
-/* 199 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(13),
@@ -67839,7 +70107,7 @@ module.exports = Map;
 
 
 /***/ }),
-/* 200 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(11);
@@ -67863,7 +70131,7 @@ module.exports = mapCacheDelete;
 
 
 /***/ }),
-/* 201 */
+/* 207 */
 /***/ (function(module, exports) {
 
 /**
@@ -67884,7 +70152,7 @@ module.exports = isKeyable;
 
 
 /***/ }),
-/* 202 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(11);
@@ -67906,7 +70174,7 @@ module.exports = mapCacheGet;
 
 
 /***/ }),
-/* 203 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(11);
@@ -67928,7 +70196,7 @@ module.exports = mapCacheHas;
 
 
 /***/ }),
-/* 204 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(11);
@@ -67956,7 +70224,7 @@ module.exports = mapCacheSet;
 
 
 /***/ }),
-/* 205 */
+/* 211 */
 /***/ (function(module, exports) {
 
 /** Used to stand-in for `undefined` hash values. */
@@ -67981,7 +70249,7 @@ module.exports = setCacheAdd;
 
 
 /***/ }),
-/* 206 */
+/* 212 */
 /***/ (function(module, exports) {
 
 /**
@@ -68001,10 +70269,10 @@ module.exports = setCacheHas;
 
 
 /***/ }),
-/* 207 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIndexOf = __webpack_require__(208);
+var baseIndexOf = __webpack_require__(214);
 
 /**
  * A specialized version of `_.includes` for arrays without support for
@@ -68024,12 +70292,12 @@ module.exports = arrayIncludes;
 
 
 /***/ }),
-/* 208 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseFindIndex = __webpack_require__(209),
-    baseIsNaN = __webpack_require__(210),
-    strictIndexOf = __webpack_require__(211);
+var baseFindIndex = __webpack_require__(215),
+    baseIsNaN = __webpack_require__(216),
+    strictIndexOf = __webpack_require__(217);
 
 /**
  * The base implementation of `_.indexOf` without `fromIndex` bounds checks.
@@ -68050,7 +70318,7 @@ module.exports = baseIndexOf;
 
 
 /***/ }),
-/* 209 */
+/* 215 */
 /***/ (function(module, exports) {
 
 /**
@@ -68080,7 +70348,7 @@ module.exports = baseFindIndex;
 
 
 /***/ }),
-/* 210 */
+/* 216 */
 /***/ (function(module, exports) {
 
 /**
@@ -68098,7 +70366,7 @@ module.exports = baseIsNaN;
 
 
 /***/ }),
-/* 211 */
+/* 217 */
 /***/ (function(module, exports) {
 
 /**
@@ -68127,7 +70395,7 @@ module.exports = strictIndexOf;
 
 
 /***/ }),
-/* 212 */
+/* 218 */
 /***/ (function(module, exports) {
 
 /**
@@ -68155,7 +70423,7 @@ module.exports = arrayIncludesWith;
 
 
 /***/ }),
-/* 213 */
+/* 219 */
 /***/ (function(module, exports) {
 
 /**
@@ -68174,11 +70442,11 @@ module.exports = cacheHas;
 
 
 /***/ }),
-/* 214 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Set = __webpack_require__(215),
-    noop = __webpack_require__(216),
+var Set = __webpack_require__(221),
+    noop = __webpack_require__(222),
     setToArray = __webpack_require__(28);
 
 /** Used as references for various `Number` constants. */
@@ -68199,7 +70467,7 @@ module.exports = createSet;
 
 
 /***/ }),
-/* 215 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(13),
@@ -68212,7 +70480,7 @@ module.exports = Set;
 
 
 /***/ }),
-/* 216 */
+/* 222 */
 /***/ (function(module, exports) {
 
 /**
@@ -68235,7 +70503,7 @@ module.exports = noop;
 
 
 /***/ }),
-/* 217 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -68573,15 +70841,15 @@ if (false) {
 }
 
 /***/ }),
-/* 218 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(219)
+var __vue_script__ = __webpack_require__(225)
 /* template */
-var __vue_template__ = __webpack_require__(220)
+var __vue_template__ = __webpack_require__(226)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -68620,7 +70888,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 219 */
+/* 225 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68772,7 +71040,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 220 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -69104,19 +71372,19 @@ if (false) {
 }
 
 /***/ }),
-/* 221 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(222)
+  __webpack_require__(228)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(224)
+var __vue_script__ = __webpack_require__(230)
 /* template */
-var __vue_template__ = __webpack_require__(225)
+var __vue_template__ = __webpack_require__(231)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -69155,13 +71423,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 222 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(223);
+var content = __webpack_require__(229);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69181,7 +71449,7 @@ if(false) {
 }
 
 /***/ }),
-/* 223 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -69195,7 +71463,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 
 /***/ }),
-/* 224 */
+/* 230 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69219,7 +71487,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 225 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -69239,19 +71507,19 @@ if (false) {
 }
 
 /***/ }),
-/* 226 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(227)
+  __webpack_require__(233)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(229)
+var __vue_script__ = __webpack_require__(235)
 /* template */
-var __vue_template__ = __webpack_require__(230)
+var __vue_template__ = __webpack_require__(236)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -69290,13 +71558,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 227 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(228);
+var content = __webpack_require__(234);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69316,7 +71584,7 @@ if(false) {
 }
 
 /***/ }),
-/* 228 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -69330,7 +71598,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 229 */
+/* 235 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69388,7 +71656,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 230 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -69526,2302 +71794,10 @@ if (false) {
 }
 
 /***/ }),
-/* 231 */
+/* 237 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "install", function() { return install; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallBeatLoader", function() { return ballBeat; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallClipRotateLoader", function() { return ballClipRotate; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallClipRotateMultipleLoader", function() { return ballClipRotateMultiple; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallClipRotatePulseLoader", function() { return ballClipRotatePulse; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallGridBeatLoader", function() { return ballGridBeat; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallGridPulseLoader", function() { return ballGridPulse; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallPulseLoader", function() { return ballPulse; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallPulseRiseLoader", function() { return ballPulseRise; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallPulseSyncLoader", function() { return ballPulseSync; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallRotateLoader", function() { return ballRotate; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallScaleLoader", function() { return ballScale; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallScaleMultipleLoader", function() { return ballScaleMultiple; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallScaleRippleLoader", function() { return ballScaleRipple; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallScaleRippleMultipleLoader", function() { return ballScaleRippleMultiple; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallSpinFadeLoader", function() { return ballSpinFade; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallTrianglePathLoader", function() { return ballTrianglePath; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallZigZagLoader", function() { return ballZigZag; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BallZigZagDeflectLoader", function() { return ballZigZagDeflect; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CubeTransitionLoader", function() { return cubeTransition; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineScaleLoader", function() { return lineScale; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineScalePartyLoader", function() { return lineScaleParty; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineScalePulseOutLoader", function() { return lineScalePulseOut; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineScalePulseOutRapidLoader", function() { return lineScalePulseOutRapid; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineSpinFadeLoader", function() { return lineSpinFade; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PacmanLoader", function() { return pacman; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SemiCircleSpinLoader", function() { return semiCircleSpin; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SquareSpinLoader", function() { return squareSpin; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TriangleSkewSpinLoader", function() { return triangleSkewSpin; });
-var _isObject = function (it) {
-  return typeof it === 'object' ? it !== null : typeof it === 'function';
-};
-
-var _anObject = function (it) {
-  if (!_isObject(it)) throw TypeError(it + ' is not an object!');
-  return it;
-};
-
-var _fails = function (exec) {
-  try {
-    return !!exec();
-  } catch (e) {
-    return true;
-  }
-};
-
-// Thank's IE8 for his funny defineProperty
-var _descriptors = !_fails(function () {
-  return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
-});
-
-function createCommonjsModule(fn, module) {
-	return module = { exports: {} }, fn(module, module.exports), module.exports;
-}
-
-var _global = createCommonjsModule(function (module) {
-// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
-var global = module.exports = typeof window != 'undefined' && window.Math == Math
-  ? window : typeof self != 'undefined' && self.Math == Math ? self
-  // eslint-disable-next-line no-new-func
-  : Function('return this')();
-if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
-});
-
-var document = _global.document;
-// typeof document.createElement is 'object' in old IE
-var is = _isObject(document) && _isObject(document.createElement);
-var _domCreate = function (it) {
-  return is ? document.createElement(it) : {};
-};
-
-var _ie8DomDefine = !_descriptors && !_fails(function () {
-  return Object.defineProperty(_domCreate('div'), 'a', { get: function () { return 7; } }).a != 7;
-});
-
-// 7.1.1 ToPrimitive(input [, PreferredType])
-
-// instead of the ES6 spec version, we didn't implement @@toPrimitive case
-// and the second argument - flag - preferred type is a string
-var _toPrimitive = function (it, S) {
-  if (!_isObject(it)) return it;
-  var fn, val;
-  if (S && typeof (fn = it.toString) == 'function' && !_isObject(val = fn.call(it))) return val;
-  if (typeof (fn = it.valueOf) == 'function' && !_isObject(val = fn.call(it))) return val;
-  if (!S && typeof (fn = it.toString) == 'function' && !_isObject(val = fn.call(it))) return val;
-  throw TypeError("Can't convert object to primitive value");
-};
-
-var dP = Object.defineProperty;
-
-var f = _descriptors ? Object.defineProperty : function defineProperty(O, P, Attributes) {
-  _anObject(O);
-  P = _toPrimitive(P, true);
-  _anObject(Attributes);
-  if (_ie8DomDefine) try {
-    return dP(O, P, Attributes);
-  } catch (e) { /* empty */ }
-  if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported!');
-  if ('value' in Attributes) O[P] = Attributes.value;
-  return O;
-};
-
-var _objectDp = {
-	f: f
-};
-
-var dP$1 = _objectDp.f;
-var FProto = Function.prototype;
-var nameRE = /^\s*function ([^ (]*)/;
-var NAME = 'name';
-
-// 19.2.4.2 name
-NAME in FProto || _descriptors && dP$1(FProto, NAME, {
-  configurable: true,
-  get: function () {
-    try {
-      return ('' + this).match(nameRE)[1];
-    } catch (e) {
-      return '';
-    }
-  }
-});
-
-var ballBeat = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "ball-beat vue-loaders"
-    }, [_c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'BallBeatLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var BORDER_RATION = 2 / 15;
-var ballClipRotate = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "ball-clip-rotate vue-loaders"
-    }, [_c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'BallClipRotateLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-        styles.borderWidth = "calc(".concat(size, " * ").concat(BORDER_RATION, ")");
-      }
-
-      if (color) {
-        styles.borderTopColor = styles.borderRightColor = styles.borderLeftColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var BASE_SIZE_PX = '35px';
-var BORDER_RATION$1 = 2 / 35;
-var INNER_BALL_SIZE_RATION = 15 / 30;
-var ballClipRotateMultiple = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "ball-clip-rotate-multiple vue-loaders",
-      style: _vm.rootStyles
-    }, [_c('div', {
-      style: _vm.outerBallStyles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.innerBallStyles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'BallClipRotateMultipleLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    rootStyles: function rootStyles() {
-      var size = this.size ? String(this.size) : BASE_SIZE_PX;
-      var styles = {
-        width: size,
-        height: size
-      };
-      return styles;
-    },
-    outerBallStyles: function outerBallStyles() {
-      var size = this.size ? String(this.size) : BASE_SIZE_PX;
-      var color = this.color ? String(this.color) : null;
-      var styles = {
-        width: size,
-        height: size,
-        borderWidth: "calc(".concat(size, " * ").concat(BORDER_RATION$1, ")"),
-        top: "calc(".concat(size, " * -1 * ").concat(BORDER_RATION$1, ")"),
-        left: "calc(".concat(size, " * -1 * ").concat(BORDER_RATION$1, ")")
-      };
-
-      if (color) {
-        styles.borderLeftColor = color;
-        styles.borderRightColor = color;
-      }
-
-      return styles;
-    },
-    innerBallStyles: function innerBallStyles() {
-      var size = this.size ? String(this.size) : BASE_SIZE_PX;
-      var color = this.color ? String(this.color) : null;
-      var styles = {
-        width: "calc(".concat(size, " * ").concat(INNER_BALL_SIZE_RATION, ")"),
-        height: "calc(".concat(size, " * ").concat(INNER_BALL_SIZE_RATION, ")"),
-        borderWidth: "calc(".concat(size, " * ").concat(BORDER_RATION$1, ")"),
-        top: "calc((".concat(size, " - (").concat(size, " * ").concat(INNER_BALL_SIZE_RATION, ")) / 2 - ").concat(size, " * ").concat(BORDER_RATION$1),
-        left: "calc((".concat(size, " - (").concat(size, " * ").concat(INNER_BALL_SIZE_RATION, ")) / 2 - ").concat(size, " * ").concat(BORDER_RATION$1)
-      };
-
-      if (color) {
-        styles.borderTopColor = color;
-        styles.borderBottomColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var BASE_SIZE_PX$1 = '30px';
-var BORDER_RATION$2 = 2 / 30;
-var INNER_BALL_SIZE_RATION$1 = 16 / 30;
-var INNER_BALL_OFFSET_RATION = 7 / 30;
-var ballClipRotatePulse = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "ball-clip-rotate-pulse vue-loaders",
-      style: _vm.rootStyles
-    }, [_c('div', {
-      style: _vm.innerBallStyles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.outerBallStyles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'BallClipRotatePulseLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    rootStyles: function rootStyles() {
-      var size = this.size ? String(this.size) : BASE_SIZE_PX$1;
-      var styles = {
-        width: "calc(".concat(size, " / 2)"),
-        marginLeft: "calc(".concat(size, " / 2)"),
-        height: size
-      };
-      return styles;
-    },
-    outerBallStyles: function outerBallStyles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-        styles.top = "calc(".concat(size, " * -1 * ").concat(BORDER_RATION$2, ")");
-        styles.borderWidth = "calc(".concat(size, " * ").concat(BORDER_RATION$2, ")");
-        styles.left = "calc(".concat(size, " * -1 * ").concat(INNER_BALL_SIZE_RATION$1, ")");
-      }
-
-      if (color) {
-        styles.borderTopColor = color;
-        styles.borderBottomColor = color;
-      }
-
-      return styles;
-    },
-    innerBallStyles: function innerBallStyles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = "calc(".concat(size, " * ").concat(INNER_BALL_SIZE_RATION$1, ")");
-        styles.top = "calc(".concat(size, " * ").concat(INNER_BALL_OFFSET_RATION, ")");
-        styles.left = "calc(".concat(size, " * -1 * ").concat(INNER_BALL_OFFSET_RATION, ")");
-      }
-
-      if (color) {
-        styles.background = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var ballGridBeat = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "ball-grid-beat vue-loaders",
-      style: _vm.rootStyles
-    }, [_c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'BallGridBeatLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    rootStyles: function rootStyles() {
-      return {
-        width: "calc(3 * (".concat(this.size || '15px', " + 4px))")
-      };
-    },
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var ballGridPulse = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "ball-grid-pulse vue-loaders",
-      style: _vm.rootStyles
-    }, [_c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'BallGridPulseLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    rootStyles: function rootStyles() {
-      return {
-        width: "calc(3 * (".concat(this.size || '15px', " + 4px))")
-      };
-    },
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var ballPulse = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "ball-pulse vue-loaders"
-    }, [_c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'BallPulseLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var ballPulseRise = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "ball-pulse-rise vue-loaders"
-    }, [_c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'BallPulseRiseLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var ballPulseSync = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "ball-pulse-sync vue-loaders"
-    }, [_c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'BallPulseSyncLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var OFFSET = 10 / 15;
-var ballRotate = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "ball-rotate vue-loaders",
-      style: _vm.rootStyles
-    }, [_c('div', {
-      style: _vm.middle
-    }, [_c('div', {
-      style: _vm.innerLeft
-    }), _vm._v(" "), _c('div', {
-      style: _vm.innerRight
-    })])]);
-  },
-  staticRenderFns: [],
-  name: 'BallRotateLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    rootStyles: function rootStyles() {
-      var size = this.size ? String(this.size) : null;
-
-      if (size) {
-        return {
-          width: size,
-          height: size,
-          padding: "calc(".concat(size, " + ").concat(size, " * ").concat(OFFSET, " + 2px)")
-        };
-      }
-    },
-    middle: function middle() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    },
-    innerLeft: function innerLeft() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-        styles.left = "calc((".concat(size, " + ").concat(size, " * ").concat(OFFSET, " + 2px) * -1)");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    },
-    innerRight: function innerRight() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-        styles.left = "calc(".concat(size, " + ").concat(size, " * ").concat(OFFSET, " + 2px)");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var ballScale = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "ball-scale vue-loaders"
-    }, [_c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'BallScaleLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var ballScaleMultiple = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "ball-scale-multiple vue-loaders",
-      style: _vm.rootStyle
-    }, [_c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'BallScaleMultipleLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    rootStyle: function rootStyle() {
-      var size = this.size ? String(this.size) : null;
-
-      if (size) {
-        return {
-          width: size,
-          height: size
-        };
-      }
-    },
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var ballScaleRipple = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "ball-scale-ripple vue-loaders"
-    }, [_c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'BallScaleRippleLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-      }
-
-      if (color) {
-        styles.borderColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var BORDER_RATION$3 = 2 / 50;
-var ballScaleRippleMultiple = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "ball-scale-ripple-multiple vue-loaders",
-      style: _vm.rootStyle
-    }, [_c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'BallScaleRippleMultipleLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    rootStyle: function rootStyle() {
-      var size = this.size ? String(this.size) : null;
-
-      if (size) {
-        return {
-          width: "calc(".concat(size, " + ").concat(size, " * ").concat(BORDER_RATION$3, ")"),
-          height: "calc(".concat(size, " + ").concat(size, " * ").concat(BORDER_RATION$3, ")")
-        };
-      }
-    },
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-        styles.borderWidth = "calc(".concat(size, " * ").concat(BORDER_RATION$3, ")");
-      }
-
-      if (color) {
-        styles.borderColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var TO_CORNER_RATIO = 17.05 / 15;
-var TO_SIDE_RATIO = 25 / 15;
-var ballSpinFade = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "ball-spin-fade-loader vue-loaders",
-      style: _vm.root
-    }, [_c('div', {
-      style: _vm.bottom
-    }), _vm._v(" "), _c('div', {
-      style: _vm.bottomRight
-    }), _vm._v(" "), _c('div', {
-      style: _vm.right
-    }), _vm._v(" "), _c('div', {
-      style: _vm.topRight
-    }), _vm._v(" "), _c('div', {
-      style: _vm.top
-    }), _vm._v(" "), _c('div', {
-      style: _vm.topLeft
-    }), _vm._v(" "), _c('div', {
-      style: _vm.left
-    }), _vm._v(" "), _c('div', {
-      style: _vm.bottomLeft
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'BallSpinFadeLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    root: function root() {
-      var size = this.size ? String(this.size) : null;
-
-      if (size) {
-        return {
-          width: size,
-          height: size,
-          borderWidth: "calc(".concat(size, " * ").concat(TO_SIDE_RATIO, ")")
-        };
-      }
-    },
-    top: function top() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-        styles.top = "calc(".concat(size, " * ").concat(TO_SIDE_RATIO, " * -1)");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    },
-    topRight: function topRight() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-        styles.top = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO, " * -1)");
-        styles.left = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO, ")");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    },
-    right: function right() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-        styles.left = "calc(".concat(size, " * ").concat(TO_SIDE_RATIO, ")");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    },
-    bottomRight: function bottomRight() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-        styles.top = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO, ")");
-        styles.left = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO, ")");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    },
-    bottom: function bottom() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-        styles.top = "calc(".concat(size, " * ").concat(TO_SIDE_RATIO, ")");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    },
-    bottomLeft: function bottomLeft() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-        styles.top = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO, ")");
-        styles.left = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO, " * -1)");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    },
-    left: function left() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-        styles.left = "calc(".concat(size, " * ").concat(TO_SIDE_RATIO, " * -1)");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    },
-    topLeft: function topLeft() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-        styles.top = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO, " * -1)");
-        styles.left = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO, " * -1)");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var BORDER_RATION$4 = 1 / 10;
-var ballTrianglePath = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "ball-triangle-path vue-loaders",
-      style: _vm.rootStyle
-    }, [_c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'BallTrianglePathLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    rootStyle: function rootStyle() {
-      var size = this.size ? String(this.size) : null;
-
-      if (size) {
-        return {
-          width: "calc(".concat(size, " + 50px)"),
-          height: "calc(".concat(size, " + 50px)")
-        };
-      }
-    },
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-        styles.borderWidth = "calc(".concat(size, " * ").concat(BORDER_RATION$4, ")");
-      }
-
-      if (color) {
-        styles.borderColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var ballZigZag = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "ball-zig-zag vue-loaders",
-      style: _vm.rootStyle
-    }, [_c('div', {
-      style: _vm.top
-    }), _vm._v(" "), _c('div', {
-      style: _vm.bottom
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'BallZigZagLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    rootStyle: function rootStyle() {
-      var size = this.size ? String(this.size) : null;
-
-      if (size) {
-        return {
-          width: size,
-          height: size
-        };
-      }
-    },
-    top: function top() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    },
-    bottom: function bottom() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var ballZigZagDeflect = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "ball-zig-zag-deflect vue-loaders",
-      style: _vm.rootStyle
-    }, [_c('div', {
-      style: _vm.top
-    }), _vm._v(" "), _c('div', {
-      style: _vm.bottom
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'BallZigZagDeflectLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    rootStyle: function rootStyle() {
-      var size = this.size ? String(this.size) : null;
-
-      if (size) {
-        return {
-          width: size,
-          height: size
-        };
-      }
-    },
-    top: function top() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    },
-    bottom: function bottom() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var cubeTransition = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "cube-transition vue-loaders",
-      style: _vm.rootStyle
-    }, [_c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'CubeTransitionLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    rootStyle: function rootStyle() {
-      var size = this.size ? String(this.size) : null;
-
-      if (size) {
-        return {
-          width: "calc(".concat(size, " + 50px)"),
-          height: "calc(".concat(size, " + 50px)")
-        };
-      }
-    },
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var WIDTH_RATIO = 4 / 35;
-var BORDER_RATIO = 2 / 4;
-var lineScale = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "line-scale vue-loaders"
-    }, [_c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'LineScaleLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO, ")");
-        styles.height = size;
-        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO, ")");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var WIDTH_RATIO$1 = 4 / 35;
-var BORDER_RATIO$1 = 2 / 4;
-var lineScaleParty = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "line-scale-party vue-loaders"
-    }, [_c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'LineScalePartyLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$1, ")");
-        styles.height = size;
-        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$1, ")");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var WIDTH_RATIO$2 = 4 / 35;
-var BORDER_RATIO$2 = 2 / 4;
-var lineScalePulseOut = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "line-scale-pulse-out vue-loaders"
-    }, [_c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'LineScalePulseOutLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$2, ")");
-        styles.height = size;
-        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$2, ")");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var WIDTH_RATIO$3 = 4 / 35;
-var BORDER_RATIO$3 = 2 / 4;
-var lineScalePulseOutRapid = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "line-scale-pulse-out-rapid vue-loaders"
-    }, [_c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    }), _vm._v(" "), _c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'LineScalePulseOutRapidLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$3, ")");
-        styles.height = size;
-        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$3, ")");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var TO_CORNER_RATIO$1 = 13.64 / 15;
-var TO_SIDE_RATIO$1 = 20 / 15;
-var WIDTH_RATIO$4 = 5 / 15;
-var BORDER_RATIO$4 = 2 / 15;
-var lineSpinFade = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "line-spin-fade-loader vue-loaders",
-      style: _vm.root
-    }, [_c('div', {
-      style: _vm.bottom
-    }), _vm._v(" "), _c('div', {
-      style: _vm.bottomRight
-    }), _vm._v(" "), _c('div', {
-      style: _vm.right
-    }), _vm._v(" "), _c('div', {
-      style: _vm.topRight
-    }), _vm._v(" "), _c('div', {
-      style: _vm.top
-    }), _vm._v(" "), _c('div', {
-      style: _vm.topLeft
-    }), _vm._v(" "), _c('div', {
-      style: _vm.left
-    }), _vm._v(" "), _c('div', {
-      style: _vm.bottomLeft
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'LineSpinFadeLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    root: function root() {
-      var size = this.size ? String(this.size) : null;
-
-      if (size) {
-        return {
-          width: size,
-          height: size,
-          borderWidth: "calc(".concat(size, " * ").concat(TO_SIDE_RATIO$1, ")")
-        };
-      }
-    },
-    top: function top() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.height = size;
-        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$4, ")");
-        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$4, ")");
-        styles.top = "calc(".concat(size, " * ").concat(TO_SIDE_RATIO$1, " * -1)");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    },
-    topRight: function topRight() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.height = size;
-        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$4, ")");
-        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$4, ")");
-        styles.top = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO$1, " * -1)");
-        styles.left = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO$1, ")");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    },
-    right: function right() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.height = size;
-        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$4, ")");
-        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$4, ")");
-        styles.left = "calc(".concat(size, " * ").concat(TO_SIDE_RATIO$1, ")");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    },
-    bottomRight: function bottomRight() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.height = size;
-        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$4, ")");
-        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$4, ")");
-        styles.top = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO$1, ")");
-        styles.left = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO$1, ")");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    },
-    bottom: function bottom() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.height = size;
-        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$4, ")");
-        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$4, ")");
-        styles.top = "calc(".concat(size, " * ").concat(TO_SIDE_RATIO$1, ")");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    },
-    bottomLeft: function bottomLeft() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.height = size;
-        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$4, ")");
-        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$4, ")");
-        styles.top = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO$1, ")");
-        styles.left = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO$1, " * -1)");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    },
-    left: function left() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.height = size;
-        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$4, ")");
-        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$4, ")");
-        styles.left = "calc(".concat(size, " * ").concat(TO_SIDE_RATIO$1, " * -1)");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    },
-    topLeft: function topLeft() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.height = size;
-        styles.width = "calc(".concat(size, " * ").concat(WIDTH_RATIO$4, ")");
-        styles.borderRadius = "calc(".concat(size, " * ").concat(BORDER_RATIO$4, ")");
-        styles.top = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO$1, " * -1)");
-        styles.left = "calc(".concat(size, " * ").concat(TO_CORNER_RATIO$1, " * -1)");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var CIRCLE_SIZE_RATIO = 10 / 50;
-var pacman = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "pacman vue-loaders",
-      style: _vm.root
-    }, [_c('div', {
-      style: _vm.bottom
-    }), _vm._v(" "), _c('div', {
-      style: _vm.top
-    }), _vm._v(" "), _c('div', {
-      style: _vm.circle
-    }), _vm._v(" "), _c('div', {
-      style: _vm.circle
-    }), _vm._v(" "), _c('div', {
-      style: _vm.circle
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'PacmanLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    root: function root() {
-      var size = this.size ? String(this.size) : null;
-
-      if (size) {
-        return {
-          borderRightWidth: "calc(70px + ".concat(CIRCLE_SIZE_RATIO, " * ").concat(size, " - ").concat(size, ")")
-        };
-      }
-    },
-    top: function top() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.borderWidth = styles.borderRadius = "calc(".concat(size, " / 2)");
-        styles.marginTop = "calc(".concat(size, " * -1)");
-      }
-
-      if (color) {
-        styles.borderTopColor = styles.borderLeftColor = styles.borderBottomColor = color;
-      }
-
-      return styles;
-    },
-    bottom: function bottom() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.borderWidth = styles.borderRadius = "calc(".concat(size, " / 2)");
-      }
-
-      if (color) {
-        styles.borderTopColor = styles.borderLeftColor = styles.borderBottomColor = color;
-      }
-
-      return styles;
-    },
-    circle: function circle() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-      var circleSize = "(".concat(size, " * ").concat(CIRCLE_SIZE_RATIO, ")");
-
-      if (size) {
-        styles.width = styles.height = "calc(".concat(circleSize, ")");
-        styles.top = "calc(".concat(size, " * 0.5 + ").concat(circleSize, " / -2 + 6.25px)");
-      }
-
-      if (color) {
-        styles.backgroundColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var semiCircleSpin = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "semi-circle-spin vue-loaders",
-      style: _vm.root
-    }, [_c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'SemiCircleSpinLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    root: function root() {
-      var size = this.size ? String(this.size) : null;
-
-      if (size) {
-        return {
-          width: size,
-          height: size
-        };
-      }
-    },
-    styles: function styles() {
-      var color = this.color ? String(this.color) : null;
-
-      if (color) {
-        return {
-          backgroundImage: "linear-gradient(transparent 0,transparent 70%,".concat(color, " 30%,").concat(color, " 100%)")
-        };
-      }
-    }
-  }
-};
-
-var squareSpin = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "square-spin vue-loaders"
-    }, [_c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'SquareSpinLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.width = styles.height = size;
-      }
-
-      if (color) {
-        styles.background = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-var triangleSkewSpin = {
-  render: function render() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c('div', {
-      staticClass: "triangle-skew-spin vue-loaders"
-    }, [_c('div', {
-      style: _vm.styles
-    })]);
-  },
-  staticRenderFns: [],
-  name: 'TriangleSkewSpinLoader',
-  props: {
-    size: String,
-    color: String
-  },
-  computed: {
-    styles: function styles() {
-      var size = this.size ? String(this.size) : null;
-      var color = this.color ? String(this.color) : null;
-
-      if (!color && !size) {
-        return;
-      }
-
-      var styles = {};
-
-      if (size) {
-        styles.borderLeftWidth = styles.borderRightWidth = styles.borderBottomWidth = "calc(".concat(size, " / 2)");
-      }
-
-      if (color) {
-        styles.borderBottomColor = color;
-      }
-
-      return styles;
-    }
-  }
-};
-
-function install(Vue) {
-  var compKeys = Object.keys(this).filter(function (key) {
-    return key !== 'install';
-  });
-  var ln = compKeys.length;
-
-  while (ln--) {
-    var component = this[compKeys[ln]];
-    Vue.component(component.name, component);
-  }
-}
-
-
-
-
-/***/ }),
-/* 242 */,
-/* 243 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(244);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(2)("b0c41526", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0c805055\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Home.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0c805055\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Home.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 244 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(1)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 245 */,
-/* 246 */,
-/* 247 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * vue-progressive-image v3.1.0
- * (c) 2018 Matteo Gabriele
- * Released under the ISC License.
- */
-!function(e,t){if(true)module.exports=t();else if("function"==typeof define&&define.amd)define([],t);else{var r=t();for(var n in r)("object"==typeof exports?exports:e)[n]=r[n]}}(this,function(){return function(e){function t(n){if(r[n])return r[n].exports;var i=r[n]={i:n,l:!1,exports:{}};return e[n].call(i.exports,i,i.exports,t),i.l=!0,i.exports}var r={};return t.m=e,t.c=r,t.d=function(e,r,n){t.o(e,r)||Object.defineProperty(e,r,{configurable:!1,enumerable:!0,get:n})},t.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(r,"a",r),r},t.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},t.p="",t(t.s=4)}([function(e,t){e.exports=function(){var e=[];return e.toString=function(){for(var e=[],t=0;t<this.length;t++){var r=this[t];r[2]?e.push("@media "+r[2]+"{"+r[1]+"}"):e.push(r[1])}return e.join("")},e.i=function(t,r){"string"==typeof t&&(t=[[null,t,""]]);for(var n={},i=0;i<this.length;i++){var a=this[i][0];"number"==typeof a&&(n[a]=!0)}for(i=0;i<t.length;i++){var o=t[i];"number"==typeof o[0]&&n[o[0]]||(r&&!o[2]?o[2]=r:r&&(o[2]="("+o[2]+") and ("+r+")"),e.push(o))}},e}},function(e,t,r){function n(e){for(var t=0;t<e.length;t++){var r=e[t],n=u[r.id];if(n){n.refs++;for(var i=0;i<n.parts.length;i++)n.parts[i](r.parts[i]);for(;i<r.parts.length;i++)n.parts.push(a(r.parts[i]));n.parts.length>r.parts.length&&(n.parts.length=r.parts.length)}else{for(var o=[],i=0;i<r.parts.length;i++)o.push(a(r.parts[i]));u[r.id]={id:r.id,refs:1,parts:o}}}}function i(){var e=document.createElement("style");return e.type="text/css",d.appendChild(e),e}function a(e){var t,r,n=document.querySelector('style[data-vue-ssr-id~="'+e.id+'"]');if(n){if(f)return g;n.parentNode.removeChild(n)}if(v){var a=h++;n=p||(p=i()),t=o.bind(null,n,a,!1),r=o.bind(null,n,a,!0)}else n=i(),t=s.bind(null,n),r=function(){n.parentNode.removeChild(n)};return t(e),function(n){if(n){if(n.css===e.css&&n.media===e.media&&n.sourceMap===e.sourceMap)return;t(e=n)}else r()}}function o(e,t,r,n){var i=r?"":n.css;if(e.styleSheet)e.styleSheet.cssText=m(t,i);else{var a=document.createTextNode(i),o=e.childNodes;o[t]&&e.removeChild(o[t]),o.length?e.insertBefore(a,o[t]):e.appendChild(a)}}function s(e,t){var r=t.css,n=t.media,i=t.sourceMap;if(n&&e.setAttribute("media",n),i&&(r+="\n/*# sourceURL="+i.sources[0]+" */",r+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(i))))+" */"),e.styleSheet)e.styleSheet.cssText=r;else{for(;e.firstChild;)e.removeChild(e.firstChild);e.appendChild(document.createTextNode(r))}}var l="undefined"!=typeof document;if("undefined"!=typeof DEBUG&&DEBUG&&!l)throw new Error("vue-style-loader cannot be used in a non-browser environment. Use { target: 'node' } in your Webpack config to indicate a server-rendering environment.");var c=r(8),u={},d=l&&(document.head||document.getElementsByTagName("head")[0]),p=null,h=0,f=!1,g=function(){},v="undefined"!=typeof navigator&&/msie [6-9]\b/.test(navigator.userAgent.toLowerCase());e.exports=function(e,t,r){f=r;var i=c(e,t);return n(i),function(t){for(var r=[],a=0;a<i.length;a++){var o=i[a],s=u[o.id];s.refs--,r.push(s)}t?(i=c(e,t),n(i)):i=[];for(var a=0;a<r.length;a++){var s=r[a];if(0===s.refs){for(var l=0;l<s.parts.length;l++)s.parts[l]();delete u[s.id]}}}};var m=function(){var e=[];return function(t,r){return e[t]=r,e.filter(Boolean).join("\n")}}()},function(e,t){e.exports=function(e,t,r,n){var i,a=e=e||{},o=typeof e.default;"object"!==o&&"function"!==o||(i=e,a=e.default);var s="function"==typeof a?a.options:a;if(t&&(s.render=t.render,s.staticRenderFns=t.staticRenderFns),r&&(s._scopeId=r),n){var l=Object.create(s.computed||null);Object.keys(n).forEach(function(e){var t=n[e];l[e]=function(){return t}}),s.computed=l}return{esModule:i,exports:a,options:s}}},function(e,t,r){"use strict";var n=r(10);t.a={props:{src:{type:null,required:!0},placeholder:{type:String},blur:{type:Number},aspectRatio:{type:Number},noRatio:{type:Boolean},fallback:{type:String},alt:{type:String}},data:function(){return{isRendered:!1,options:{cache:!0},defaultBlur:20,image:null,originalWidth:0,placeholderImage:null,aspectRatioDetect:.5625,isPollingKilled:!1,isImageCached:!1,imageError:!1}},watch:{src:function(){this.handleImageLoading()}},computed:{shouldPlaceholderRender:function(){return!!this.placeholderImage},shouldImageRender:function(){return this.isRendered},cached:function(){return this.options.cache&&this.isImageCached},calculatedRatio:function(){return this.aspectRatio||this.aspectRatioDetect},wrapperStyle:function(){return this.noRatio?{}:{paddingBottom:100*this.calculatedRatio+"%"}},componentStyle:function(){return{maxWidth:0===this.originalWidth?"100%":this.originalWidth+"px"}},blurStyle:function(){var e=this.defaultBlur;return Object(n.a)(this.blur)?this.getBlurStyle(this.blur):Object(n.a)(this.options.blur)?this.getBlurStyle(this.options.blur):this.getBlurStyle(e)}},mounted:function(){this.handleImageLoading()},methods:{getBlurStyle:function(e){if(0!==e)return{filter:"blur("+e+"px)"}},defineAspectRatio:function(e){var t=this,r=this.options.timeout||2500,n=this.options.pollInterval||10,i=setInterval(function(){if(e.naturalWidth){clearInterval(i);var r=e.naturalHeight,n=e.naturalWidth;t.aspectRatioDetect=r/n,t.originalWidth=n}},n);setTimeout(function(){e.naturalWidth||(clearInterval(i),t.isPollingKilled=!0)},r)},isCached:function(e){var t=new Image;return t.src=e,t.complete},loadImage:function(){var e=this,t=new Image,r=this.options.delay||0,n=this.fallback||this.options.fallback,i=this.imageError?n:this.src;this.options.cache&&this.isCached(i)?(this.image=i,this.placeholderImage=null,this.isImageCached=!0):(this.image=null,this.isImageCached=!1,this.isRendered=!1),this.aspectRatio||this.defineAspectRatio(t),t.onload=function(){if(!e.image){e.isPollingKilled&&!e.aspectRatio&&e.defineAspectRatio(t),e.image=i;var n=void 0;try{n=e.$refs.canvas.getContext("2d"),n.drawImage(e.$refs.main,0,0)}catch(e){}e.$nextTick(function(){setTimeout(function(){e.isRendered=!0,e.placeholderImage=null},r)}),e.imageError=!1,e.$emit("onLoad",t.src)}},t.onerror=function(t){e.$emit("onError",t),(e.fallback||e.options.fallback)&&(e.imageError=!0,e.handleImageLoading())},t.src=i},loadPlaceholder:function(){var e=this;if(this.placeholder||this.options.placeholder){var t=new Image,r=this.placeholder||this.options.placeholder;t.src=r,t.onload=function(){e.placeholderImage=r,e.$emit("onLoadPlaceholder",r)},t.onerror=function(t){e.$emit("onPlaceholderError",t)}}},handleImageLoading:function(){this.loadPlaceholder(),this.loadImage()}}}},function(e,t,r){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=r(5),i=r.n(n),a=r(12),o=r.n(a),s=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var n in r)Object.prototype.hasOwnProperty.call(r,n)&&(e[n]=r[n])}return e},l=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};return s({},e,{data:function(){return{options:t}}})},c=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};e.component("progressive-img",l(i.a,t)),e.component("progressive-background",l(o.a,t))};t.default={install:c}},function(e,t,r){r(6);var n=r(2)(r(9),r(11),null,null);e.exports=n.exports},function(e,t,r){var n=r(7);"string"==typeof n&&(n=[[e.i,n,""]]),n.locals&&(e.exports=n.locals),r(1)("c467ffae",n,!0)},function(e,t,r){t=e.exports=r(0)(),t.push([e.i,".progressive-image{position:relative;overflow:hidden;width:100%;display:inline-block}.canvas{visibility:hidden;position:absolute;top:0;left:0}.progressive-image-main{position:absolute;top:0;left:0;width:100%;height:auto;z-index:1;transition-duration:.3s;transition-property:all;transition-timing-function:ease-out;transform:translateZ(0)}.progressive-image-before-enter{opacity:1}.progressive-image-enter{opacity:0}.progressive-image-placeholder{position:absolute;top:0;left:0;z-index:0;overflow:hidden;transition-duration:.3s;transition-property:all;transition-timing-function:ease-out;backface-visibility:hidden;transform:translateZ(0) scale(1.1);width:100%;height:100%;background-size:cover}.progressive-image-placeholder-out{transition-duration:inherit;transition-property:all;transition-timing-function:ease-out;transition-delay:.4s;opacity:0}.progressive-image-preloader{pointer-events:none;position:absolute;top:0;left:0;width:100%;height:100%;z-index:2}",""])},function(e,t){e.exports=function(e,t){for(var r=[],n={},i=0;i<t.length;i++){var a=t[i],o=a[0],s=a[1],l=a[2],c=a[3],u={id:e+":"+i,css:s,media:l,sourceMap:c};n[o]?n[o].parts.push(u):r.push(n[o]={id:o,parts:[u]})}return r}},function(e,t,r){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=r(3),i=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var n in r)Object.prototype.hasOwnProperty.call(r,n)&&(e[n]=r[n])}return e};t.default={name:"progressive-img",props:{imageCustomClass:{type:String}},mixins:[n.a],computed:{placeholderStyle:function(){return i({},this.blurStyle,{"background-image":"url("+(this.placeholder||this.options.placeholder)+")"})}}}},function(e,t,r){"use strict";r.d(t,"a",function(){return n});var n=function(e){return void 0!==e&&null!==e}},function(e,t){e.exports={render:function(){var e=this,t=e.$createElement,r=e._self._c||t;return r("div",{ref:"image",staticClass:"progressive-image",style:e.componentStyle},[e.cached?r("div",{staticClass:"progressive-image-wrapper",style:e.wrapperStyle},[r("img",{class:["progressive-image-main",e.imageCustomClass],attrs:{src:e.image,alt:e.alt}})]):r("span",[e.shouldImageRender?e._e():r("canvas",{ref:"canvas",staticClass:"canvas",attrs:{width:"1",height:"1"}}),e._v(" "),r("div",{staticClass:"progressive-image-wrapper",style:e.wrapperStyle},[r("transition",{attrs:{"enter-class":"progressive-image-enter","enter-active-class":"progressive-image-before-enter"}},[r("img",{directives:[{name:"show",rawName:"v-show",value:e.shouldImageRender,expression:"shouldImageRender"}],ref:"main",class:["progressive-image-main",e.imageCustomClass],attrs:{src:e.image,alt:e.alt}})]),e._v(" "),r("transition",{attrs:{"enter-class":"progressive-image-enter","enter-active-class":"progressive-image-before-enter"}},[e.shouldPlaceholderRender?r("div",{staticClass:"progressive-image-placeholder",class:{"progressive-image-placeholder-out":e.shouldImageRender},style:e.placeholderStyle}):e._e()])],1)])])},staticRenderFns:[]}},function(e,t,r){var n={};n.$style=r(13);var i=r(2)(r(15),r(16),null,n);e.exports=i.exports},function(e,t,r){var n=r(14);"string"==typeof n&&(n=[[e.i,n,""]]),n.locals&&(e.exports=n.locals),r(1)("b4050912",n,!0)},function(e,t,r){t=e.exports=r(0)(),t.push([e.i,"._2BthHRY48Qth9Ja9ecuFEQ_0{position:relative;width:100%;height:100%;overflow:hidden}._30VsZs3N14iSeemk3xHHZL_0{position:relative;z-index:1}._3em-Y1_N-m7q8CbVUFEIzb_0{visibility:hidden;position:absolute;top:0;left:0}.arZxkKg-w3Qec3gGdgaPh_0{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;transition:all .4s ease-out;background-position:50%;background-repeat:no-repeat;background-size:cover}._2WZ48QHYw0iFj9daPgvHd_0{transform:scale(1.1);z-index:0}._10rgjDNoIpLvLRaxZc7CL0_0{opacity:1}._2Dw5nQ56jB5hJmnsvE24Be_0{opacity:0}._2g5nJIWy9OjBBWk-StL8LD_0{pointer-events:none;position:absolute;top:0;left:0;width:100%;height:100%;z-index:2}",""]),t.locals={component:"_2BthHRY48Qth9Ja9ecuFEQ_0",slot:"_30VsZs3N14iSeemk3xHHZL_0",canvas:"_3em-Y1_N-m7q8CbVUFEIzb_0",image:"arZxkKg-w3Qec3gGdgaPh_0",placeholder:"_2WZ48QHYw0iFj9daPgvHd_0 arZxkKg-w3Qec3gGdgaPh_0",before:"_10rgjDNoIpLvLRaxZc7CL0_0",enter:"_2Dw5nQ56jB5hJmnsvE24Be_0","progressive-image-preloader":"_2g5nJIWy9OjBBWk-StL8LD_0"}},function(e,t,r){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=r(3),i=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var n in r)Object.prototype.hasOwnProperty.call(r,n)&&(e[n]=r[n])}return e};t.default={name:"progressive-background",props:{noRatio:{type:Boolean,required:!1}},mixins:[n.a],data:function(){return{applyRatio:!this.noRatio}},computed:{imageStyle:function(){return{backgroundImage:"url("+this.image+")"}},placeholderStyle:function(){return i({},this.blurStyle,{backgroundImage:"url("+this.placeholderImage+")"})}}}},function(e,t){e.exports={render:function(){var e=this,t=e.$createElement,r=e._self._c||t;return r("div",{class:e.$style.component},[e.cached?r("div",{style:e.wrapperStyle},[r("div",{class:e.$style.image,style:e.imageStyle}),e._v(" "),r("div",{class:e.$style.slot},[e._t("content")],2)]):r("span",[e.shouldImageRender?e._e():r("div",[r("canvas",{ref:"canvas",staticClass:"canvas",attrs:{width:"1",height:"1"}}),e._v(" "),r("img",{ref:"main",attrs:{src:e.image,hidden:""}})]),e._v(" "),r("div",{style:e.wrapperStyle},[r("transition",{attrs:{"enter-class":e.$style.enter,"enter-active-class":e.$style.before}},[e.shouldImageRender?r("div",{class:e.$style.image,style:e.imageStyle}):e._e()]),e._v(" "),r("div",{class:e.$style.slot},[e._t("content",null,{visible:!e.shouldImageRender})],2),e._v(" "),r("transition",{attrs:{"enter-class":e.$style.enter,"enter-active-class":e.$style.before}},[e.shouldPlaceholderRender?r("div",{class:e.$style.placeholder,style:e.placeholderStyle}):e._e()])],1)])])},staticRenderFns:[]}}])});
-
-/***/ }),
-/* 248 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(249);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(2)("6567224c", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8fe1b9f2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./About.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8fe1b9f2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./About.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 249 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(1)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.arZxkKg-w3Qec3gGdgaPh_0 {\n    background-position: center center; \n    background-repeat: no-repeat; \n    background-size: cover; \n    background-attachment: fixed;\n}\n", ""]);
-
-// exports
-
 
 /***/ })
 /******/ ]);

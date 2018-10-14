@@ -11,6 +11,7 @@ class AppStorage {
     store (user, token) {
         this.storeToken(token)
         this.storeUser(user)
+        console.log('here 3');
     }
 
     clear () {
