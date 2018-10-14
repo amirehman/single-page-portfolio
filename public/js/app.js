@@ -14253,8 +14253,6 @@ __WEBPACK_IMPORTED_MODULE_3__Helpers_User__["a" /* default */].hasToken();
 
 Vue.component('AppHome', __webpack_require__(227));
 Vue.component('SideNav', __webpack_require__(232));
-//  Vue.component('AddProjectElement', require('./components/backend/Projects/AddProjectElements.vue'));
-
 
 var app = new Vue({
   el: '#app',
@@ -37385,17 +37383,18 @@ var User = function () {
             }).catch(function (error) {
                 return console.log(error.response.data);
             });
-            console.log('here');
         }
     }, {
         key: 'responseAfterLogin',
         value: function responseAfterLogin(res) {
             var access_token = res.data.access_token;
             var username = res.data.user;
-            console.log('here 2');
+
             if (__WEBPACK_IMPORTED_MODULE_0__Token__["a" /* default */].isValid(access_token)) {
                 __WEBPACK_IMPORTED_MODULE_1__AppStorage__["a" /* default */].store(username, access_token);
-                //window.location = '/me/dashboard'
+                window.location = '/me/dashboard';
+            } else {
+                console.log('you are here');
             }
         }
     }, {
@@ -37469,7 +37468,7 @@ var Token = function () {
         value: function isValid(token) {
             var payload = this.payload(token);
             if (payload) {
-                return payload.iss == "http://127.0.0.1:8000/api/auth/login" ? true : false;
+                return payload.iss == "http://45.32.60.134/api/auth/login" ? true : false;
             }
 
             return false;
@@ -37521,7 +37520,6 @@ var AppStorage = function () {
         value: function store(user, token) {
             this.storeToken(token);
             this.storeUser(user);
-            console.log('here 3');
         }
     }, {
         key: 'clear',

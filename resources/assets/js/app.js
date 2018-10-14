@@ -28,8 +28,6 @@ import router from './Router/router.js'
 
  Vue.component('AppHome', require('./components/backend/AppHome.vue'));
  Vue.component('SideNav', require('./components/backend/SideNav.vue'));
-//  Vue.component('AddProjectElement', require('./components/backend/Projects/AddProjectElements.vue'));
-
 
   
 
