@@ -15,13 +15,13 @@
                             <h3 class="is-marginless is-size-3">{{project.title}}</h3>
                             <p>{{project.detail}}</p>
 
-                            <div class="single-elemets" v-if="!loading">
+                            <div class="single-elemets aaa" v-if="!loading">
                                 <h4 class="is-size-5" >Elemets used in this project</h4>
                                 <ul>
                                     <li class="button m-r-5 is-radiusless" v-for="element in elements">
                                         <a target="_blank" :href="`${element.link}`">{{element.name}}</a>
                                     </li>
-                                </ul>
+                                </ul>g
                             </div>
                             <div class="single-link" v-if="!loading">
                                 <h4 v-if="project.link" class="is-size-5" >Project Live Link</h4>

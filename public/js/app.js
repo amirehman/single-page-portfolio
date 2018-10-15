@@ -81091,7 +81091,7 @@ var render = function() {
                     _c("p", [_vm._v(_vm._s(_vm.project.detail))]),
                     _vm._v(" "),
                     !_vm.loading
-                      ? _c("div", { staticClass: "single-elemets" }, [
+                      ? _c("div", { staticClass: "single-elemets aaa" }, [
                           _c("h4", { staticClass: "is-size-5" }, [
                             _vm._v("Elemets used in this project")
                           ]),
@@ -81116,7 +81116,8 @@ var render = function() {
                                 ]
                               )
                             })
-                          )
+                          ),
+                          _vm._v("g\n                        ")
                         ])
                       : _vm._e(),
                     _vm._v(" "),
