@@ -24,8 +24,8 @@
                                 </ul>
                             </div>
                             <div class="single-link" v-if="!loading">
-                                <h4 class="is-size-5" >Project Live Link</h4>
-                                <p><a href="" target="_blank">www.google.com</a> <i class="fa fa-external-link"> </i></p>
+                                <h4 v-if="project.link" class="is-size-5" >Project Live Link</h4>
+                                <p v-if="project.link"><a :href="project.link" target="_blank">{{project.link}}</a> <i class="fa fa-external-link"> </i></p>
                             </div>
                         </header>
                         <hr v-if="!loading">

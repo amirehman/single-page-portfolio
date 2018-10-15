@@ -81122,11 +81122,28 @@ var render = function() {
                     _vm._v(" "),
                     !_vm.loading
                       ? _c("div", { staticClass: "single-link" }, [
-                          _c("h4", { staticClass: "is-size-5" }, [
-                            _vm._v("Project Live Link")
-                          ]),
+                          _vm.project.link
+                            ? _c("h4", { staticClass: "is-size-5" }, [
+                                _vm._v("Project Live Link")
+                              ])
+                            : _vm._e(),
                           _vm._v(" "),
-                          _vm._m(0)
+                          _vm.project.link
+                            ? _c("p", [
+                                _c(
+                                  "a",
+                                  {
+                                    attrs: {
+                                      href: _vm.project.link,
+                                      target: "_blank"
+                                    }
+                                  },
+                                  [_vm._v(_vm._s(_vm.project.link))]
+                                ),
+                                _vm._v(" "),
+                                _c("i", { staticClass: "fa fa-external-link" })
+                              ])
+                            : _vm._e()
                         ])
                       : _vm._e()
                   ]),
@@ -81196,20 +81213,7 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", [
-      _c("a", { attrs: { href: "", target: "_blank" } }, [
-        _vm._v("www.google.com")
-      ]),
-      _vm._v(" "),
-      _c("i", { staticClass: "fa fa-external-link" })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
