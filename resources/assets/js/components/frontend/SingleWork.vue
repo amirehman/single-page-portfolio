@@ -21,7 +21,7 @@
                                     <li class="button m-r-5 is-radiusless" v-for="element in elements">
                                         <a target="_blank" :href="`${element.link}`">{{element.name}}</a>
                                     </li>
-                                </ul>g
+                                </ul>
                             </div>
                             <div class="single-link" v-if="!loading">
                                 <h4 v-if="project.link" class="is-size-5" >Project Live Link</h4>

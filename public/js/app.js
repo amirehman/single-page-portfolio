@@ -81116,8 +81116,7 @@ var render = function() {
                                 ]
                               )
                             })
-                          ),
-                          _vm._v("g\n                        ")
+                          )
                         ])
                       : _vm._e(),
                     _vm._v(" "),
