@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="container  m-t-0">
+        <div class="container  m-t-30">
             <div class="columns">
 
                 <div class="column is-8">
@@ -28,6 +28,13 @@
                                     <span class="m-b-5 is-block has-text-weight-semibold">Thumbnail</span>
                                     <input name="image" type="file" class="input is-radiusless is-shadowless" @change="addImage">
                                     <p class="help is-danger" v-if="errors.thumbnail">{{errors.thumbnail[0]}}</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-l-0">
+                                    <span class="m-b-5 is-block has-text-weight-semibold">Target Link</span>
+                                    <input type="url" class="input is-radiusless is-shadowless" v-model="project.link">
+                                    <p class="help is-danger" v-if="errors.link">{{errors.thumbnail[0]}}</p>
                                 </td>
                             </tr>
                             <tr>
@@ -123,6 +130,7 @@
                         title: this.project.title,
                         date: this.project.date,
                         image: this.project.image,
+                        link: this.project.link,
                         detail: this.project.detail,
                         elements: this.selectedElements
                     })

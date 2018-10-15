@@ -25,3 +25,11 @@
 [v-cloak] {
     display: none;
   }
+
+
+  .pad-sm {
+    @include screentwo-max {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

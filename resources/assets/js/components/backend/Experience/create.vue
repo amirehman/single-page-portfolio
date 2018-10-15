@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="container  m-t-0">
+        <div class="container  m-t-15">
             <div class="column is-8">
                 <p class="subtitle has-text-grey">Add New Experience
                         <a @click="$router.go(-1)" class="is-small button is-pulled-right  m-r-15">Go Back ↵</a>

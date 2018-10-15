@@ -3,7 +3,7 @@
     
         <div class="container">
     
-            <div class="container  m-t-0">
+            <div class="container  m-t-30">
                 <div class="columns">
     
                     <div class="column is-6">

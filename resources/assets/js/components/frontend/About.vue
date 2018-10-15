@@ -4,7 +4,7 @@
             <top-navbar></top-navbar>
 
         <div class="about-wrapper">
-            <div class="container">
+            <div class="container pad-col">
                 <div class="columns">
                     <div class="column is-8">
                         <div class="inner-wrapper">

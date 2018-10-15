@@ -17,6 +17,7 @@ class CreateProjectsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('slug');
+            $table->string('link');
             $table->text('detail');
             $table->string('image');
             $table->integer('likes');

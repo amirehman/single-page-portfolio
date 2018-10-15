@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="container  m-t-0">
+        <div class="container  m-t-15">
             <div class="column is-8">
                 <p class="subtitle has-text-grey">Add Project
                     <a @click="$router.go(-1)" class="is-small button is-pulled-right  m-r-15">Go Back ↵</a>
@@ -31,6 +31,13 @@
                             </tr>
                             <tr>
                                 <td class="p-l-0">
+                                    <span class="m-b-5 is-block has-text-weight-semibold">Target Link</span>
+                                    <input type="url" class="input is-radiusless is-shadowless" v-model="project.link">
+                                    <p class="help is-danger" v-if="errors.link">{{errors.thumbnail[0]}}</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-l-0">
                                     <span class="m-b-5 is-block has-text-weight-semibold">Detail</span>
                                     <textarea name="detail" class="textarea is-radiusless is-shadowless" v-model="project.detail"></textarea>
                                 </td>
@@ -57,7 +64,8 @@
                     title: "",
                     date: "",
                     detail: "",
-                    image: ""
+                    image: "",
+                    link: ""
                 },
                 errors: {}
     
@@ -76,6 +84,7 @@
                         title: this.project.title,
                         date: this.project.date,
                         image: this.project.image,
+                        link: this.project.link,
                         detail: this.project.detail
                     })
                     .then(response => {

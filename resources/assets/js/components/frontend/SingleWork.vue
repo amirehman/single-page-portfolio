@@ -5,7 +5,7 @@
     
         <div class="single-wrapper">
          
-        <div class="container">
+        <div class="container pad-col">
             <div class="columns">
                 <div class="column is-8">
                     <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="5px"></ball-pulse-sync-loader>
@@ -22,6 +22,10 @@
                                         <a target="_blank" :href="`${element.link}`">{{element.name}}</a>
                                     </li>
                                 </ul>
+                            </div>
+                            <div class="single-link" v-if="!loading">
+                                <h4 class="is-size-5" >Project Live Link</h4>
+                                <p><a href="" target="_blank">www.google.com</a> <i class="fa fa-external-link"> </i></p>
                             </div>
                         </header>
                         <hr v-if="!loading">

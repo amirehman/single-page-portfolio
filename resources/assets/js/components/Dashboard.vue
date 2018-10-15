@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="container  m-t-0">
+        <div class="container  m-t-15">
             <div class="column is-12">
                 <p class="subtitle has-text-grey">Dashboard</p>
     

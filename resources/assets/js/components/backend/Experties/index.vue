@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="container  m-t-0">
+        <div class="container  m-t-15">
             <div class="column is-8" v-if="!editing">
                 <p class="subtitle has-text-grey">Add New Expertie    
                     <router-link to="/me/dashboard" class="is-small button is-pulled-right">Dashboard</router-link>

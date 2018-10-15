@@ -57833,7 +57833,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "container  m-t-0" }, [
+    _c("div", { staticClass: "container  m-t-15" }, [
       _c("div", { staticClass: "column is-12" }, [
         _c("p", { staticClass: "subtitle has-text-grey" }, [
           _vm._v("Dashboard")
@@ -58223,7 +58223,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "container  m-t-0" }, [
+    _c("div", { staticClass: "container  m-t-15" }, [
       _c("div", { staticClass: "column is-8" }, [
         _c(
           "p",
@@ -58406,7 +58406,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -58420,6 +58420,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuejs_datepicker__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Pages_index_vue__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Pages_index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__Pages_index_vue__);
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -58552,6 +58559,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 title: this.project.title,
                 date: this.project.date,
                 image: this.project.image,
+                link: this.project.link,
                 detail: this.project.detail,
                 elements: this.selectedElements
             }).then(function (response) {
@@ -58947,7 +58955,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "container  m-t-0" }, [
+    _c("div", { staticClass: "container  m-t-30" }, [
       _c("div", { staticClass: "columns" }, [
         _c("div", { staticClass: "column is-8" }, [
           _c(
@@ -59084,6 +59092,47 @@ var render = function() {
                         }),
                         _vm._v(" "),
                         _vm.errors.thumbnail
+                          ? _c("p", { staticClass: "help is-danger" }, [
+                              _vm._v(_vm._s(_vm.errors.thumbnail[0]))
+                            ])
+                          : _vm._e()
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticClass: "p-l-0" }, [
+                        _c(
+                          "span",
+                          {
+                            staticClass:
+                              "m-b-5 is-block has-text-weight-semibold"
+                          },
+                          [_vm._v("Target Link")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.project.link,
+                              expression: "project.link"
+                            }
+                          ],
+                          staticClass: "input is-radiusless is-shadowless",
+                          attrs: { type: "url" },
+                          domProps: { value: _vm.project.link },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(_vm.project, "link", $event.target.value)
+                            }
+                          }
+                        }),
+                        _vm._v(" "),
+                        _vm.errors.link
                           ? _c("p", { staticClass: "help is-danger" }, [
                               _vm._v(_vm._s(_vm.errors.thumbnail[0]))
                             ])
@@ -59359,7 +59408,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -59421,6 +59470,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -59430,7 +59486,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 title: "",
                 date: "",
                 detail: "",
-                image: ""
+                image: "",
+                link: ""
             },
             errors: {}
 
@@ -59452,6 +59509,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 title: this.project.title,
                 date: this.project.date,
                 image: this.project.image,
+                link: this.project.link,
                 detail: this.project.detail
             }).then(function (response) {
                 _this.$toast.open({
@@ -59487,7 +59545,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "container  m-t-0" }, [
+    _c("div", { staticClass: "container  m-t-15" }, [
       _c("div", { staticClass: "column is-8" }, [
         _c(
           "p",
@@ -59620,6 +59678,46 @@ var render = function() {
                       }),
                       _vm._v(" "),
                       _vm.errors.thumbnail
+                        ? _c("p", { staticClass: "help is-danger" }, [
+                            _vm._v(_vm._s(_vm.errors.thumbnail[0]))
+                          ])
+                        : _vm._e()
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", { staticClass: "p-l-0" }, [
+                      _c(
+                        "span",
+                        {
+                          staticClass: "m-b-5 is-block has-text-weight-semibold"
+                        },
+                        [_vm._v("Target Link")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.project.link,
+                            expression: "project.link"
+                          }
+                        ],
+                        staticClass: "input is-radiusless is-shadowless",
+                        attrs: { type: "url" },
+                        domProps: { value: _vm.project.link },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(_vm.project, "link", $event.target.value)
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _vm.errors.link
                         ? _c("p", { staticClass: "help is-danger" }, [
                             _vm._v(_vm._s(_vm.errors.thumbnail[0]))
                           ])
@@ -60014,7 +60112,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "container  m-t-0" }, [
+    _c("div", { staticClass: "container  m-t-15" }, [
       !_vm.editing
         ? _c("div", { staticClass: "column is-8" }, [
             _c(
@@ -60607,7 +60705,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "container  m-t-0" }, [
+    _c("div", { staticClass: "container  m-t-15" }, [
       _c("div", { staticClass: "column is-8" }, [
         _c(
           "p",
@@ -61059,7 +61157,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "container  m-t-0" }, [
+      _c("div", { staticClass: "container  m-t-30" }, [
         _c("div", { staticClass: "columns" }, [
           _c("div", { staticClass: "column is-6" }, [
             _c(
@@ -61625,7 +61723,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "container  m-t-0" }, [
+    _c("div", { staticClass: "container  m-t-15" }, [
       !_vm.editing
         ? _c("div", { staticClass: "column is-8" }, [
             _c(
@@ -62343,7 +62441,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "container  m-t-0" }, [
+    _c("div", { staticClass: "container  m-t-15" }, [
       _c("div", { staticClass: "column is-8" }, [
         _c(
           "p",
@@ -62663,7 +62761,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "container  m-t-0" }, [
+    _c("div", { staticClass: "container  m-t-15" }, [
       _c("div", { staticClass: "column is-8" }, [
         _c(
           "p",
@@ -63647,7 +63745,7 @@ var render = function() {
   return _c("div", [
     _c(
       "div",
-      { staticClass: "container  m-t-0" },
+      { staticClass: "container  m-t-15" },
       [
         _c("div", { staticClass: "column is-8" }, [
           _c(
@@ -64396,7 +64494,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "container  m-t-0" }, [
+    _c("div", { staticClass: "container  m-t-15" }, [
       !_vm.editing
         ? _c("div", { staticClass: "column is-8" }, [
             _c(
@@ -78881,7 +78979,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "container  m-t-15" }, [
+    _c("div", { staticClass: "container  m-t-30" }, [
       _c("div", { staticClass: "columns" }, [
         _c("div", { staticClass: "column is-8" }, [
           _c(
@@ -79427,7 +79525,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "container  m-t-0" }, [
+    _c("div", { staticClass: "container  m-t-15" }, [
       _c("div", { staticClass: "column is-8" }, [
         _c(
           "p",
@@ -80645,7 +80743,7 @@ var render = function() {
     [
       _c("top-navbar"),
       _vm._v(" "),
-      _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "container pad-col" }, [
         _vm._m(0),
         _vm._v(" "),
         _c("div", { staticClass: "columns" }, [
@@ -80886,6 +80984,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -80958,7 +81060,7 @@ var render = function() {
       _c("top-navbar"),
       _vm._v(" "),
       _c("div", { staticClass: "single-wrapper" }, [
-        _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "container pad-col" }, [
           _c("div", { staticClass: "columns" }, [
             _c(
               "div",
@@ -81015,6 +81117,16 @@ var render = function() {
                               )
                             })
                           )
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    !_vm.loading
+                      ? _c("div", { staticClass: "single-link" }, [
+                          _c("h4", { staticClass: "is-size-5" }, [
+                            _vm._v("Project Live Link")
+                          ]),
+                          _vm._v(" "),
+                          _vm._m(0)
                         ])
                       : _vm._e()
                   ]),
@@ -81084,7 +81196,20 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _c("a", { attrs: { href: "", target: "_blank" } }, [
+        _vm._v("www.google.com")
+      ]),
+      _vm._v(" "),
+      _c("i", { staticClass: "fa fa-external-link" })
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -82750,7 +82875,7 @@ var render = function() {
       _c("top-navbar"),
       _vm._v(" "),
       _c("div", { staticClass: "about-wrapper" }, [
-        _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "container pad-col" }, [
           _c("div", { staticClass: "columns" }, [
             _c("div", { staticClass: "column is-8" }, [
               _c(
@@ -83287,7 +83412,7 @@ var render = function() {
       _c("top-navbar"),
       _vm._v(" "),
       _c("div", { staticClass: "contact-wrapper" }, [
-        _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "container pad-col" }, [
           _c("div", { staticClass: "columns" }, [
             _c("div", { staticClass: "column is-8" }, [
               _vm._m(0),

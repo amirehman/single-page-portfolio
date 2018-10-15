@@ -3,7 +3,7 @@
     
         <top-navbar></top-navbar>
     
-        <div class="container">
+        <div class="container pad-col">
             <div class="work-header">
                 <div class="content text-center">
                     <div class="columns">

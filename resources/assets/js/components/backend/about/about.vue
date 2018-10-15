@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="container  m-t-15">
+        <div class="container  m-t-30">
             <div class="columns">
                 <div class="column is-8">
                     <p class="subtitle has-text-grey">About
