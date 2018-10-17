@@ -2,9 +2,10 @@ class Token {
 
 
     isValid(token){
+        token = 'bearer '+token;
         const payload = this.payload(token);
         if(payload){
-            return payload.iss == "http://www.amirr.net/api/auth/login" ? true : false
+            return payload.iss == "https://amirr.net/api/auth/login" ? true : false
         }
 
         return false
