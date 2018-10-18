@@ -49700,24 +49700,23 @@ var Token = function () {
     }
 
     _createClass(Token, [{
-        key: 'isValid',
+        key: "isValid",
         value: function isValid(token) {
-            token = 'bearer ' + token;
             var payload = this.payload(token);
             if (payload) {
-                return payload.iss == "https://amirr.net/api/auth/login" ? true : false;
+                return payload.iss == "http://45.77.65.13/api/auth/login" ? true : false;
             }
 
             return false;
         }
     }, {
-        key: 'payload',
+        key: "payload",
         value: function payload(token) {
             var payload = token.split('.')[1];
             return this.decode(payload);
         }
     }, {
-        key: 'decode',
+        key: "decode",
         value: function decode(payload) {
             return JSON.parse(atob(payload));
         }
