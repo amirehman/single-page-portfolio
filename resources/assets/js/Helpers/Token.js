@@ -5,7 +5,7 @@ class Token {
         token = 'bearer '+token;
         const payload = this.payload(token);
         if(payload){
-            return payload.iss == "https://amirr.net/api/auth/login" ? true : false
+            return payload.iss == "http://amirr.net/api/auth/login" ? true : false
         }
 
         return false
