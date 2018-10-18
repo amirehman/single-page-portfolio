@@ -73,7 +73,7 @@
         data() {
             return {
                 project: {},
-                baseURL: "http://45.32.60.134/",
+                baseURL: "http://45.77.65.13/",
                 elements: {},
                 pages: {},
                 loading: true,

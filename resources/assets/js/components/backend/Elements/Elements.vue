@@ -136,6 +136,7 @@
                         link: this.element.link
                     })
                     .then(response => {
+                        this.getElements()
                         this.$toast.open({
                             duration: 800,
                             message: 'Element Added Successfully',
@@ -144,7 +145,6 @@
                     })
                 this.element.name = ""
                 this.element.link = "http://"
-                this.getElements()
             },
             cancelEdit() {
                 this.editing = false

@@ -95,7 +95,7 @@
                 elements: [],
                 selectedElements: [11, 12],
                 errors: {},
-                baseURL: "http://45.32.60.134/"
+                baseURL: "http://45.77.65.13/"
             }
         },
         created() {

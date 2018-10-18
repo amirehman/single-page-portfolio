@@ -16,7 +16,7 @@ class CreateProjectPagesTable extends Migration
         Schema::create('project_pages', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->text('detail');
+            $table->text('detail')->nullable();
             $table->string('image');
 
             $table->integer('project_id')->unsigned();
