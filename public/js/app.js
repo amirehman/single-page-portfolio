@@ -49704,7 +49704,7 @@ var Token = function () {
         value: function isValid(token) {
             var payload = this.payload(token);
             if (payload) {
-                return payload.iss == "http://45.77.65.13/api/auth/login" ? true : false;
+                return payload.iss == "http://www.amirr.net/api/auth/login" ? true : false;
             }
 
             return false;
@@ -58517,7 +58517,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             elements: [],
             selectedElements: [11, 12],
             errors: {},
-            baseURL: "http://45.32.60.134/"
+            baseURL: "http://45.77.65.13/"
         };
     },
     created: function created() {
@@ -58769,7 +58769,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {
             project: "",
             pages: "",
-            baseURL: "http://45.32.60.134/"
+            baseURL: "http://45.77.65.13/"
         };
     },
     created: function created() {
@@ -60035,6 +60035,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 slug: this.element.name,
                 link: this.element.link
             }).then(function (response) {
+                _this2.getElements();
                 _this2.$toast.open({
                     duration: 800,
                     message: 'Element Added Successfully',
@@ -60043,7 +60044,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             });
             this.element.name = "";
             this.element.link = "http://";
-            this.getElements();
         },
         cancelEdit: function cancelEdit() {
             this.editing = false;
@@ -61060,7 +61060,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             page: {},
             dropfile: "",
             errors: {},
-            baseURL: "http://45.32.60.134/"
+            baseURL: "http://45.77.65.13/"
 
         };
     },
@@ -65341,7 +65341,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             },
             dropFiles: {},
             errors: {},
-            baseURL: "http://45.32.60.134/"
+            baseURL: "http://45.77.65.13/"
 
         };
     },
@@ -80107,7 +80107,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             },
             profile: {},
             loading: true,
-            backgroundImgUrl: "http://45.32.60.134/images/assets/",
+            backgroundImgUrl: "http://45.77.65.13/images/assets/",
             bodyimage: 'round.png'
         };
     },
@@ -80420,7 +80420,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             projects: {},
-            baseURL: "http://45.32.60.134/",
+            baseURL: "http://45.77.65.13/",
             loading: true
 
         };
@@ -80995,7 +80995,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             project: {},
-            baseURL: "http://45.32.60.134/",
+            baseURL: "http://45.77.65.13/",
             elements: {},
             pages: {},
             loading: true,
@@ -81489,7 +81489,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             },
             experties: {},
             expertiesTypes: {},
-            backgroundImgUrl: "http://45.32.60.134/images/",
+            backgroundImgUrl: "http://45.77.65.13/images/",
             experiences: {},
             educations: {},
             loading: true
