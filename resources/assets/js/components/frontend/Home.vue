@@ -8,7 +8,7 @@
                 <div class="about-info">
 
                     <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="8px"></ball-pulse-sync-loader>
-                    <h2 v-cloak class="intro info dynamic-content" @click="handleClicks" v-html="general.intro"></h2>
+                    <h2 v-cloak class="info dynamic-content" @click="handleClicks" v-html="general.intro"></h2>
 
                     <div class="about-photo">
                         <img :src="`${baseURL}${general.dp}`" alt="image">

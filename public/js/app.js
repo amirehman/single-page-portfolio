@@ -80233,7 +80233,7 @@ var render = function() {
                 : _vm._e(),
               _vm._v(" "),
               _c("h2", {
-                staticClass: "intro info dynamic-content",
+                staticClass: "info dynamic-content",
                 domProps: { innerHTML: _vm._s(_vm.general.intro) },
                 on: { click: _vm.handleClicks }
               }),

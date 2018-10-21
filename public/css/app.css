@@ -39555,7 +39555,7 @@ small,
   border-bottom-color: #f3c195;
 }
 
-.front-cover .about-info h2 {
+.front-cover .about-info h2.info {
   font-size: 26px;
   line-height: 36px;
   font-family: "Open Sans", sans-serif;
@@ -39563,7 +39563,7 @@ small,
   position: relative;
 }
 
-.front-cover .about-info h2:before {
+.front-cover .about-info h2.info:before {
   content: "Hey there!";
   left: -50px;
   top: -30px;
@@ -39575,13 +39575,13 @@ small,
   font-weight: bolder;
 }
 
-.front-cover .about-info h2 a {
-  color: #2c3e50;
+.front-cover .about-info h2.info a {
+  color: #2c3e50 !important;
   display: inline-block;
   position: relative;
 }
 
-.front-cover .about-info h2 a:after {
+.front-cover .about-info h2.info a:after {
   content: "";
   position: absolute;
   left: 0px;
@@ -39589,18 +39589,19 @@ small,
   width: 100%;
   height: 1px;
   opacity: 0;
+  display: none;
   background-color: #ffa76d;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.front-cover .about-info h2 a:hover {
-  color: #d35400;
+.front-cover .about-info h2.info a:hover {
+  color: #d35400 !important;
 }
 
-.front-cover .about-info h2 a:hover:after {
+.front-cover .about-info h2.info a:hover:after {
   width: 50%;
-  opacity: 1;
+  opacity: 0;
   left: 25%;
 }
 
