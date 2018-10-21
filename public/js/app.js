@@ -80131,7 +80131,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             },
             profile: {},
             loading: true,
-            baseURL: "http:45.77.65.13/images/",
+            baseURL: "http://45.77.65.13/images/",
             bodyimage: 'round.png',
             NavIsActive: false
         };
