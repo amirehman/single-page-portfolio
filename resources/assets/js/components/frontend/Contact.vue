@@ -69,7 +69,7 @@
     
                                     <div class="has-text-centered">
                                         <h5 class="is-size-5 has-text-grey">write to
-                                            <a href="mailto:hi@amirrehman.com" class="email-link">hi@amirrehman.com</a>
+                                            <a href="mailto:hi@amirrehman.com" class="email-link">hi@amirr.net</a>
                                         </h5>
                                     </div>
     

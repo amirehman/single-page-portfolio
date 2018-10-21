@@ -1,7 +1,7 @@
 <template>
     <div>
     
-        <section class="front-cover" :style="{ 'background-image': 'url(' + baseURL + 'assets/' + bodyimage + ')'}">
+        <section class="front-cover">
             <div class="hero is-fullheight">
 
 
