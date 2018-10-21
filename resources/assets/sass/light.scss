@@ -15,16 +15,30 @@ body.work {
 
 .front-cover {
     position: relative;
+    z-index: 1;
     .about-info {
-        position: fixed;
-        z-index: 1;
-        bottom: 30px;
-        left: 30px;
-        width: 70%;
+        padding: 30px;
+        text-align: left;
+        width: 960px;
+        margin: 10% auto;
+        position: relative;
+        z-index: 11;
         @include screentwo-max {
             width: 85%;
         }        
+        .about-photo {
+            width: 160px;
+            height: 160px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            img {
+                width: 100%;
+            }
+        }
         .social {
+            margin: 15px auto;
             font-size: 18px;
             @include screentwo-max {
                 margin-top: 35px;
@@ -32,8 +46,14 @@ body.work {
             a {
                 display: inline-block;
                 font-size: 24px;
-                margin-right: 5px;
+                margin-right: 15px;
                 color: $midnight;
+                &.email {
+                    font-size: 18px;
+                    &:hover {
+                        border-bottom: 1px solid black(0.1);
+                    }
+                }
                 @include screenone-max {
                     font-size: 18px;
                     margin-bottom: 5px;
@@ -59,54 +79,53 @@ body.work {
                 }
             }
         }
-        .intro {
-            font-family: $goudy;
-            text-shadow: 1px 1px 1px rgba(black, 0.09);
-            margin-bottom: 30px;
-            p {
-                margin: 0px;
-                font-size: 1.6em;
-                line-height: 1.3em;
-                a {
+        h2 {
+            font-size: 26px;
+            line-height: 36px;
+            font-family: $font;
+            font-weight: 400!important;
+            position: relative;
+            &:before {
+                content: "Hey there!";
+                left: -50px;
+                top: -30px;
+                position: absolute;
+                font-size: 180px;
+                width: 100%;
+                color: rgba(0, 0, 0, 0.08);
+                font-family: $raleway;
+                font-weight: bolder;
+            }
+            
+            a {
+                color: $midnight;
+                display: inline-block;
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    bottom: 0px;
+                    width: 100%;
+                    height: 1px;
+                    opacity: 0;
+                    background-color: lighten($pumpkin, 30%);
+                    transition: 0.3s;
+                }
+                &:hover {
                     color: $pumpkin;
-                    display: inline-block;
-                    position: relative;
                     &:after {
-                        content: "";
-                        position: absolute;
-                        left: 0px;
-                        bottom: 0px;
-                        width: 100%;
-                        height: 1px;
-                        background-color: lighten($pumpkin, 30%);
-                        transition: 0.3s;
-                    }
-                    &:hover {
-                        &:after {
-                            width: 50%;
-                            left: 25%;
-                        }
+                        width: 50%;
+                        opacity: 1;
+                        left: 25%;
                     }
                 }
             }
         }
     }
-    .corner-lines {
-        position: fixed;
-        z-index: 1;
-        width: 120px;
-        height: 120px;
-        right: 30px;
-        top: 30px;
-        border-top: 2px solid lighten(grey, 40%);
-        border-right: 2px solid lighten(grey, 45%);
-        display: none;
-        @include screenone-max {
-            width: 60px;
-            height: 60px;
-        }
-    }
+
 }
+
 
 
 .front-cards {

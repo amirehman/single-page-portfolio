@@ -1,13 +1,20 @@
 <template>
     <div>
     
-        <section class="front-cover" :style="{ 'background-image': 'url(' + backgroundImgUrl + bodyimage + ')'}">
+        <section class="front-cover" :style="{ 'background-image': 'url(' + baseURL + 'assets/' + bodyimage + ')'}">
             <div class="hero is-fullheight">
+
+
                 <div class="about-info">
-    
+
                     <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="8px"></ball-pulse-sync-loader>
-                    <div v-cloak class="intro dynamic-content" @click="handleClicks" v-html="general.intro"></div>
-    
+                    <h2 v-cloak class="intro info dynamic-content" @click="handleClicks" v-html="general.intro"></h2>
+
+                    <div class="about-photo">
+                        <img :src="`${baseURL}${general.dp}`" alt="image">
+                    </div>
+
+
                     <div class="social">
                     
                         <a class="nottarget" :href="general.linkedin" target="_blank">
@@ -25,13 +32,30 @@
                         <a class="nottarget" :href="general.facebook" target="_blank">
                             <i class="fa fa-facebook"></i>
                         </a>
-                        <span  v-if="!loading" class="has-text-grey"> or email me direct at
-                            <a class="has-text-weight-semibold" href="mailto:hi@amirrehman.com">{{profile.email}}</a>
-                        </span>
+                        <a class="has-text-grey"> | </a>
+                        <a  class="has-text-grey email" href="mailto:hi@amirr.net" >
+                            hi@amirr.net
+                        </a>
                     </div>
-                </div>
-    
-                <div class="corner-lines"></div>
+
+                    <div class="menu front">
+                        <div class="menu-button">
+                            <div class="fa fa-bars" v-if="!NavIsActive" @click="onNavBarClick"></div>
+                            <div class="fa fa-close"  v-if="NavIsActive" @click="onNavBarClose"></div>
+                            <div class="menu-items" v-bind:class="{ active: NavIsActive}">
+                                <div class="items"><router-link to="/about">About</router-link></div>
+                                <div class="items"><router-link to="/work">Work</router-link></div>
+                                <div class="items"><router-link to="/contact">Contact</router-link></div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>            
+                
     
             </div>
         </section>
@@ -53,8 +77,9 @@
                 },
                 profile: {},
                 loading: true,
-                backgroundImgUrl: "http://45.77.65.13/images/assets/",
-                bodyimage: 'round.png'
+                baseURL: "http:45.77.65.13/images/",
+                bodyimage: 'round.png',
+                NavIsActive: false
             }
         },
         created() {
@@ -70,8 +95,13 @@
             }, 900)
         },
         methods: {
+            onNavBarClick () {
+                this.NavIsActive = true
+            },
+            onNavBarClose () {
+                this.NavIsActive = false
+            },
             applyTextEdit() {
-    
             },
             getData() {
                 axios.get(`/api/general`)

@@ -4,7 +4,7 @@ class Token {
     isValid(token){
         const payload = this.payload(token);
         if(payload){
-            return payload.iss == "http://www.amirr.net/api/auth/login" ? true : false
+            return payload.iss == "http://amirr.net/api/auth/login" ? true : false
         }
 
         return false

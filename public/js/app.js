@@ -49704,7 +49704,7 @@ var Token = function () {
         value: function isValid(token) {
             var payload = this.payload(token);
             if (payload) {
-                return payload.iss == "http://www.amirr.net/api/auth/login" ? true : false;
+                return payload.iss == "http://amirr.net/api/auth/login" ? true : false;
             }
 
             return false;
@@ -80041,7 +80041,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -80098,6 +80098,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -80107,8 +80131,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             },
             profile: {},
             loading: true,
-            backgroundImgUrl: "http://45.77.65.13/images/assets/",
-            bodyimage: 'round.png'
+            baseURL: "http:45.77.65.13/images/",
+            bodyimage: 'round.png',
+            NavIsActive: false
         };
     },
     created: function created() {
@@ -80124,6 +80149,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
+        onNavBarClick: function onNavBarClick() {
+            this.NavIsActive = true;
+        },
+        onNavBarClose: function onNavBarClose() {
+            this.NavIsActive = false;
+        },
         applyTextEdit: function applyTextEdit() {},
         getData: function getData() {
             var _this = this;
@@ -80186,7 +80217,7 @@ var render = function() {
         staticClass: "front-cover",
         style: {
           "background-image":
-            "url(" + _vm.backgroundImgUrl + _vm.bodyimage + ")"
+            "url(" + _vm.baseURL + "assets/" + _vm.bodyimage + ")"
         }
       },
       [
@@ -80201,11 +80232,20 @@ var render = function() {
                   })
                 : _vm._e(),
               _vm._v(" "),
-              _c("div", {
-                staticClass: "intro dynamic-content",
+              _c("h2", {
+                staticClass: "intro info dynamic-content",
                 domProps: { innerHTML: _vm._s(_vm.general.intro) },
                 on: { click: _vm.handleClicks }
               }),
+              _vm._v(" "),
+              _c("div", { staticClass: "about-photo" }, [
+                _c("img", {
+                  attrs: {
+                    src: "" + _vm.baseURL + _vm.general.dp,
+                    alt: "image"
+                  }
+                })
+              ]),
               _vm._v(" "),
               _c("div", { staticClass: "social" }, [
                 _c(
@@ -80253,27 +80293,84 @@ var render = function() {
                   [_c("i", { staticClass: "fa fa-facebook" })]
                 ),
                 _vm._v(" "),
-                !_vm.loading
-                  ? _c("span", { staticClass: "has-text-grey" }, [
-                      _vm._v(
-                        " or email me direct at\n                        "
-                      ),
+                _c("a", { staticClass: "has-text-grey" }, [_vm._v(" | ")]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "has-text-grey email",
+                    attrs: { href: "mailto:hi@amirr.net" }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        hi@amirr.net\n                    "
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "menu front" }, [
+                _c("div", { staticClass: "menu-button" }, [
+                  !_vm.NavIsActive
+                    ? _c("div", {
+                        staticClass: "fa fa-bars",
+                        on: { click: _vm.onNavBarClick }
+                      })
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _vm.NavIsActive
+                    ? _c("div", {
+                        staticClass: "fa fa-close",
+                        on: { click: _vm.onNavBarClose }
+                      })
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "menu-items",
+                      class: { active: _vm.NavIsActive }
+                    },
+                    [
                       _c(
-                        "a",
-                        {
-                          staticClass: "has-text-weight-semibold",
-                          attrs: { href: "mailto:hi@amirrehman.com" }
-                        },
-                        [_vm._v(_vm._s(_vm.profile.email))]
+                        "div",
+                        { staticClass: "items" },
+                        [
+                          _c("router-link", { attrs: { to: "/about" } }, [
+                            _vm._v("About")
+                          ])
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "items" },
+                        [
+                          _c("router-link", { attrs: { to: "/work" } }, [
+                            _vm._v("Work")
+                          ])
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "items" },
+                        [
+                          _c("router-link", { attrs: { to: "/contact" } }, [
+                            _vm._v("Contact")
+                          ])
+                        ],
+                        1
                       )
-                    ])
-                  : _vm._e()
+                    ]
+                  )
+                ])
               ])
             ],
             1
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "corner-lines" })
+          )
         ])
       ]
     ),
@@ -80483,12 +80580,36 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
             profile: {},
-            general: {}
+            general: {},
+            NavIsActive: false
         };
     },
     created: function created() {
@@ -80500,7 +80621,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         axios.get("/api/about").then(function (response) {
             _this.profile = response.data.data;
         });
+    },
+
+    methods: {
+        onNavBarClick: function onNavBarClick() {
+            this.NavIsActive = true;
+        },
+        onNavBarClose: function onNavBarClose() {
+            this.NavIsActive = false;
+        }
     }
+
 });
 
 /***/ }),
@@ -80511,61 +80642,118 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("footer", { staticClass: "footer is-paddingless m-t-75" }, [
-    _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "content" }, [
-        _c("div", { staticClass: "getsocial" }, [
-          _c("a", { staticClass: "gettitle" }, [_vm._v("Get Social ")]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "nottarget",
-              attrs: { href: _vm.general.linkedin, target: "_blank" }
-            },
-            [_c("i", { staticClass: "fa fa-linkedin" })]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "nottarget",
-              attrs: { href: _vm.general.github, target: "_blank" }
-            },
-            [_c("i", { staticClass: "fa fa-github" })]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "nottarget",
-              attrs: { href: _vm.general.stackoverflow, target: "_blank" }
-            },
-            [_c("i", { staticClass: "fa fa-stack-overflow" })]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "nottarget",
-              attrs: { href: _vm.general.instagram, target: "_blank" }
-            },
-            [_c("i", { staticClass: "fa fa-instagram" })]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "nottarget",
-              attrs: { href: _vm.general.facebook, target: "_blank" }
-            },
-            [_c("i", { staticClass: "fa fa-facebook" })]
-          ),
-          _vm._v(" "),
-          _c("span", [
-            _vm._v(" or email me direct at\n                                "),
-            _c("a", { attrs: { href: _vm.profile.email } }, [
-              _vm._v(_vm._s(_vm.profile.email))
+  return _c("div", [
+    _c("div", { staticClass: "menu normal" }, [
+      _c("div", { staticClass: "menu-button" }, [
+        !_vm.NavIsActive
+          ? _c("div", {
+              staticClass: "fa fa-bars",
+              on: { click: _vm.onNavBarClick }
+            })
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.NavIsActive
+          ? _c("div", {
+              staticClass: "fa fa-close",
+              on: { click: _vm.onNavBarClose }
+            })
+          : _vm._e(),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "menu-items", class: { active: _vm.NavIsActive } },
+          [
+            _c(
+              "div",
+              { staticClass: "items" },
+              [
+                _c("router-link", { attrs: { to: "/about" } }, [
+                  _vm._v("About")
+                ])
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "items" },
+              [_c("router-link", { attrs: { to: "/work" } }, [_vm._v("Work")])],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "items" },
+              [
+                _c("router-link", { attrs: { to: "/contact" } }, [
+                  _vm._v("Contact")
+                ])
+              ],
+              1
+            )
+          ]
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _c("footer", { staticClass: "footer is-paddingless m-t-75" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "content" }, [
+          _c("div", { staticClass: "getsocial" }, [
+            _c("a", { staticClass: "gettitle" }, [_vm._v("Get Social ")]),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "nottarget",
+                attrs: { href: _vm.general.linkedin, target: "_blank" }
+              },
+              [_c("i", { staticClass: "fa fa-linkedin" })]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "nottarget",
+                attrs: { href: _vm.general.github, target: "_blank" }
+              },
+              [_c("i", { staticClass: "fa fa-github" })]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "nottarget",
+                attrs: { href: _vm.general.stackoverflow, target: "_blank" }
+              },
+              [_c("i", { staticClass: "fa fa-stack-overflow" })]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "nottarget",
+                attrs: { href: _vm.general.instagram, target: "_blank" }
+              },
+              [_c("i", { staticClass: "fa fa-instagram" })]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "nottarget",
+                attrs: { href: _vm.general.facebook, target: "_blank" }
+              },
+              [_c("i", { staticClass: "fa fa-facebook" })]
+            ),
+            _vm._v(" "),
+            _c("span", [
+              _vm._v(
+                " or email me direct at\n                                            "
+              ),
+              _c("a", { attrs: { href: _vm.profile.email } }, [
+                _vm._v(_vm._s(_vm.profile.email))
+              ])
             ])
           ])
         ])
