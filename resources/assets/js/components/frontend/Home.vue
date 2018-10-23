@@ -37,7 +37,7 @@
                         </a>
                     </div>
 
-                    <div class="menu front" v-bind:class="{ active: NavIsActive}">
+                    <div class="menu front">
                         <div class="menu-button">
                             <div class="fa fa-bars" v-if="!NavIsActive" @click="onNavBarClick"></div>
                             <div class="fa fa-close"  v-if="NavIsActive" @click="onNavBarClose"></div>

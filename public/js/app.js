@@ -80291,69 +80291,65 @@ var render = function() {
             )
           ]),
           _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "menu front", class: { active: _vm.NavIsActive } },
-            [
-              _c("div", { staticClass: "menu-button" }, [
-                !_vm.NavIsActive
-                  ? _c("div", {
-                      staticClass: "fa fa-bars",
-                      on: { click: _vm.onNavBarClick }
-                    })
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.NavIsActive
-                  ? _c("div", {
-                      staticClass: "fa fa-close",
-                      on: { click: _vm.onNavBarClose }
-                    })
-                  : _vm._e(),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "menu-items",
-                    class: { active: _vm.NavIsActive }
-                  },
-                  [
-                    _c(
-                      "div",
-                      { staticClass: "items" },
-                      [
-                        _c("router-link", { attrs: { to: "/about" } }, [
-                          _vm._v("About")
-                        ])
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "items" },
-                      [
-                        _c("router-link", { attrs: { to: "/work" } }, [
-                          _vm._v("Work")
-                        ])
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "items" },
-                      [
-                        _c("router-link", { attrs: { to: "/contact" } }, [
-                          _vm._v("Contact")
-                        ])
-                      ],
-                      1
-                    )
-                  ]
-                )
-              ])
-            ]
-          )
+          _c("div", { staticClass: "menu front" }, [
+            _c("div", { staticClass: "menu-button" }, [
+              !_vm.NavIsActive
+                ? _c("div", {
+                    staticClass: "fa fa-bars",
+                    on: { click: _vm.onNavBarClick }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.NavIsActive
+                ? _c("div", {
+                    staticClass: "fa fa-close",
+                    on: { click: _vm.onNavBarClose }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "menu-items",
+                  class: { active: _vm.NavIsActive }
+                },
+                [
+                  _c(
+                    "div",
+                    { staticClass: "items" },
+                    [
+                      _c("router-link", { attrs: { to: "/about" } }, [
+                        _vm._v("About")
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "items" },
+                    [
+                      _c("router-link", { attrs: { to: "/work" } }, [
+                        _vm._v("Work")
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "items" },
+                    [
+                      _c("router-link", { attrs: { to: "/contact" } }, [
+                        _vm._v("Contact")
+                      ])
+                    ],
+                    1
+                  )
+                ]
+              )
+            ])
+          ])
         ],
         1
       )
