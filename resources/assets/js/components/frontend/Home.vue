@@ -2,7 +2,6 @@
     <div>
     
         <section class="front-cover">
-            <div class="hero is-fullheight">
 
 
                 <div class="about-info">
@@ -32,13 +31,13 @@
                         <a class="nottarget" :href="general.facebook" target="_blank">
                             <i class="fa fa-facebook"></i>
                         </a>
-                        <a class="has-text-grey"> | </a>
+                        <a class="has-text-grey line"> | </a>
                         <a  class="has-text-grey email" href="mailto:hi@amirr.net" >
                             hi@amirr.net
                         </a>
                     </div>
 
-                    <div class="menu front">
+                    <div class="menu front" v-bind:class="{ active: NavIsActive}">
                         <div class="menu-button">
                             <div class="fa fa-bars" v-if="!NavIsActive" @click="onNavBarClick"></div>
                             <div class="fa fa-close"  v-if="NavIsActive" @click="onNavBarClose"></div>
@@ -57,12 +56,8 @@
                 </div>            
                 
     
-            </div>
         </section>
-    
-        <section class="">
-        </section>
-    
+
     
     </div>
 </template>

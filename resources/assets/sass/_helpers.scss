@@ -13,3 +13,39 @@ $sides: (top, bottom, left, right); // Leave this variable alone
   }
 }
 
+
+
+@mixin valign () {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin valign-left () {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@mixin valign-right () {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@mixin valign-right-bottom () {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@mixin clear () {
+  &:after {
+      content: "";
+      display: block;
+      clear: both;
+  }
+}

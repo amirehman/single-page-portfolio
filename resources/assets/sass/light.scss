@@ -20,21 +20,27 @@ body.work {
         padding: 30px;
         text-align: left;
         width: 960px;
-        margin: 10% auto;
         position: relative;
         z-index: 11;
+        margin: auto;
+        margin-top: 10%;
         @include screentwo-max {
-            width: 85%;
+            width: 100%;
+            text-align: center;
         }        
         .about-photo {
             width: 160px;
             height: 160px;
-            overflow: hidden;
+            overflow: hidden; 
             border-radius: 50%;
             margin-top: 30px;
             margin-bottom: 30px;
+            @include screentwo-max {
+                margin-left: auto;                
+                margin-right: auto;                
+            }
             img {
-                width: 100%;
+                margin: auto;
             }
         }
         .social {
@@ -50,6 +56,10 @@ body.work {
                 color: $midnight;
                 &.email {
                     font-size: 18px;
+                    @include screentwo-max {
+                        display: block;
+                        text-align: center;
+                    }
                     &:hover {
                         border-bottom: 1px solid black(0.1);
                     }
@@ -60,6 +70,11 @@ body.work {
                 }
                 &:hover {
                     color: $carrot;
+                }
+                &.line {
+                    @include screentwo-max {
+                        display: none;
+                    }
                 }
             }
             span {
@@ -95,6 +110,13 @@ body.work {
                 color: rgba(0, 0, 0, 0.08);
                 font-family: $raleway;
                 font-weight: bolder;
+                @include screentwo-max {
+                    left: inherit;
+                    right: 0px;
+                    top: -50px;
+                    font-size: 48px;
+                    width: 100%;
+                }
             }
             
             a {
@@ -494,7 +516,7 @@ body.work {
         }
         a {
             color: black; // display: block
-            font-style: italic;
+            // font-style: italic;
         }
     }
 }
@@ -588,6 +610,9 @@ body.work {
 }
 
 .contact-wrapper {
+    @include screentwo-max {
+        padding: 15px;
+    }
     .is-divider {
         margin: 70px auto;
         border-width: 1px;

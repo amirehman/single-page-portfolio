@@ -10,7 +10,7 @@
                         <div class="contact-header">
                             <div class="content">
                                 <h3>LET'S HAVE A CHAT </h3>
-                                <p class="has-text-grey is-paddingless is-size-6">Reach out and send me a friendly hello.</p>
+                                <p class="has-text-grey is-paddingless title is-size-7">Reach out and send me a friendly hello.</p>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum accusantium voluptatibus numquam minus dolor porro quisquam ratione quibusdam, labore, saepe est consequuntur reiciendis harum doloremque, esse dolore laudantium.
                                     Non, exercitationem.</p>
                             </div>
