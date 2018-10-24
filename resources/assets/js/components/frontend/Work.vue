@@ -19,8 +19,8 @@
             <div class="columns">
                 <div class="column">
                     <div class="work-wrapper">
-                    <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="5px"></ball-pulse-sync-loader>
-
+                        <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="5px"></ball-pulse-sync-loader>
+    
                         <div class="work-row" v-cloak>
     
                             <div class="work-col col-sm" v-for="project in projects">
@@ -28,10 +28,15 @@
                                     <div class="card">
                                         <div class="card-image">
                                             <figure class="image">
-                                                <progressive-img 
-                                                    :src="`${baseURL}images/${project.image}`" class="is-block" 
-                                                    :placeholder="`${baseURL}images/${project.image}`" 
-                                                />
+                                                <clazy-load :src="`${baseURL}images/${project.image}`">
+                                                    <img :src="`${baseURL}images/${project.image}`">
+                                                    <div class="preloader" slot="placeholder">
+                                                        <div class="timeline-item">
+                                                            <div class="animated-background">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </clazy-load>
                                             </figure>
                                         </div>
                                         <div class="card-content">
@@ -58,7 +63,7 @@
     
         </div>
     
-        <footer-bottom  v-if="!loading"></footer-bottom>
+        <footer-bottom v-if="!loading"></footer-bottom>
     
     </div>
 </template>
@@ -66,6 +71,9 @@
 <script>
     import footer from "./Footer";
     import navbar from "./TopNav";
+    import {
+        VueClazyLoad
+    } from 'vue-clazy-load';
     export default {
         data() {
             return {
@@ -88,7 +96,9 @@
         },
         components: {
             "footer-bottom": footer,
-            "top-navbar": navbar
+            "top-navbar": navbar,
+            "clazy-load": VueClazyLoad
         }
     }
 </script>
+

@@ -39772,8 +39772,24 @@ small,
   opacity: 1;
 }
 
-.work-col .card:hover {
-  border-color: #e67d2250;
+.work-col .card:hover .card-content {
+  visibility: visible;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 11;
+}
+
+.work-col .card-content {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  z-index: -11;
+  visibility: hidden;
+  border-top: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.85);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .work-col .card-content a {
@@ -40147,6 +40163,52 @@ small,
 .single-link i {
   font-size: 12px;
   color: #2c3e50;
+}
+
+.timeline-item {
+  border-radius: 0px;
+  padding: 5px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -768px 0;
+  }
+
+  100% {
+    background-position: 768px 0;
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -768px 0;
+  }
+
+  100% {
+    background-position: 768px 0;
+  }
+}
+
+.animated-background {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  position: relative;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  background: #f6f7f8;
+  background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eeeeee67), color-stop(18%, #dddddd7c), color-stop(33%, #eeeeee60));
+  background: linear-gradient(to right, #eeeeee67 8%, #dddddd7c 18%, #eeeeee60 33%);
+  background-size: 800px 104px;
+  height: 300px;
 }
 
 .menu {

@@ -284,11 +284,25 @@ body.work {
                 }
             }
         }
+        
         &:hover {
-            border-color: #e67d2250;
+            .card-content {
+                visibility: visible;
+                transition: 0.3s;
+                z-index: 11;
+            }
         }
     }
     .card-content {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        z-index: -11;
+        visibility: hidden;
+        border-top: 1px solid white;
+        background-color: rgba(255, 255, 255, 0.85);
+        transition: 0.3s;
         a {
             color: rgba(0, 0, 0, 0.7);
         }
@@ -638,3 +652,34 @@ body.work {
         color: $midnight;
     }
 }
+
+
+
+.timeline-item {
+    border-radius: 0px;
+    padding: 5px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -768px 0
+    }
+    100%{
+        background-position: 768px 0
+    }
+}
+
+.animated-background {
+    animation-duration: 1.5s;
+    position: relative;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee67 8%, #dddddd7c 18%, #eeeeee60 33%);
+    background-size: 800px 104px;
+    height: 300px;
+ }
