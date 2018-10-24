@@ -11,7 +11,6 @@ window.Vue = require('vue');
 
 import Buefy from 'buefy';
 import * as VueLoaders from 'vue-loaders';
-import VueProgressiveImage from 'vue-progressive-image'
 import VueClazyLoad from 'vue-clazy-load'
 
 import User from './Helpers/User'
@@ -19,7 +18,6 @@ window.User = User
 
 Vue.use(Buefy);
 Vue.use(VueLoaders);
-Vue.use(VueProgressiveImage)
 
 Vue.use(require('vue-moment'));
 

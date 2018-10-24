@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Http\Resources\ProjectResource;
 use File;
+use Image;
 
 class ProjectController extends Controller
 {
@@ -61,19 +62,10 @@ class ProjectController extends Controller
           $slug = $project->slug = $count ? "{$slug}-{$count}" : $slug;
         }
 
+        
+        $filename = time().'.' . explode('/', explode(':', substr($request->image, 0, strpos($request->image, ';')))[1])[1];
 
-        $exploded = explode(',', $request->image);
-        $decoded = base64_decode($exploded[1]);
-
-        if(str_contains($exploded[0], 'jpeg'))
-            $extension = "jpg";
-        else 
-            $extension = "png";
-
-        $filename = str_random().time().'.'.$extension;
-        $path = public_path().'/images/'.$filename;  
-        file_put_contents($path, $decoded);
-
+        \Image::make($request->image)->resize(600,800)->save(public_path('images/').$filename);
 
 
         $project->title = $request->title;
@@ -124,21 +116,16 @@ class ProjectController extends Controller
         $project = Project::where('id', '=', $pid)->first();
             
         if(strlen($request->image) > 220){
-            $exploded = explode(',', $request->image);
-            $decoded = base64_decode($exploded[1]);
-    
-            if(str_contains($exploded[0], 'jpeg'))
-                $extension = "jpg";
-            else 
-                $extension = "png";
-    
-            $filename = str_random().time().'.'.$extension;
-            $path = public_path().'/images/'.$filename;  
-            file_put_contents($path, $decoded);
+
+                    
+            $filename = time().'.' . explode('/', explode(':', substr($request->image, 0, strpos($request->image, ';')))[1])[1];
+
+            \Image::make($request->image)->resize(600,800)->save(public_path('images/').$filename);
 
             File::delete(public_path('images/'. $project->image));
 
             $project->image = $filename;
+
         }
 
         $likes = $project->likes + 1;    

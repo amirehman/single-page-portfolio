@@ -6,6 +6,7 @@ use App\ProjectPage;
 use App\Project;
 use Illuminate\Http\Request;
 use File;
+use ImageOptimizer;
 
 class ProjectPageController extends Controller
 {
@@ -47,17 +48,10 @@ class ProjectPageController extends Controller
           ]);
 
         $slug = Project::find($pid)->slug;
-        $exploded = explode(',', $request->image);
-        $decoded = base64_decode($exploded[1]);
 
-        if(str_contains($exploded[0], 'jpeg'))
-            $extension = "jpg";
-        else 
-            $extension = "png";
+        $filename = time().'.' . explode('/', explode(':', substr($request->image, 0, strpos($request->image, ';')))[1])[1];
 
-        $filename = str_random().time().'.'.$extension;
-        $path = public_path().'/images/'.$filename;  
-        file_put_contents($path, $decoded);
+        \Image::make($request->image)->save(public_path('images/').$filename);
 
         $page = new ProjectPage;
         $page->title = $request->title;
@@ -114,17 +108,11 @@ class ProjectPageController extends Controller
         $page = ProjectPage::find($pageid);
 
         if(strlen($request->image) > 220){
-            $exploded = explode(',', $request->image);
-            $decoded = base64_decode($exploded[1]);
-    
-            if(str_contains($exploded[0], 'jpeg'))
-                $extension = "jpg";
-            else 
-                $extension = "png";
-    
-            $filename = str_random().time().'.'.$extension;
-            $path = public_path().'/images/'.$filename;  
-            file_put_contents($path, $decoded);
+            
+            
+        
+            $filename = time().'.' . explode('/', explode(':', substr($request->image, 0, strpos($request->image, ';')))[1])[1];
+            \Image::make($request->image)->save(public_path('images/').$filename);            
 
             File::delete(public_path('images/'. $page->image));
 
