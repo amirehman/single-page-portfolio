@@ -12,13 +12,15 @@ window.Vue = require('vue');
 import Buefy from 'buefy';
 import * as VueLoaders from 'vue-loaders';
 import VueClazyLoad from 'vue-clazy-load'
+import Vue from 'vue'
+import VueMasonry from 'vue-masonry-css'
 
 import User from './Helpers/User'
 window.User = User
 
 Vue.use(Buefy);
 Vue.use(VueLoaders);
-
+Vue.use(VueMasonry);
 Vue.use(require('vue-moment'));
 
 User.hasToken();

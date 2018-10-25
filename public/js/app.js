@@ -14221,8 +14221,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_loaders__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_clazy_load__ = __webpack_require__(248);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_clazy_load___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue_clazy_load__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Helpers_User__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router_router_js__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_masonry_css__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Helpers_User__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Router_router_js__ = __webpack_require__(63);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -14239,23 +14242,25 @@ window.Vue = __webpack_require__(13);
 
 
 
-window.User = __WEBPACK_IMPORTED_MODULE_3__Helpers_User__["a" /* default */];
-
-Vue.use(__WEBPACK_IMPORTED_MODULE_0_buefy___default.a);
-Vue.use(__WEBPACK_IMPORTED_MODULE_1_vue_loaders__);
-
-Vue.use(__webpack_require__(62));
-
-__WEBPACK_IMPORTED_MODULE_3__Helpers_User__["a" /* default */].hasToken();
 
 
+window.User = __WEBPACK_IMPORTED_MODULE_5__Helpers_User__["a" /* default */];
 
-Vue.component('AppHome', __webpack_require__(227));
-Vue.component('SideNav', __webpack_require__(232));
+__WEBPACK_IMPORTED_MODULE_3_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_0_buefy___default.a);
+__WEBPACK_IMPORTED_MODULE_3_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_loaders__);
+__WEBPACK_IMPORTED_MODULE_3_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_4_vue_masonry_css__["a" /* default */]);
+__WEBPACK_IMPORTED_MODULE_3_vue___default.a.use(__webpack_require__(62));
 
-var app = new Vue({
+__WEBPACK_IMPORTED_MODULE_5__Helpers_User__["a" /* default */].hasToken();
+
+
+
+__WEBPACK_IMPORTED_MODULE_3_vue___default.a.component('AppHome', __webpack_require__(227));
+__WEBPACK_IMPORTED_MODULE_3_vue___default.a.component('SideNav', __webpack_require__(232));
+
+var app = new __WEBPACK_IMPORTED_MODULE_3_vue___default.a({
   el: '#app',
-  router: __WEBPACK_IMPORTED_MODULE_4__Router_router_js__["a" /* default */]
+  router: __WEBPACK_IMPORTED_MODULE_6__Router_router_js__["a" /* default */]
 });
 
 /***/ }),
@@ -80925,95 +80930,111 @@ var render = function() {
                 _c(
                   "div",
                   { staticClass: "work-row" },
-                  _vm._l(_vm.projects, function(project) {
-                    return _c(
-                      "div",
-                      { staticClass: "work-col col-sm" },
-                      [
-                        _c(
-                          "router-link",
-                          { attrs: { to: "/work/" + project.slug } },
+                  [
+                    _c(
+                      "masonry",
+                      {
+                        attrs: {
+                          cols: { default: 3, 1000: 2, 550: 1 },
+                          gutter: 15
+                        }
+                      },
+                      _vm._l(_vm.projects, function(project, index) {
+                        return _c(
+                          "div",
+                          { key: index, staticClass: "work-col" },
                           [
-                            _c("div", { staticClass: "card" }, [
-                              _c("div", { staticClass: "card-image" }, [
-                                _c(
-                                  "figure",
-                                  { staticClass: "image" },
-                                  [
+                            _c(
+                              "router-link",
+                              { attrs: { to: "/work/" + project.slug } },
+                              [
+                                _c("div", { staticClass: "card" }, [
+                                  _c("div", { staticClass: "card-image" }, [
                                     _c(
-                                      "clazy-load",
-                                      {
-                                        attrs: {
-                                          src:
-                                            _vm.baseURL +
-                                            "images/" +
-                                            project.image
-                                        }
-                                      },
+                                      "figure",
+                                      { staticClass: "image" },
                                       [
-                                        _c("img", {
-                                          attrs: {
-                                            src:
-                                              _vm.baseURL +
-                                              "images/" +
-                                              project.image
-                                          }
-                                        }),
-                                        _vm._v(" "),
                                         _c(
-                                          "div",
+                                          "clazy-load",
                                           {
-                                            staticClass: "preloader",
-                                            attrs: { slot: "placeholder" },
-                                            slot: "placeholder"
+                                            attrs: {
+                                              src:
+                                                _vm.baseURL +
+                                                "images/" +
+                                                project.image
+                                            }
                                           },
                                           [
+                                            _c("img", {
+                                              attrs: {
+                                                src:
+                                                  _vm.baseURL +
+                                                  "images/" +
+                                                  project.image
+                                              }
+                                            }),
+                                            _vm._v(" "),
                                             _c(
                                               "div",
-                                              { staticClass: "timeline-item" },
+                                              {
+                                                staticClass: "preloader",
+                                                attrs: { slot: "placeholder" },
+                                                slot: "placeholder"
+                                              },
                                               [
-                                                _c("div", {
-                                                  staticClass:
-                                                    "animated-background"
-                                                })
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "timeline-item"
+                                                  },
+                                                  [
+                                                    _c("div", {
+                                                      staticClass:
+                                                        "animated-background"
+                                                    })
+                                                  ]
+                                                )
                                               ]
                                             )
                                           ]
                                         )
-                                      ]
-                                    )
-                                  ],
-                                  1
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "card-content" }, [
-                                _c("div", { staticClass: "content" }, [
-                                  _c("p", [
-                                    _vm._v(
-                                      _vm._s(project.title) +
-                                        "\n                                                "
+                                      ],
+                                      1
                                     )
                                   ]),
                                   _vm._v(" "),
-                                  _c(
-                                    "p",
-                                    { staticClass: "elements" },
-                                    _vm._l(project.elements, function(element) {
-                                      return _c("span", [
-                                        _vm._v(_vm._s(element.name))
-                                      ])
-                                    })
-                                  )
+                                  _c("div", { staticClass: "card-content" }, [
+                                    _c("div", { staticClass: "content" }, [
+                                      _c("p", [
+                                        _vm._v(
+                                          _vm._s(project.title) +
+                                            "\n                                            "
+                                        )
+                                      ]),
+                                      _vm._v(" "),
+                                      _c(
+                                        "p",
+                                        { staticClass: "elements" },
+                                        _vm._l(project.elements, function(
+                                          element
+                                        ) {
+                                          return _c("span", [
+                                            _vm._v(_vm._s(element.name))
+                                          ])
+                                        })
+                                      )
+                                    ])
+                                  ])
                                 ])
-                              ])
-                            ])
-                          ]
+                              ]
+                            )
+                          ],
+                          1
                         )
-                      ],
-                      1
+                      })
                     )
-                  })
+                  ],
+                  1
                 )
               ],
               1
@@ -81035,7 +81056,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "work-header" }, [
       _c("div", { staticClass: "content text-center" }, [
         _c("div", { staticClass: "columns" }, [
-          _c("div", { staticClass: "column is-8" }, [
+          _c("div", { staticClass: "column is-12" }, [
             _c("p", { staticClass: "has-text-weight-normal is-size-6" }, [
               _vm._v(
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eum veniam obcaecati sit dolorum iusto libero corrupti minus molestias, voluptate officia dolorem nam reiciendis dolore consequuntur dolor. Saepe, nihil natus?"
@@ -84714,6 +84735,254 @@ var VueClazyLoad = ClazyLoadComponent;
 /***/ })
 /******/ ]);
 });
+
+/***/ }),
+/* 249 */,
+/* 250 */,
+/* 251 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/*!
+ * vue-masonry-css v1.0.3
+ * https://github.com/paulcollett/vue-masonry-css
+ * Released under the MIT License.
+ */
+
+// the component name `<masonry />`
+// can be overridden with `Vue.use(Masonry, { name: 'the-masonry' });`
+var componentName = 'masonry';
+
+var props = {
+  tag: {
+    type: [String],
+    default: 'div'
+  },
+  cols: {
+    type: [Object, Number, String],
+    default: 2
+  },
+  gutter: {
+    type: [Object, Number, String],
+    default: 0
+  },
+  css: {
+    type: [Boolean],
+    default: true
+  },
+  columnTag: {
+    type: [String],
+    default: 'div'
+  },
+  columnClass: {
+    type: [String, Array, Object],
+    default: function () { return []; }
+  },
+  columnAttr: {
+    type: [Object],
+    default: function () { return ({}); }
+  }
+};
+
+// Get the resulting value from  `:col=` prop
+// based on the window width
+var breakpointValue = function (mixed, windowWidth) {
+  var valueAsNum = parseInt(mixed);
+
+  if(valueAsNum > -1) {
+    return mixed;
+  }else if(typeof mixed !== 'object') {
+    return 0;
+  }
+
+  var matchedBreakpoint = Infinity;
+  var matchedValue = mixed.default || 0;
+
+  for(var k in mixed) {
+    var breakpoint = parseInt(k);
+    var breakpointValRaw = mixed[breakpoint];
+    var breakpointVal = parseInt(breakpointValRaw);
+
+    if(isNaN(breakpoint) || isNaN(breakpointVal)) {
+      continue;
+    }
+
+    var isNewBreakpoint = windowWidth <= breakpoint && breakpoint < matchedBreakpoint;
+
+    if(isNewBreakpoint) {
+      matchedBreakpoint = breakpoint;
+      matchedValue = breakpointValRaw;
+    }
+  }
+
+  return matchedValue;
+};
+
+var component = {
+  props: props,
+
+  data: function data() {
+    return {
+      displayColumns: 2,
+      displayGutter: 0
+    }
+  },
+
+  mounted: function mounted() {
+    var this$1 = this;
+
+    this.$nextTick(function () {
+      this$1.reCalculate();
+    });
+
+    // Bind resize handler to page
+    if(window) {
+      window.addEventListener('resize', this.reCalculate);
+    }
+  },
+
+  updated: function updated() {
+    var this$1 = this;
+
+    this.$nextTick(function () {
+      this$1.reCalculate();
+    });
+  },
+
+  beforeDestroy: function beforeDestroy() {
+    if(window) {
+      window.removeEventListener('resize', this.reCalculate);
+    }
+  },
+
+  methods: {
+    // Recalculate how many columns to display based on window width
+    // and the value of the passed `:cols=` prop
+    reCalculate: function reCalculate() {
+      var previousWindowWidth = this.windowWidth;
+
+      this.windowWidth = (window ? window.innerWidth : null) || Infinity;
+
+      // Window resize events get triggered on page height
+      // change which when loading the page can result in multiple
+      // needless calculations. We prevent this here.
+      if(previousWindowWidth === this.windowWidth) {
+        return;
+      }
+
+      this._reCalculateColumnCount(this.windowWidth);
+
+      this._reCalculateGutterSize(this.windowWidth);
+    },
+
+    _reCalculateGutterSize: function _reCalculateGutterSize(windowWidth) {
+      this.displayGutter = breakpointValue(this.gutter, windowWidth);
+    },
+
+    _reCalculateColumnCount: function _reCalculateColumnCount(windowWidth) {
+      var newColumns = breakpointValue(this.cols, windowWidth);
+
+      // Make sure we can return a valid value
+      newColumns = Math.max(1, Number(newColumns) || 0);
+
+      this.displayColumns = newColumns;
+    },
+
+    _getChildItemsInColumnsArray: function _getChildItemsInColumnsArray() {
+      var this$1 = this;
+
+      var columns = [];
+      var childItems = this.$slots.default || [];
+
+      // This component does not work with a child <transition-group /> ..yet,
+      // so for now we think it may be helpful to ignore until we can find a way for support
+      if(childItems.length === 1 && childItems[0].componentOptions && childItems[0].componentOptions.tag == 'transition-group') {
+        childItems = childItems[0].componentOptions.children;
+      }
+
+      // Loop through child elements
+      for (var i = 0, visibleItemI = 0; i < childItems.length; i++, visibleItemI++) {
+        // skip Vue elements without tags, which includes
+        // whitespace elements and also plain text
+        if(!childItems[i].tag) {
+          visibleItemI--;
+
+          continue;
+        }
+
+        // Get the column index the child item will end up in
+        var columnIndex = visibleItemI % this$1.displayColumns;
+
+        if(!columns[columnIndex]) {
+          columns[columnIndex] = [];
+        }
+
+        columns[columnIndex].push(childItems[i]);
+      }
+
+      return columns;
+    }
+  },
+
+  render: function render(createElement) {
+    var this$1 = this;
+
+    var columnsContainingChildren = this._getChildItemsInColumnsArray();
+    var isGutterSizeUnitless = parseInt(this.displayGutter) === this.displayGutter * 1;
+    var gutterSizeWithUnit =  isGutterSizeUnitless ? ((this.displayGutter) + "px") : this.displayGutter;
+
+    var columnStyle = {
+      boxSizing: 'border-box',
+      backgroundClip: 'padding-box',
+      width: ((100 / this.displayColumns) + "%"),
+      border: '0 solid transparent',
+      borderLeftWidth: gutterSizeWithUnit
+    };
+
+    var columns = columnsContainingChildren.map(function (children, index) {
+      /// Create column element and inject the children
+      return createElement(this$1.columnTag, {
+        key: index + '-' + columnsContainingChildren.length,
+        style: this$1.css ? columnStyle : null,
+        class: this$1.columnClass,
+        attrs: this$1.columnAttr
+      }, children); // specify child items here
+    });
+
+    var containerStyle = {
+      display: ['-webkit-box', '-ms-flexbox', 'flex'],
+      marginLeft: ("-" + gutterSizeWithUnit)
+    };
+
+    // Return wrapper with columns
+    return createElement(
+      this.tag, // tag name
+      this.css ? { style: containerStyle } : null, // element options
+      columns // column vue elements
+    );
+  }
+};
+
+var Plugin = function () {};
+
+Plugin.install = function (Vue, options) {
+  if (Plugin.installed) {
+    return;
+  }
+
+  if(options && options.name) {
+    Vue.component(options.name, component);
+  } else {
+    Vue.component(componentName, component);
+  }
+};
+
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(Plugin);
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (Plugin);
+
 
 /***/ })
 /******/ ]);

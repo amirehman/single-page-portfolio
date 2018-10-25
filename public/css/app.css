@@ -39715,9 +39715,8 @@ small,
 }
 
 .work-col {
-  float: left;
   cursor: pointer;
-  padding: 5px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -39823,38 +39822,6 @@ small,
 
 .work-col .card-content p.elements span:after {
   contain: ",";
-}
-
-.work-col.col-sm {
-  width: 50%;
-}
-
-@media only screen and (max-width: 991px) {
-  .work-col.col-sm {
-    width: 50%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .work-col.col-sm {
-    width: 100%;
-  }
-}
-
-.work-col.col-lg {
-  width: 100%;
-}
-
-@media only screen and (max-width: 991px) {
-  .work-col.col-lg {
-    width: 50%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .work-col.col-lg {
-    width: 100%;
-  }
 }
 
 @media only screen and (max-width: 991px) {

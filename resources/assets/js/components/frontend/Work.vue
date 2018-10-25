@@ -7,7 +7,7 @@
             <div class="work-header">
                 <div class="content text-center">
                     <div class="columns">
-                        <div class="column is-8">
+                        <div class="column is-12">
                             <p class="has-text-weight-normal is-size-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eum veniam obcaecati sit dolorum iusto libero corrupti minus molestias, voluptate officia dolorem nam reiciendis dolore consequuntur dolor. Saepe, nihil natus?</p>
                         </div>
     
@@ -23,7 +23,8 @@
     
                         <div class="work-row" v-cloak>
     
-                            <div class="work-col col-sm" v-for="project in projects">
+                            <masonry :cols="{default: 3, 1000: 2, 550: 1}" :gutter="15">
+                            <div class="work-col" v-for="(project, index) in projects" :key="index">
                                 <router-link :to="`/work/${project.slug}`">
                                     <div class="card">
                                         <div class="card-image">
@@ -41,9 +42,7 @@
                                         </div>
                                         <div class="card-content">
                                             <div class="content">
-    
                                                 <p>{{project.title}}
-                                                    <!-- <time datetime="2016-1-1">{{project.date}}</time> -->
                                                 </p>
                                                 <p class="elements">
                                                     <span v-for="element in project.elements">{{element.name}}</span>
@@ -54,6 +53,7 @@
                                 </router-link>
                             </div>
                             <!-- work-col -->
+                            </masonry>    
     
     
                         </div>
