@@ -2,68 +2,86 @@
     <div>
     
         <section class="front-cover">
-
-
-                <div class="about-info">
-
-                    <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="8px"></ball-pulse-sync-loader>
-                    <h2 v-cloak class="info dynamic-content" @click="handleClicks" v-html="general.intro"></h2>
-
-                    <div class="about-photo">
-                        <img :src="`${baseURL}${general.dp}`" alt="image">
-                    </div>
-
-
-                    <div class="social">
-                    
-                        <a class="nottarget" :href="general.linkedin" target="_blank">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                        <a class="nottarget" :href="general.github" target="_blank">
-                            <i class="fa fa-github"></i>
-                        </a>
-                        <a class="nottarget" :href="general.stackoverflow" target="_blank">
-                            <i class="fa fa-stack-overflow"></i>
-                        </a>
-                        <a class="nottarget" :href="general.instagram" target="_blank">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                        <a class="nottarget" :href="general.facebook" target="_blank">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a class="has-text-grey line"> | </a>
-                        <a  class="has-text-grey email" href="mailto:hi@amirr.net" >
-                            hi@amirr.net
-                        </a>
-                    </div>
-
-                    <div class="menu front">
-                        <div class="menu-button">
-                            <div class="fa fa-bars" v-if="!NavIsActive" @click="onNavBarClick"></div>
-                            <div class="fa fa-close"  v-if="NavIsActive" @click="onNavBarClose"></div>
-                            <div class="menu-items" v-bind:class="{ active: NavIsActive}">
-                                <div class="items"><router-link to="/about">About</router-link></div>
-                                <div class="items"><router-link to="/work">Work</router-link></div>
-                                <div class="items"><router-link to="/contact">Contact</router-link></div>
+    
+    
+            <div class="about-info">
+    
+                <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="8px"></ball-pulse-sync-loader>
+                <h2 v-cloak class="info dynamic-content" @click="handleClicks" v-html="general.intro"></h2>
+    
+                <div class="about-photo">
+                    <clazy-load :src="`${baseURL}${general.dp}`">
+                        <img :src="`${baseURL}${general.dp}`">
+                        <div class="preloader" slot="placeholder">
+                            <div class="timeline-item">
+                                <div class="animated-background">
+                                </div>
                             </div>
                         </div>
-
-
-
-
+                    </clazy-load>
+                </div>
+    
+    
+                <div class="social">
+    
+                    <a class="nottarget" :href="general.linkedin" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a class="nottarget" :href="general.github" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a class="nottarget" :href="general.stackoverflow" target="_blank">
+                        <i class="fa fa-stack-overflow"></i>
+                    </a>
+                    <a class="nottarget" :href="general.instagram" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a class="nottarget" :href="general.facebook" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="has-text-grey line"> | </a>
+                    <a class="has-text-grey email" href="mailto:hi@amirr.net">
+                                    hi@amirr.net
+                                </a>
+                </div>
+    
+                <div class="menu front">
+                    <div class="menu-button">
+                        <div class="fa fa-bars" v-if="!NavIsActive" @click="onNavBarClick"></div>
+                        <div class="fa fa-close" v-if="NavIsActive" @click="onNavBarClose"></div>
+                        <div class="menu-items" v-bind:class="{ active: NavIsActive}">
+                            <div class="items">
+                                <router-link to="/about">About</router-link>
+                            </div>
+                            <div class="items">
+                                <router-link to="/work">Work</router-link>
+                            </div>
+                            <div class="items">
+                                <router-link to="/contact">Contact</router-link>
+                            </div>
+                        </div>
                     </div>
-
-                </div>            
-                
+    
+    
+    
+    
+                </div>
+    
+            </div>
+    
     
         </section>
-
+    
     
     </div>
 </template>
 
 
 <script>
+    import {
+        VueClazyLoad
+    } from 'vue-clazy-load';
+    
     export default {
         data() {
             return {
@@ -90,14 +108,13 @@
             }, 900)
         },
         methods: {
-            onNavBarClick () {
+            onNavBarClick() {
                 this.NavIsActive = true
             },
-            onNavBarClose () {
+            onNavBarClose() {
                 this.NavIsActive = false
             },
-            applyTextEdit() {
-            },
+            applyTextEdit() {},
             getData() {
                 axios.get(`/api/general`)
                     .then(response => {
@@ -149,5 +166,9 @@
 
 
 <style scopped>
-    
+    .animated-background {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
 </style>

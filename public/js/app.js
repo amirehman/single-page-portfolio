@@ -80035,7 +80035,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.animated-background {\n    width: 120px;\n    height: 120px;\n    border-radius: 50%;\n}\n", ""]);
 
 // exports
 
@@ -80046,6 +80046,8 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_clazy_load__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_clazy_load___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_clazy_load__);
 //
 //
 //
@@ -80111,6 +80113,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -80217,11 +80235,36 @@ var render = function() {
             on: { click: _vm.handleClicks }
           }),
           _vm._v(" "),
-          _c("div", { staticClass: "about-photo" }, [
-            _c("img", {
-              attrs: { src: "" + _vm.baseURL + _vm.general.dp, alt: "image" }
-            })
-          ]),
+          _c(
+            "div",
+            { staticClass: "about-photo" },
+            [
+              _c(
+                "clazy-load",
+                { attrs: { src: "" + _vm.baseURL + _vm.general.dp } },
+                [
+                  _c("img", {
+                    attrs: { src: "" + _vm.baseURL + _vm.general.dp }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "preloader",
+                      attrs: { slot: "placeholder" },
+                      slot: "placeholder"
+                    },
+                    [
+                      _c("div", { staticClass: "timeline-item" }, [
+                        _c("div", { staticClass: "animated-background" })
+                      ])
+                    ]
+                  )
+                ]
+              )
+            ],
+            1
+          ),
           _vm._v(" "),
           _c("div", { staticClass: "social" }, [
             _c(
@@ -80279,7 +80322,7 @@ var render = function() {
               },
               [
                 _vm._v(
-                  "\n                        hi@amirr.net\n                    "
+                  "\n                                hi@amirr.net\n                            "
                 )
               ]
             )
@@ -83186,7 +83229,7 @@ var render = function() {
                             "div",
                             { staticClass: "columns is-flex-mobile" },
                             _vm._l(_vm.expertiesTypes, function(typeo) {
-                              return _c("div", { staticClass: "column is-4" }, [
+                              return _c("div", { staticClass: "column is-3" }, [
                                 _c("aside", { staticClass: "menu" }, [
                                   _c("p", { staticClass: "menu-label" }, [
                                     _vm._v(

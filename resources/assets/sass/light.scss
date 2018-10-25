@@ -589,10 +589,10 @@ body.work {
 .about-skills {
     .about-skills-body {
         aside {
+            text-align: left!important;
             ul {
                 list-style: none;
                 li {
-                    // border: 1px solid rgba(#000000, 0.3);
                     a {
                         color: $midnight;
                         padding: 5px;
@@ -614,10 +614,6 @@ body.work {
             }
         }
     }
-}
-
-.progressive-image {
-    max-width: 100%!important;
 }
 
 .contact-wrapper {

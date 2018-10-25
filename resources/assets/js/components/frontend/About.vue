@@ -24,7 +24,7 @@
                                         <div class="about-skills-body">
     
                                             <div class="columns is-flex-mobile">
-                                                <div class="column is-4" v-for="typeo in expertiesTypes">
+                                                <div class="column is-3" v-for="typeo in expertiesTypes">
                                                     <aside class="menu">
                                                         <p class="menu-label">
                                                             {{typeo}}
