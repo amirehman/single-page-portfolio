@@ -80935,7 +80935,7 @@ var render = function() {
                       "masonry",
                       {
                         attrs: {
-                          cols: { default: 3, 1000: 2, 550: 1 },
+                          cols: { default: 3, 1399: 2, 550: 1 },
                           gutter: 15
                         }
                       },

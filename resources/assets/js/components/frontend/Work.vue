@@ -23,7 +23,7 @@
     
                         <div class="work-row" v-cloak>
     
-                            <masonry :cols="{default: 3, 1000: 2, 550: 1}" :gutter="15">
+                            <masonry :cols="{default: 3, 1399: 2, 550: 1}" :gutter="15">
                             <div class="work-col" v-for="(project, index) in projects" :key="index">
                                 <router-link :to="`/work/${project.slug}`">
                                     <div class="card">
