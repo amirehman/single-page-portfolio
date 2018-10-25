@@ -83166,7 +83166,13 @@ var render = function() {
                         "background-size": "cover",
                         "background-attachment": "fixed"
                       },
-                      attrs: { src: _vm.backgroundImgUrl + _vm.profile.image }
+                      style: {
+                        "background-image":
+                          "url(" +
+                          _vm.backgroundImgUrl +
+                          _vm.profile.image +
+                          ")"
+                      }
                     }),
                     _vm._v(" "),
                     _c("div", { staticClass: "about-skills about-section" }, [

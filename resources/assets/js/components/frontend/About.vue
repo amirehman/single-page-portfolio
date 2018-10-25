@@ -16,7 +16,7 @@
                                     <h3 class="button is-radiusless	">BIOGRAPHY</h3>
                                     <div v-html="profile.bio"></div>
                                 </div>
-                                <div class="content-img about-section image1" style="background-position: center ; background-repeat: no-repeat; background-size: cover;background-attachment: fixed;" :src="backgroundImgUrl+profile.image">
+                                <div class="content-img about-section image1" style="background-position: center ; background-repeat: no-repeat; background-size: cover;background-attachment: fixed;" :style="{ 'background-image': 'url(' + backgroundImgUrl + profile.image + ')' }">
                                 </div>
                                 <div class="about-skills about-section">
                                     <div class="content">
