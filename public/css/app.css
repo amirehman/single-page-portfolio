@@ -39723,7 +39723,6 @@ small,
 .work-col .card {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
-  border: 1px solid rgba(211, 211, 211, 0.52);
 }
 
 .work-col .card .card-image {
@@ -40134,7 +40133,6 @@ small,
 
 .timeline-item {
   border-radius: 0px;
-  padding: 5px;
   margin: 0 auto;
   max-width: 100%;
 }
