@@ -79956,19 +79956,19 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(157)
+  __webpack_require__(252)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = __webpack_require__(159)
 /* template */
-var __vue_template__ = __webpack_require__(160)
+var __vue_template__ = __webpack_require__(254)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-0c805055"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -80001,46 +80001,8 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 157 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(158);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(2)("b0c41526", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0c805055\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Home.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0c805055\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Home.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 158 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(1)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.animated-background {\n    width: 120px;\n    height: 120px;\n    border-radius: 50%;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 157 */,
+/* 158 */,
 /* 159 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -80210,200 +80172,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 160 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("section", { staticClass: "front-cover" }, [
-      _c(
-        "div",
-        { staticClass: "about-info" },
-        [
-          _vm.loading
-            ? _c("ball-pulse-sync-loader", {
-                attrs: { color: "#e67e22", size: "8px" }
-              })
-            : _vm._e(),
-          _vm._v(" "),
-          _c("h2", {
-            staticClass: "info dynamic-content",
-            domProps: { innerHTML: _vm._s(_vm.general.intro) },
-            on: { click: _vm.handleClicks }
-          }),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "about-photo" },
-            [
-              _c(
-                "clazy-load",
-                { attrs: { src: "" + _vm.baseURL + _vm.general.dp } },
-                [
-                  _c("img", {
-                    attrs: { src: "" + _vm.baseURL + _vm.general.dp }
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "preloader",
-                      attrs: { slot: "placeholder" },
-                      slot: "placeholder"
-                    },
-                    [
-                      _c("div", { staticClass: "timeline-item" }, [
-                        _c("div", { staticClass: "animated-background" })
-                      ])
-                    ]
-                  )
-                ]
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "social" }, [
-            _c(
-              "a",
-              {
-                staticClass: "nottarget",
-                attrs: { href: _vm.general.linkedin, target: "_blank" }
-              },
-              [_c("i", { staticClass: "fa fa-linkedin" })]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticClass: "nottarget",
-                attrs: { href: _vm.general.github, target: "_blank" }
-              },
-              [_c("i", { staticClass: "fa fa-github" })]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticClass: "nottarget",
-                attrs: { href: _vm.general.stackoverflow, target: "_blank" }
-              },
-              [_c("i", { staticClass: "fa fa-stack-overflow" })]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticClass: "nottarget",
-                attrs: { href: _vm.general.instagram, target: "_blank" }
-              },
-              [_c("i", { staticClass: "fa fa-instagram" })]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticClass: "nottarget",
-                attrs: { href: _vm.general.facebook, target: "_blank" }
-              },
-              [_c("i", { staticClass: "fa fa-facebook" })]
-            ),
-            _vm._v(" "),
-            _c("a", { staticClass: "has-text-grey line" }, [_vm._v(" | ")]),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticClass: "has-text-grey email",
-                attrs: { href: "mailto:hi@amirr.net" }
-              },
-              [
-                _vm._v(
-                  "\n                                hi@amirr.net\n                            "
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "menu front" }, [
-            _c("div", { staticClass: "menu-button" }, [
-              !_vm.NavIsActive
-                ? _c("div", {
-                    staticClass: "fa fa-bars",
-                    on: { click: _vm.onNavBarClick }
-                  })
-                : _vm._e(),
-              _vm._v(" "),
-              _vm.NavIsActive
-                ? _c("div", {
-                    staticClass: "fa fa-close",
-                    on: { click: _vm.onNavBarClose }
-                  })
-                : _vm._e(),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "menu-items",
-                  class: { active: _vm.NavIsActive }
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "items" },
-                    [
-                      _c("router-link", { attrs: { to: "/about" } }, [
-                        _vm._v("About")
-                      ])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "items" },
-                    [
-                      _c("router-link", { attrs: { to: "/work" } }, [
-                        _vm._v("Work")
-                      ])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "items" },
-                    [
-                      _c("router-link", { attrs: { to: "/contact" } }, [
-                        _vm._v("Contact")
-                      ])
-                    ],
-                    1
-                  )
-                ]
-              )
-            ])
-          ])
-        ],
-        1
-      )
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-0c805055", module.exports)
-  }
-}
-
-/***/ }),
+/* 160 */,
 /* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -85001,6 +84770,240 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 /* harmony default export */ __webpack_exports__["a"] = (Plugin);
 
+
+/***/ }),
+/* 252 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(253);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("d794f940", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0c805055\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Home.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0c805055\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Home.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 253 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.animated-background[data-v-0c805055] {\n    width: 120px;\n    height: 120px;\n    border-radius: 50%;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 254 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("section", { staticClass: "front-cover" }, [
+      _c(
+        "div",
+        { staticClass: "about-info" },
+        [
+          _vm.loading
+            ? _c("ball-pulse-sync-loader", {
+                attrs: { color: "#e67e22", size: "8px" }
+              })
+            : _vm._e(),
+          _vm._v(" "),
+          _c("h2", {
+            staticClass: "info dynamic-content",
+            domProps: { innerHTML: _vm._s(_vm.general.intro) },
+            on: { click: _vm.handleClicks }
+          }),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "about-photo" },
+            [
+              _c(
+                "clazy-load",
+                { attrs: { src: "" + _vm.baseURL + _vm.general.dp } },
+                [
+                  _c("img", {
+                    attrs: { src: "" + _vm.baseURL + _vm.general.dp }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "preloader",
+                      attrs: { slot: "placeholder" },
+                      slot: "placeholder"
+                    },
+                    [
+                      _c("div", { staticClass: "timeline-item" }, [
+                        _c("div", { staticClass: "animated-background" })
+                      ])
+                    ]
+                  )
+                ]
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "social" }, [
+            _c(
+              "a",
+              {
+                staticClass: "nottarget",
+                attrs: { href: _vm.general.linkedin, target: "_blank" }
+              },
+              [_c("i", { staticClass: "fa fa-linkedin" })]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "nottarget",
+                attrs: { href: _vm.general.github, target: "_blank" }
+              },
+              [_c("i", { staticClass: "fa fa-github" })]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "nottarget",
+                attrs: { href: _vm.general.stackoverflow, target: "_blank" }
+              },
+              [_c("i", { staticClass: "fa fa-stack-overflow" })]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "nottarget",
+                attrs: { href: _vm.general.instagram, target: "_blank" }
+              },
+              [_c("i", { staticClass: "fa fa-instagram" })]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "nottarget",
+                attrs: { href: _vm.general.facebook, target: "_blank" }
+              },
+              [_c("i", { staticClass: "fa fa-facebook" })]
+            ),
+            _vm._v(" "),
+            _c("a", { staticClass: "has-text-grey line" }, [_vm._v(" | ")]),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "has-text-grey email",
+                attrs: { href: "mailto:hi@amirr.net" }
+              },
+              [
+                _vm._v(
+                  "\n                                hi@amirr.net\n                            "
+                )
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "menu front" }, [
+            _c("div", { staticClass: "menu-button" }, [
+              !_vm.NavIsActive
+                ? _c("div", {
+                    staticClass: "fa fa-bars",
+                    on: { click: _vm.onNavBarClick }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.NavIsActive
+                ? _c("div", {
+                    staticClass: "fa fa-close",
+                    on: { click: _vm.onNavBarClose }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "menu-items",
+                  class: { active: _vm.NavIsActive }
+                },
+                [
+                  _c(
+                    "div",
+                    { staticClass: "items" },
+                    [
+                      _c("router-link", { attrs: { to: "/about" } }, [
+                        _vm._v("About")
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "items" },
+                    [
+                      _c("router-link", { attrs: { to: "/work" } }, [
+                        _vm._v("Work")
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "items" },
+                    [
+                      _c("router-link", { attrs: { to: "/contact" } }, [
+                        _vm._v("Contact")
+                      ])
+                    ],
+                    1
+                  )
+                ]
+              )
+            ])
+          ])
+        ],
+        1
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-0c805055", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

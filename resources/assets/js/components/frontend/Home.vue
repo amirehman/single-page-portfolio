@@ -165,7 +165,7 @@
 </script>
 
 
-<style scopped>
+<style scoped>
     .animated-background {
         width: 120px;
         height: 120px;
