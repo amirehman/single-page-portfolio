@@ -65,7 +65,7 @@ class ProjectController extends Controller
         
         $filename = time().'.' . explode('/', explode(':', substr($request->image, 0, strpos($request->image, ';')))[1])[1];
 
-        \Image::make($request->image)->resize(600,800)->save(public_path('images/').$filename);
+        \Image::make($request->image)->resize(600,null)->save(public_path('images/').$filename);
 
 
         $project->title = $request->title;
@@ -120,7 +120,7 @@ class ProjectController extends Controller
                     
             $filename = time().'.' . explode('/', explode(':', substr($request->image, 0, strpos($request->image, ';')))[1])[1];
 
-            \Image::make($request->image)->resize(600,800)->save(public_path('images/').$filename);
+            \Image::make($request->image)->resize(600,null)->save(public_path('images/').$filename);
 
             File::delete(public_path('images/'. $project->image));
 
