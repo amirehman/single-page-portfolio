@@ -10,7 +10,6 @@
                 <h2 v-cloak class="info dynamic-content" @click="handleClicks" v-html="general.intro"></h2>
     
                 <div class="about-photo">
-                    <clazy-load :src="`${baseURL}${general.dp}`">
                         <img :src="`${baseURL}${general.dp}`">
                         <div class="preloader" slot="placeholder">
                             <div class="timeline-item">
@@ -18,7 +17,6 @@
                                 </div>
                             </div>
                         </div>
-                    </clazy-load>
                 </div>
     
     

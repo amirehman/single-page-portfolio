@@ -80677,8 +80677,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 
 
@@ -80790,36 +80788,19 @@ var render = function() {
             on: { click: _vm.handleClicks }
           }),
           _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "about-photo" },
-            [
-              _c(
-                "clazy-load",
-                { attrs: { src: "" + _vm.baseURL + _vm.general.dp } },
-                [
-                  _c("img", {
-                    attrs: { src: "" + _vm.baseURL + _vm.general.dp }
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "preloader",
-                      attrs: { slot: "placeholder" },
-                      slot: "placeholder"
-                    },
-                    [
-                      _c("div", { staticClass: "timeline-item" }, [
-                        _c("div", { staticClass: "animated-background" })
-                      ])
-                    ]
-                  )
-                ]
-              )
-            ],
-            1
-          ),
+          _c("div", { staticClass: "about-photo" }, [
+            _c("img", { attrs: { src: "" + _vm.baseURL + _vm.general.dp } }),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "preloader",
+                attrs: { slot: "placeholder" },
+                slot: "placeholder"
+              },
+              [_vm._m(0)]
+            )
+          ]),
           _vm._v(" "),
           _c("div", { staticClass: "social" }, [
             _c(
@@ -80948,7 +80929,16 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "timeline-item" }, [
+      _c("div", { staticClass: "animated-background" })
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
