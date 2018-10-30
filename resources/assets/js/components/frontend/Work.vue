@@ -8,7 +8,9 @@
                 <div class="content text-center">
                     <div class="columns">
                         <div class="column is-12">
-                            <p class="has-text-weight-normal is-size-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eum veniam obcaecati sit dolorum iusto libero corrupti minus molestias, voluptate officia dolorem nam reiciendis dolore consequuntur dolor. Saepe, nihil natus?</p>
+                            <div class="content"> 
+                            <p class="has-text-weight-normal is-size-6">See my works below. all their back-end and front-end parts were completely done by me. Much of my most recent work using current technologies has been for internal enterprise web apps which naturally can't be shared with the public.</p>
+                            </div>
                         </div>
     
                     </div>
@@ -16,7 +18,7 @@
             </div>
     
     
-            <div class="columns">
+            <div class="columns m-t-75">
                 <div class="column">
                     <div class="work-wrapper">
                         <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="5px"></ball-pulse-sync-loader>
@@ -27,7 +29,17 @@
                             <div class="work-col" v-for="(project, index) in projects" :key="index">
                                 <router-link :to="`/work/${project.slug}`">
                                     <div class="card">
+                                    
                                         <div class="card-image">
+                                        <div class="card-content">
+                                            <div class="content">
+                                                <p>{{project.title}}
+                                                </p>
+                                                <p class="elements">
+                                                    <span v-for="element in project.elements">{{element.name}}</span>
+                                                </p>
+                                            </div>
+                                        </div>
                                             <figure class="image">
                                                 <clazy-load :src="`${baseURL}images/${project.image}`">
                                                     <img :src="`${baseURL}images/${project.image}`">
@@ -40,15 +52,7 @@
                                                 </clazy-load>
                                             </figure>
                                         </div>
-                                        <div class="card-content">
-                                            <div class="content">
-                                                <p>{{project.title}}
-                                                </p>
-                                                <p class="elements">
-                                                    <span v-for="element in project.elements">{{element.name}}</span>
-                                                </p>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </router-link>
                             </div>

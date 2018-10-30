@@ -80707,6 +80707,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         }, 900);
     },
 
+    components: {
+        "clazy-load": __WEBPACK_IMPORTED_MODULE_0_vue_clazy_load__["VueClazyLoad"]
+    },
     methods: {
         onNavBarClick: function onNavBarClick() {
             this.NavIsActive = true;
@@ -81014,6 +81017,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__TopNav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__TopNav__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_clazy_load__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_clazy_load___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue_clazy_load__);
+//
+//
+//
+//
 //
 //
 //
@@ -81510,7 +81517,7 @@ var render = function() {
       _c("div", { staticClass: "container pad-col" }, [
         _vm._m(0),
         _vm._v(" "),
-        _c("div", { staticClass: "columns" }, [
+        _c("div", { staticClass: "columns m-t-75" }, [
           _c("div", { staticClass: "column" }, [
             _c(
               "div",
@@ -81545,6 +81552,29 @@ var render = function() {
                               [
                                 _c("div", { staticClass: "card" }, [
                                   _c("div", { staticClass: "card-image" }, [
+                                    _c("div", { staticClass: "card-content" }, [
+                                      _c("div", { staticClass: "content" }, [
+                                        _c("p", [
+                                          _vm._v(
+                                            _vm._s(project.title) +
+                                              "\n                                            "
+                                          )
+                                        ]),
+                                        _vm._v(" "),
+                                        _c(
+                                          "p",
+                                          { staticClass: "elements" },
+                                          _vm._l(project.elements, function(
+                                            element
+                                          ) {
+                                            return _c("span", [
+                                              _vm._v(_vm._s(element.name))
+                                            ])
+                                          })
+                                        )
+                                      ])
+                                    ]),
+                                    _vm._v(" "),
                                     _c(
                                       "figure",
                                       { staticClass: "image" },
@@ -81596,29 +81626,6 @@ var render = function() {
                                       ],
                                       1
                                     )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "card-content" }, [
-                                    _c("div", { staticClass: "content" }, [
-                                      _c("p", [
-                                        _vm._v(
-                                          _vm._s(project.title) +
-                                            "\n                                            "
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c(
-                                        "p",
-                                        { staticClass: "elements" },
-                                        _vm._l(project.elements, function(
-                                          element
-                                        ) {
-                                          return _c("span", [
-                                            _vm._v(_vm._s(element.name))
-                                          ])
-                                        })
-                                      )
-                                    ])
                                   ])
                                 ])
                               ]
@@ -81652,10 +81659,12 @@ var staticRenderFns = [
       _c("div", { staticClass: "content text-center" }, [
         _c("div", { staticClass: "columns" }, [
           _c("div", { staticClass: "column is-12" }, [
-            _c("p", { staticClass: "has-text-weight-normal is-size-6" }, [
-              _vm._v(
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eum veniam obcaecati sit dolorum iusto libero corrupti minus molestias, voluptate officia dolorem nam reiciendis dolore consequuntur dolor. Saepe, nihil natus?"
-              )
+            _c("div", { staticClass: "content" }, [
+              _c("p", { staticClass: "has-text-weight-normal is-size-6" }, [
+                _vm._v(
+                  "See my works below. all their back-end and front-end parts were completely done by me. Much of my most recent work using current technologies has been for internal enterprise web apps which naturally can't be shared with the public."
+                )
+              ])
             ])
           ])
         ])

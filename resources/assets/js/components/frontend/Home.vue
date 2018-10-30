@@ -107,6 +107,9 @@
                 })
             }, 900)
         },
+        components: {
+            "clazy-load": VueClazyLoad
+        },
         methods: {
             onNavBarClick() {
                 this.NavIsActive = true

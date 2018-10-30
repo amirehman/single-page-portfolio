@@ -231,10 +231,15 @@ body.work {
     margin-bottom: 15px;
     text-align: center;
     .card {
-        box-shadow: none !important;
-        // border: 1px solid rgba(211, 211, 211, 0.52);
-        .card-image {
+        box-shadow: none;
+        border-radius: 5px;
+        transition: 0.3s;
+    .card-image {
             position: relative;
+            .image {
+                border-radius: 5px;
+                overflow: hidden;
+            }
             &:after {
                 display: none;
                 content: "";
@@ -281,41 +286,25 @@ body.work {
                 }
             }
         }
-        
-        &:hover {
-            .card-content {
-                visibility: visible;
-                transition: 0.3s;
-                z-index: 11;
-            }
-        }
     }
     .card-content {
-        position: absolute;
-        left: 0px;
-        bottom: 0px;
-        width: 100%;
-        z-index: -11;
-        visibility: hidden;
-        border-top: 1px solid white;
-        background-color: rgba(255, 255, 255, 0.97);
         transition: 0.3s;
+        text-align: left;
+        padding-left: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         a {
             color: rgba(0, 0, 0, 0.7);
-        }
-        time {
-            margin-top: 5px;
-            display: block;
-            font-size: 14px;
-            font-weight: 400;
-            color: rgba(0, 0, 0, 0.3);
+            text-transform: capitalize;
         }
         p {
             margin-bottom: 0px;
+            font-size: 18px;
+            font-weight: 600;
         }
         p.elements {
-            font-size: 13px;
-            color: rgba(0, 0, 0, 0.467);
+            font-size: 16px;
+            color: rgba(138, 138, 138, 0.6);
             margin-top: 5px;
             padding: 0px;
             span {
@@ -325,6 +314,15 @@ body.work {
                 &:after {
                     contain: ",";
                 }
+            }
+        }
+    }
+    &:hover {
+        .card {
+            box-shadow: 0 2px 3px rgba(10, 10, 10, 0.08), 0 0 0 1px rgba(10, 10, 10, 0.07);
+            background-color: rgba(206, 206, 206, 0.05);
+            .card-content {
+                padding-left: 15px;
             }
         }
     }
