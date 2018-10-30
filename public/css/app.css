@@ -39735,6 +39735,8 @@ small,
 .work-col .card .card-image .image {
   border-radius: 5px;
   overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .work-col .card .card-image:after {
@@ -39823,6 +39825,10 @@ small,
 
 .work-col:hover .card .card-content {
   padding-left: 15px;
+}
+
+.work-col:hover .card .image {
+  border-radius: 0px 0px 5px 5px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -40066,6 +40072,16 @@ small,
   margin-bottom: 30px;
 }
 
+.about-skills .about-skills-body p {
+  width: 100%;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.about-skills .about-skills-body .menu {
+  display: inherit;
+}
+
 .about-skills .about-skills-body aside {
   text-align: left !important;
 }
@@ -40087,7 +40103,7 @@ small,
 }
 
 .about-skills .about-skills-body aside ul li a:before {
-  content: "\23E4   ";
+  content: "- ";
   display: inline-block;
   margin-right: 6px;
   color: #373737;
