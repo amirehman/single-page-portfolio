@@ -80587,7 +80587,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.animated-background[data-v-0c805055] {\n    width: 120px;\n    height: 120px;\n    border-radius: 50%;\n}\n", ""]);
+exports.push([module.i, "\n.animated-background[data-v-0c805055] {\n    width: 220px;\n    height: 220px;\n    border-radius: 20%;\n}\n", ""]);
 
 // exports
 
@@ -80690,7 +80690,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             },
             profile: {},
             loading: true,
-            baseURL: "http://45.77.65.13/images/",
+            baseURL: "http://www.amirr.net/images/",
             bodyimage: 'round.png',
             NavIsActive: false
         };

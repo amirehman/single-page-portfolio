@@ -90,7 +90,7 @@
                 },
                 profile: {},
                 loading: true,
-                baseURL: "http://45.77.65.13/images/",
+                baseURL: "http://www.amirr.net/images/",
                 bodyimage: 'round.png',
                 NavIsActive: false
             }
@@ -170,8 +170,8 @@
 
 <style scoped>
     .animated-background {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
+        width: 220px;
+        height: 220px;
+        border-radius: 20%;
     }
 </style>
