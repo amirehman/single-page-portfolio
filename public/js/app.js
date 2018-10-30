@@ -80707,9 +80707,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         }, 900);
     },
 
-    components: {
-        "clazy-load": __WEBPACK_IMPORTED_MODULE_0_vue_clazy_load__["VueClazyLoad"]
-    },
     methods: {
         onNavBarClick: function onNavBarClick() {
             this.NavIsActive = true;
@@ -80760,6 +80757,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 }
             }
         }
+    },
+    components: {
+        "clazy-load": __WEBPACK_IMPORTED_MODULE_0_vue_clazy_load__["VueClazyLoad"]
     }
 
 });
