@@ -67,7 +67,7 @@
                 page: {},
                 dropfile: "",
                 errors: {},
-                baseURL: "http://45.77.65.13/"
+                baseURL: "https://45.77.65.13/"
     
             }
         },

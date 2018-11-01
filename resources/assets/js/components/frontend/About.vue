@@ -161,7 +161,7 @@
                 },
                 experties: {},
                 expertiesTypes: {},
-                backgroundImgUrl: "http://45.77.65.13/images/",
+                backgroundImgUrl: "https://45.77.65.13/images/",
                 experiences: {},
                 educations: {},
                 loading: true
