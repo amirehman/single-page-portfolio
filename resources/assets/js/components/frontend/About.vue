@@ -161,7 +161,7 @@
                 },
                 experties: {},
                 expertiesTypes: {},
-                backgroundImgUrl: "https://45.77.65.13/images/",
+                backgroundImgUrl: "https://www.amirr.net/images/",
                 experiences: {},
                 educations: {},
                 loading: true

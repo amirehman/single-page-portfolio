@@ -55,7 +55,7 @@
             return {
                 project: "",
                 pages: "",
-                baseURL: "https://45.77.65.13/"
+                baseURL: "https://www.amirr.net/"
             }
         },
         created() {

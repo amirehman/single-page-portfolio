@@ -59063,7 +59063,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             elements: [],
             selectedElements: [11, 12],
             errors: {},
-            baseURL: "https://45.77.65.13/"
+            baseURL: "https://www.amirr.net/"
         };
     },
     created: function created() {
@@ -59315,7 +59315,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {
             project: "",
             pages: "",
-            baseURL: "https://45.77.65.13/"
+            baseURL: "https://www.amirr.net/"
         };
     },
     created: function created() {
@@ -61606,7 +61606,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             page: {},
             dropfile: "",
             errors: {},
-            baseURL: "https://45.77.65.13/"
+            baseURL: "https://www.amirr.net/"
 
         };
     },
@@ -65887,7 +65887,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             },
             dropFiles: {},
             errors: {},
-            baseURL: "https://45.77.65.13/"
+            baseURL: "https://www.amirr.net/"
 
         };
     },
@@ -81089,7 +81089,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             projects: {},
-            baseURL: "https://45.77.65.13/",
+            baseURL: "https://www.amirr.net/",
             loading: true
 
         };
@@ -81812,7 +81812,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             project: {},
-            baseURL: "https://45.77.65.13/",
+            baseURL: "https://www.amirr.net/",
             elements: {},
             pages: {},
             loading: true,
@@ -82338,7 +82338,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             },
             experties: {},
             expertiesTypes: {},
-            backgroundImgUrl: "https://45.77.65.13/images/",
+            backgroundImgUrl: "https://www.amirr.net/images/",
             experiences: {},
             educations: {},
             loading: true

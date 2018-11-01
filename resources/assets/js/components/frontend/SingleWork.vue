@@ -82,7 +82,7 @@
         data() {
             return {
                 project: {},
-                baseURL: "https://45.77.65.13/",
+                baseURL: "https://www.amirr.net/",
                 elements: {},
                 pages: {},
                 loading: true,
