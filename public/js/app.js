@@ -50250,7 +50250,7 @@ var Token = function () {
         value: function isValid(token) {
             var payload = this.payload(token);
             if (payload) {
-                return payload.iss == "http://www.amirr.net/api/auth/login" ? true : false;
+                return payload.iss == "https://www.amirr.net/api/auth/login" ? true : false;
             }
 
             return false;
@@ -59063,7 +59063,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             elements: [],
             selectedElements: [11, 12],
             errors: {},
-            baseURL: "http://45.77.65.13/"
+            baseURL: "https://45.77.65.13/"
         };
     },
     created: function created() {
@@ -59315,7 +59315,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {
             project: "",
             pages: "",
-            baseURL: "http://45.77.65.13/"
+            baseURL: "https://45.77.65.13/"
         };
     },
     created: function created() {
@@ -61606,7 +61606,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             page: {},
             dropfile: "",
             errors: {},
-            baseURL: "http://45.77.65.13/"
+            baseURL: "https://45.77.65.13/"
 
         };
     },
@@ -65887,7 +65887,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             },
             dropFiles: {},
             errors: {},
-            baseURL: "http://45.77.65.13/"
+            baseURL: "https://45.77.65.13/"
 
         };
     },
@@ -80688,7 +80688,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             },
             profile: {},
             loading: true,
-            baseURL: "http://www.amirr.net/images/",
+            baseURL: "https://www.amirr.net/images/",
             bodyimage: 'round.png',
             NavIsActive: false
         };
@@ -81089,7 +81089,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             projects: {},
-            baseURL: "http://45.77.65.13/",
+            baseURL: "https://45.77.65.13/",
             loading: true
 
         };
@@ -81812,7 +81812,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             project: {},
-            baseURL: "http://45.77.65.13/",
+            baseURL: "https://45.77.65.13/",
             elements: {},
             pages: {},
             loading: true,
@@ -82338,7 +82338,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             },
             experties: {},
             expertiesTypes: {},
-            backgroundImgUrl: "http://45.77.65.13/images/",
+            backgroundImgUrl: "https://45.77.65.13/images/",
             experiences: {},
             educations: {},
             loading: true
