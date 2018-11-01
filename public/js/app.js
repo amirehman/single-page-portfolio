@@ -81081,6 +81081,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -81507,130 +81509,132 @@ var render = function() {
       _c("div", { staticClass: "container pad-col" }, [
         _vm._m(0),
         _vm._v(" "),
-        _c("div", { staticClass: "columns m-t-75" }, [
+        _c("div", { staticClass: "columns" }, [
           _c("div", { staticClass: "column" }, [
-            _c(
-              "div",
-              { staticClass: "work-wrapper" },
-              [
-                _vm.loading
-                  ? _c("ball-pulse-sync-loader", {
-                      attrs: { color: "#e67e22", size: "5px" }
-                    })
-                  : _vm._e(),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "work-row" },
-                  [
-                    _c(
-                      "masonry",
-                      {
-                        attrs: {
-                          cols: { default: 3, 1399: 2, 550: 1 },
-                          gutter: 15
-                        }
-                      },
-                      _vm._l(_vm.projects, function(project, index) {
-                        return _c(
-                          "div",
-                          { key: index, staticClass: "work-col" },
-                          [
-                            _c(
-                              "router-link",
-                              { attrs: { to: "/work/" + project.slug } },
-                              [
-                                _c("div", { staticClass: "card" }, [
-                                  _c("div", { staticClass: "card-image" }, [
-                                    _c("div", { staticClass: "card-content" }, [
-                                      _c("div", { staticClass: "content" }, [
-                                        _c("p", [
-                                          _vm._v(
-                                            _vm._s(project.title) +
-                                              "\n                                            "
-                                          )
-                                        ]),
-                                        _vm._v(" "),
-                                        _c(
-                                          "p",
-                                          { staticClass: "elements" },
-                                          _vm._l(project.elements, function(
-                                            element
-                                          ) {
-                                            return _c("span", [
-                                              _vm._v(_vm._s(element.name))
-                                            ])
-                                          })
+            _c("div", { staticClass: "work-wrapper" }, [
+              _c(
+                "div",
+                { staticClass: "m-l-20" },
+                [
+                  _vm.loading
+                    ? _c("ball-pulse-sync-loader", {
+                        attrs: { color: "#e67e22", size: "5px" }
+                      })
+                    : _vm._e()
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "work-row" },
+                [
+                  _c(
+                    "masonry",
+                    {
+                      attrs: {
+                        cols: { default: 3, 1399: 2, 550: 1 },
+                        gutter: 15
+                      }
+                    },
+                    _vm._l(_vm.projects, function(project, index) {
+                      return _c(
+                        "div",
+                        { key: index, staticClass: "work-col" },
+                        [
+                          _c(
+                            "router-link",
+                            { attrs: { to: "/work/" + project.slug } },
+                            [
+                              _c("div", { staticClass: "card" }, [
+                                _c("div", { staticClass: "card-image" }, [
+                                  _c("div", { staticClass: "card-content" }, [
+                                    _c("div", { staticClass: "content" }, [
+                                      _c("p", [
+                                        _vm._v(
+                                          _vm._s(project.title) +
+                                            "\n                                            "
                                         )
-                                      ])
-                                    ]),
-                                    _vm._v(" "),
-                                    _c(
-                                      "figure",
-                                      { staticClass: "image" },
-                                      [
-                                        _c(
-                                          "clazy-load",
-                                          {
+                                      ]),
+                                      _vm._v(" "),
+                                      _c(
+                                        "p",
+                                        { staticClass: "elements" },
+                                        _vm._l(project.elements, function(
+                                          element
+                                        ) {
+                                          return _c("span", [
+                                            _vm._v(_vm._s(element.name))
+                                          ])
+                                        })
+                                      )
+                                    ])
+                                  ]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "figure",
+                                    { staticClass: "image" },
+                                    [
+                                      _c(
+                                        "clazy-load",
+                                        {
+                                          attrs: {
+                                            src:
+                                              _vm.baseURL +
+                                              "images/" +
+                                              project.image
+                                          }
+                                        },
+                                        [
+                                          _c("img", {
                                             attrs: {
                                               src:
                                                 _vm.baseURL +
                                                 "images/" +
                                                 project.image
                                             }
-                                          },
-                                          [
-                                            _c("img", {
-                                              attrs: {
-                                                src:
-                                                  _vm.baseURL +
-                                                  "images/" +
-                                                  project.image
-                                              }
-                                            }),
-                                            _vm._v(" "),
-                                            _c(
-                                              "div",
-                                              {
-                                                staticClass: "preloader",
-                                                attrs: { slot: "placeholder" },
-                                                slot: "placeholder"
-                                              },
-                                              [
-                                                _c(
-                                                  "div",
-                                                  {
-                                                    staticClass: "timeline-item"
-                                                  },
-                                                  [
-                                                    _c("div", {
-                                                      staticClass:
-                                                        "animated-background"
-                                                    })
-                                                  ]
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        )
-                                      ],
-                                      1
-                                    )
-                                  ])
+                                          }),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass: "preloader",
+                                              attrs: { slot: "placeholder" },
+                                              slot: "placeholder"
+                                            },
+                                            [
+                                              _c(
+                                                "div",
+                                                {
+                                                  staticClass: "timeline-item"
+                                                },
+                                                [
+                                                  _c("div", {
+                                                    staticClass:
+                                                      "animated-background"
+                                                  })
+                                                ]
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ],
+                                    1
+                                  )
                                 ])
-                              ]
-                            )
-                          ],
-                          1
-                        )
-                      })
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            )
+                              ])
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    })
+                  )
+                ],
+                1
+              )
+            ])
           ])
         ])
       ]),

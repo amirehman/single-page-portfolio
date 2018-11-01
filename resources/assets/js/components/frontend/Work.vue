@@ -18,13 +18,15 @@
             </div>
     
     
-            <div class="columns m-t-75">
+            <div class="columns">
                 <div class="column">
                     <div class="work-wrapper">
-                        <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="5px"></ball-pulse-sync-loader>
-    
+                       
+                            <div class="m-l-20">
+                                <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="5px"></ball-pulse-sync-loader>
+                            </div>
                         <div class="work-row" v-cloak>
-    
+                             
                             <masonry :cols="{default: 3, 1399: 2, 550: 1}" :gutter="15">
                             <div class="work-col" v-for="(project, index) in projects" :key="index">
                                 <router-link :to="`/work/${project.slug}`">
