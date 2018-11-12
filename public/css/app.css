@@ -39831,6 +39831,18 @@ small,
   border-radius: 0px 0px 5px 5px;
 }
 
+.work-col .elements span {
+  font-size: 14px;
+}
+
+.work-col .elements span::after {
+  content: ", ";
+}
+
+.work-col .elements span:last-child::after {
+  display: none;
+}
+
 @media only screen and (max-width: 991px) {
   .single-wrapper .inner-wrapper {
     padding: 15px;

@@ -8,7 +8,9 @@
             <div class="container pad-col">
                 <div class="columns">
                     <div class="column is-8">
-                        <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="5px"></ball-pulse-sync-loader>
+                        <div class="has-text-centered">
+                                <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="5px"></ball-pulse-sync-loader>
+                            </div>
                         <div class="inner-wrapper" v-cloak>
                             <header class="single-header has-text-left">
                                 <span class="is-marginless is-size-7 has-text-grey" v-if="!loading">Project</span>

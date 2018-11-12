@@ -348,6 +348,19 @@ body.work {
     //         width: 100%;
     //     }
     // }
+    .elements {
+        span {
+            font-size: 14px;
+            &::after {
+                content: ", "
+            }
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 .single-wrapper {

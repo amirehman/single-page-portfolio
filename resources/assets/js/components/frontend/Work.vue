@@ -22,7 +22,7 @@
                 <div class="column">
                     <div class="work-wrapper">
                        
-                            <div class="m-l-20">
+                        <div class="has-text-centered">
                                 <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="5px"></ball-pulse-sync-loader>
                             </div>
                         <div class="work-row" v-cloak>

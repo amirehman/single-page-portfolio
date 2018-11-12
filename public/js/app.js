@@ -55205,6 +55205,10 @@ var routes = [{
 }];
 
 var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
+  scrollBehavior: function scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
+
   hashbang: false,
   mode: 'history',
   routes: routes
@@ -81514,7 +81518,7 @@ var render = function() {
             _c("div", { staticClass: "work-wrapper" }, [
               _c(
                 "div",
-                { staticClass: "m-l-20" },
+                { staticClass: "has-text-centered" },
                 [
                   _vm.loading
                     ? _c("ball-pulse-sync-loader", {
@@ -81807,6 +81811,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -81884,179 +81890,177 @@ var render = function() {
       _c("div", { staticClass: "single-wrapper" }, [
         _c("div", { staticClass: "container pad-col" }, [
           _c("div", { staticClass: "columns" }, [
-            _c(
-              "div",
-              { staticClass: "column is-8" },
-              [
-                _vm.loading
-                  ? _c("ball-pulse-sync-loader", {
-                      attrs: { color: "#e67e22", size: "5px" }
-                    })
-                  : _vm._e(),
-                _vm._v(" "),
-                _c("div", { staticClass: "inner-wrapper" }, [
-                  _c("header", { staticClass: "single-header has-text-left" }, [
-                    !_vm.loading
-                      ? _c(
-                          "span",
-                          {
-                            staticClass: "is-marginless is-size-7 has-text-grey"
-                          },
-                          [_vm._v("Project")]
-                        )
-                      : _vm._e(),
-                    _vm._v(" "),
-                    _c("h3", { staticClass: "is-marginless is-size-3" }, [
-                      _vm._v(_vm._s(_vm.project.title))
-                    ]),
-                    _vm._v(" "),
-                    _c("p", [_vm._v(_vm._s(_vm.project.detail))]),
-                    _vm._v(" "),
-                    !_vm.loading
-                      ? _c("div", { staticClass: "single-elemets aaa" }, [
-                          _c("h4", { staticClass: "is-size-5" }, [
-                            _vm._v("Elemets used in this project")
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "ul",
-                            _vm._l(_vm.elements, function(element) {
-                              return _c(
-                                "li",
-                                { staticClass: "button m-r-5 is-radiusless" },
-                                [
-                                  _c(
-                                    "a",
-                                    {
-                                      attrs: {
-                                        target: "_blank",
-                                        href: "" + element.link
-                                      }
-                                    },
-                                    [_vm._v(_vm._s(element.name))]
-                                  )
-                                ]
-                              )
-                            })
-                          )
-                        ])
-                      : _vm._e(),
-                    _vm._v(" "),
-                    !_vm.loading
-                      ? _c("div", { staticClass: "single-link" }, [
-                          _vm.project.link
-                            ? _c("h4", { staticClass: "is-size-5" }, [
-                                _vm._v("Project Live Link")
-                              ])
-                            : _vm._e(),
-                          _vm._v(" "),
-                          _vm.project.link
-                            ? _c("p", [
+            _c("div", { staticClass: "column is-8" }, [
+              _c(
+                "div",
+                { staticClass: "has-text-centered" },
+                [
+                  _vm.loading
+                    ? _c("ball-pulse-sync-loader", {
+                        attrs: { color: "#e67e22", size: "5px" }
+                      })
+                    : _vm._e()
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "inner-wrapper" }, [
+                _c("header", { staticClass: "single-header has-text-left" }, [
+                  !_vm.loading
+                    ? _c(
+                        "span",
+                        {
+                          staticClass: "is-marginless is-size-7 has-text-grey"
+                        },
+                        [_vm._v("Project")]
+                      )
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c("h3", { staticClass: "is-marginless is-size-3" }, [
+                    _vm._v(_vm._s(_vm.project.title))
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(_vm.project.detail))]),
+                  _vm._v(" "),
+                  !_vm.loading
+                    ? _c("div", { staticClass: "single-elemets aaa" }, [
+                        _c("h4", { staticClass: "is-size-5" }, [
+                          _vm._v("Elemets used in this project")
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "ul",
+                          _vm._l(_vm.elements, function(element) {
+                            return _c(
+                              "li",
+                              { staticClass: "button m-r-5 is-radiusless" },
+                              [
                                 _c(
                                   "a",
                                   {
                                     attrs: {
-                                      href: _vm.project.link,
-                                      target: "_blank"
+                                      target: "_blank",
+                                      href: "" + element.link
                                     }
                                   },
-                                  [_vm._v(_vm._s(_vm.project.link))]
-                                ),
-                                _vm._v(" "),
-                                _c("i", { staticClass: "fa fa-external-link" })
-                              ])
-                            : _vm._e()
-                        ])
-                      : _vm._e()
-                  ]),
+                                  [_vm._v(_vm._s(element.name))]
+                                )
+                              ]
+                            )
+                          })
+                        )
+                      ])
+                    : _vm._e(),
                   _vm._v(" "),
-                  !_vm.loading ? _c("hr") : _vm._e(),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "single-body" }, [
-                    _c(
-                      "ul",
-                      _vm._l(_vm.pages, function(page) {
-                        return _c(
-                          "li",
-                          [
-                            _c("span", { staticClass: "vline" }),
-                            _vm._v(" "),
-                            _c(
-                              "h4",
-                              { staticClass: "is-size-4 is-marginless" },
-                              [_vm._v(_vm._s(page.title))]
-                            ),
-                            _vm._v(" "),
-                            _c("p", { staticClass: "is-size-6" }, [
-                              _vm._v(_vm._s(page.detail))
-                            ]),
-                            _vm._v(" "),
-                            page.image
-                              ? [
-                                  _c(
-                                    "clazy-load",
-                                    {
+                  !_vm.loading
+                    ? _c("div", { staticClass: "single-link" }, [
+                        _vm.project.link
+                          ? _c("h4", { staticClass: "is-size-5" }, [
+                              _vm._v("Project Live Link")
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.project.link
+                          ? _c("p", [
+                              _c(
+                                "a",
+                                {
+                                  attrs: {
+                                    href: _vm.project.link,
+                                    target: "_blank"
+                                  }
+                                },
+                                [_vm._v(_vm._s(_vm.project.link))]
+                              ),
+                              _vm._v(" "),
+                              _c("i", { staticClass: "fa fa-external-link" })
+                            ])
+                          : _vm._e()
+                      ])
+                    : _vm._e()
+                ]),
+                _vm._v(" "),
+                !_vm.loading ? _c("hr") : _vm._e(),
+                _vm._v(" "),
+                _c("div", { staticClass: "single-body" }, [
+                  _c(
+                    "ul",
+                    _vm._l(_vm.pages, function(page) {
+                      return _c(
+                        "li",
+                        [
+                          _c("span", { staticClass: "vline" }),
+                          _vm._v(" "),
+                          _c("h4", { staticClass: "is-size-4 is-marginless" }, [
+                            _vm._v(_vm._s(page.title))
+                          ]),
+                          _vm._v(" "),
+                          _c("p", { staticClass: "is-size-6" }, [
+                            _vm._v(_vm._s(page.detail))
+                          ]),
+                          _vm._v(" "),
+                          page.image
+                            ? [
+                                _c(
+                                  "clazy-load",
+                                  {
+                                    attrs: {
+                                      src: _vm.baseURL + "images/" + page.image
+                                    }
+                                  },
+                                  [
+                                    _c("img", {
                                       attrs: {
                                         src:
                                           _vm.baseURL + "images/" + page.image
                                       }
-                                    },
-                                    [
-                                      _c("img", {
-                                        attrs: {
-                                          src:
-                                            _vm.baseURL + "images/" + page.image
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "preloader",
-                                          attrs: { slot: "placeholder" },
-                                          slot: "placeholder"
-                                        },
-                                        [
-                                          _c(
-                                            "div",
-                                            { staticClass: "timeline-item" },
-                                            [
-                                              _c("div", {
-                                                staticClass:
-                                                  "animated-background"
-                                              })
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]
-                              : _vm._e()
-                          ],
-                          2
-                        )
-                      })
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "single-like has-text-centered" }, [
-                  !_vm.loading
-                    ? _c("i", {
-                        staticClass: "fa fa-heart",
-                        attrs: { title: "git it a thumbs up" },
-                        on: { click: _vm.likeProject }
-                      })
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "like-counter" }, [
-                    _vm._v(_vm._s(_vm.project.likes))
-                  ])
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "preloader",
+                                        attrs: { slot: "placeholder" },
+                                        slot: "placeholder"
+                                      },
+                                      [
+                                        _c(
+                                          "div",
+                                          { staticClass: "timeline-item" },
+                                          [
+                                            _c("div", {
+                                              staticClass: "animated-background"
+                                            })
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ]
+                            : _vm._e()
+                        ],
+                        2
+                      )
+                    })
+                  )
                 ])
-              ],
-              1
-            )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "single-like has-text-centered" }, [
+                !_vm.loading
+                  ? _c("i", {
+                      staticClass: "fa fa-heart",
+                      attrs: { title: "git it a thumbs up" },
+                      on: { click: _vm.likeProject }
+                    })
+                  : _vm._e(),
+                _vm._v(" "),
+                _c("span", { staticClass: "like-counter" }, [
+                  _vm._v(_vm._s(_vm.project.likes))
+                ])
+              ])
+            ])
           ])
         ])
       ]),
