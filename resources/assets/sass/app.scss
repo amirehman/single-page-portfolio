@@ -22,6 +22,9 @@
 @import "menu";
 
 
+html,body {
+    overflow-x: hidden;
+}
 
 [v-cloak] {
     display: none;

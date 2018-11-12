@@ -40304,6 +40304,11 @@ small,
   width: 140px;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 [v-cloak] {
   display: none;
 }
