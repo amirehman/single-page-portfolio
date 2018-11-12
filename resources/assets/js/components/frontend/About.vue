@@ -13,14 +13,14 @@
     
                             <div class="about-header about-section" v-cloak>
                                 <div class="content">
-                                    <h3 class="button is-radiusless	">BIOGRAPHY</h3>
+                                    <h1 class="is-size-5 button is-radiusless">BIOGRAPHY</h1>
                                     <div v-html="profile.bio"></div>
                                 </div>
                                 <div class="content-img about-section image1" style="background-position: center ; background-repeat: no-repeat; background-size: cover;background-attachment: fixed;" :style="{ 'background-image': 'url(' + backgroundImgUrl + profile.image + ')' }">
                                 </div>
                                 <div class="about-skills about-section">
                                     <div class="content">
-                                        <h3 class="button is-radiusless	">EXPERTISE</h3>
+                                        <h1 class="is-size-5 button is-radiusless	">EXPERTISE</h1>
                                         <div class="about-skills-body">
     
                                             <div class="columns is-flex-mobile">
@@ -49,7 +49,7 @@
                                 <!-- section -->
                                 <div class="about-skills about-section">
                                     <div class="content">
-                                        <h3 class="button is-radiusless	">WORK EXPERIENCE</h3>
+                                        <h1 class="is-size-5 button is-radiusless	">WORK EXPERIENCE</h1>
     
     
                                         <div class="timeline">
@@ -98,7 +98,7 @@
     
                                 <div class="about-section">
                                     <div class="content">
-                                        <h3 class="button is-radiusless">EDUCATION</h3>
+                                        <h1 class="is-size-5 button is-radiusless">EDUCATION</h1>
     
                                         <div class="timeline">
     

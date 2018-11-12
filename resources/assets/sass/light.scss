@@ -373,7 +373,7 @@ body.work {
             span {
                 font-style: italic;
             }
-            h3 {
+            h1 {
                 font-weight: 400;
                 font-family: $font;
                 text-transform: uppercase;
@@ -649,6 +649,9 @@ body.work {
     }
     .contact-header {
         margin-top: 70px;
+        h1 {
+            margin-bottom: 15px;
+        }
     }
     .contact-body {
         margin: 70px auto;

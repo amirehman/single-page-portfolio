@@ -14,7 +14,7 @@
                         <div class="inner-wrapper" v-cloak>
                             <header class="single-header has-text-left">
                                 <span class="is-marginless is-size-7 has-text-grey" v-if="!loading">Project</span>
-                                <h3 class="is-marginless is-size-3">{{project.title}}</h3>
+                                <h1 class="is-marginless is-size-3">{{project.title}}</h1>
                                 <p>{{project.detail}}</p>
     
                                 <div class="single-elemets aaa" v-if="!loading">

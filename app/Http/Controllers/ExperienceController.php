@@ -17,7 +17,7 @@ class ExperienceController extends Controller
      */
     public function index()
     {
-        return ExperienceResource::collection(Experience::all()); 
+        return ExperienceResource::collection(Experience::orderBy('created_at', 'desc')->get());
     }
 
     /**

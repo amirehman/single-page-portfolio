@@ -17,7 +17,7 @@ class EducationController extends Controller
      */
     public function index()
     {
-        return EducationResource::collection(Education::all());
+        return EducationResource::collection(Education::orderBy('created_at', 'desc')->get());
     }
 
     /**

@@ -39857,7 +39857,7 @@ small,
   font-style: italic;
 }
 
-.single-wrapper .inner-wrapper .single-header h3 {
+.single-wrapper .inner-wrapper .single-header h1 {
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
@@ -40140,6 +40140,10 @@ small,
 
 .contact-wrapper .contact-header {
   margin-top: 70px;
+}
+
+.contact-wrapper .contact-header h1 {
+  margin-bottom: 15px;
 }
 
 .contact-wrapper .contact-body {

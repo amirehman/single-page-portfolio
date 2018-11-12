@@ -35,8 +35,8 @@
                                         <div class="card-image">
                                         <div class="card-content">
                                             <div class="content">
-                                                <p>{{project.title}}
-                                                </p>
+                                                <h1 class="title is-6 is-marginless is-paddingless">{{project.title}}
+                                                </h1>
                                                 <p class="elements">
                                                     <span v-for="element in project.elements">{{element.name}}</span>
                                                 </p>

@@ -81554,12 +81554,19 @@ var render = function() {
                                 _c("div", { staticClass: "card-image" }, [
                                   _c("div", { staticClass: "card-content" }, [
                                     _c("div", { staticClass: "content" }, [
-                                      _c("p", [
-                                        _vm._v(
-                                          _vm._s(project.title) +
-                                            "\n                                            "
-                                        )
-                                      ]),
+                                      _c(
+                                        "h1",
+                                        {
+                                          staticClass:
+                                            "title is-6 is-marginless is-paddingless"
+                                        },
+                                        [
+                                          _vm._v(
+                                            _vm._s(project.title) +
+                                              "\n                                            "
+                                          )
+                                        ]
+                                      ),
                                       _vm._v(" "),
                                       _c(
                                         "p",
@@ -81916,7 +81923,7 @@ var render = function() {
                       )
                     : _vm._e(),
                   _vm._v(" "),
-                  _c("h3", { staticClass: "is-marginless is-size-3" }, [
+                  _c("h1", { staticClass: "is-marginless is-size-3" }, [
                     _vm._v(_vm._s(_vm.project.title))
                   ]),
                   _vm._v(" "),
@@ -83751,9 +83758,11 @@ var render = function() {
                   _vm._v(" "),
                   _c("div", { staticClass: "about-header about-section" }, [
                     _c("div", { staticClass: "content" }, [
-                      _c("h3", { staticClass: "button is-radiusless\t" }, [
-                        _vm._v("BIOGRAPHY")
-                      ]),
+                      _c(
+                        "h1",
+                        { staticClass: "is-size-5 button is-radiusless" },
+                        [_vm._v("BIOGRAPHY")]
+                      ),
                       _vm._v(" "),
                       _c("div", {
                         domProps: { innerHTML: _vm._s(_vm.profile.bio) }
@@ -83779,9 +83788,11 @@ var render = function() {
                     _vm._v(" "),
                     _c("div", { staticClass: "about-skills about-section" }, [
                       _c("div", { staticClass: "content" }, [
-                        _c("h3", { staticClass: "button is-radiusless\t" }, [
-                          _vm._v("EXPERTISE")
-                        ]),
+                        _c(
+                          "h1",
+                          { staticClass: "is-size-5 button is-radiusless\t" },
+                          [_vm._v("EXPERTISE")]
+                        ),
                         _vm._v(" "),
                         _c("div", { staticClass: "about-skills-body" }, [
                           _c(
@@ -83829,9 +83840,11 @@ var render = function() {
                     _vm._v(" "),
                     _c("div", { staticClass: "about-skills about-section" }, [
                       _c("div", { staticClass: "content" }, [
-                        _c("h3", { staticClass: "button is-radiusless\t" }, [
-                          _vm._v("WORK EXPERIENCE")
-                        ]),
+                        _c(
+                          "h1",
+                          { staticClass: "is-size-5 button is-radiusless\t" },
+                          [_vm._v("WORK EXPERIENCE")]
+                        ),
                         _vm._v(" "),
                         _c(
                           "div",
@@ -83922,9 +83935,11 @@ var render = function() {
                     _vm._v(" "),
                     _c("div", { staticClass: "about-section" }, [
                       _c("div", { staticClass: "content" }, [
-                        _c("h3", { staticClass: "button is-radiusless" }, [
-                          _vm._v("EDUCATION")
-                        ]),
+                        _c(
+                          "h1",
+                          { staticClass: "is-size-5 button is-radiusless" },
+                          [_vm._v("EDUCATION")]
+                        ),
                         _vm._v(" "),
                         _c(
                           "div",
@@ -84524,11 +84539,16 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "contact-header" }, [
       _c("div", { staticClass: "content" }, [
-        _c("h3", [_vm._v("LET'S HAVE A CHAT ")]),
+        _c("h1", { staticClass: "title is-4 is-margin-less is-paddingless" }, [
+          _vm._v("LET'S HAVE A CHAT ")
+        ]),
         _vm._v(" "),
         _c(
           "p",
-          { staticClass: "has-text-grey is-paddingless title is-size-7" },
+          {
+            staticClass:
+              "has-text-grey is-margin-less is-paddingless title is-size-7"
+          },
           [_vm._v("Reach out and send me a friendly hello.")]
         ),
         _vm._v(" "),
