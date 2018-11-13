@@ -45,7 +45,7 @@
                                                 </div>
                                                 <figure class="image">
                                                     <clazy-load :src="`${baseURL}images/${project.image}`">
-                                                        <img :src="`${baseURL}images/${project.image}`">
+                                                        <img :src="`${baseURL}images/${project.image}`" alt="work image">
                                                         <div class="preloader" slot="placeholder">
                                                             <div class="timeline-item">
                                                                 <div class="animated-background">

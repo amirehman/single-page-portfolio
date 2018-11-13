@@ -10,7 +10,7 @@
                 <h1 v-cloak class="info dynamic-content" @click="handleClicks" v-html="general.intro"></h1>
     
                 <div class="about-photo">
-                        <img :src="`${baseURL}${general.dp}`">
+                        <img :src="`${baseURL}${general.dp}`" alt="Amir's Photo">
                         <div class="preloader" slot="placeholder">
                             <div class="timeline-item">
                                 <div class="animated-background">

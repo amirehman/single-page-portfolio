@@ -41,7 +41,7 @@
                                         <p class="is-size-6">{{page.detail}}</p>
                                         <template v-if="page.image">
                                             <clazy-load :src="`${baseURL}images/${page.image}`">
-                                                        <img :src="`${baseURL}images/${page.image}`">
+                                                        <img :src="`${baseURL}images/${page.image}`" alt="work image">
                                                         <div class="preloader" slot="placeholder">
                                                             <div class="timeline-item">
                                                                 <div class="animated-background">

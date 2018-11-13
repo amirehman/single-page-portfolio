@@ -55202,7 +55202,7 @@ var routes = [{
   path: '/contact',
   component: __WEBPACK_IMPORTED_MODULE_22__components_frontend_Contact_vue___default.a,
   name: 'contact'
-}];
+}, { path: "*", component: __WEBPACK_IMPORTED_MODULE_18__components_frontend_Home___default.a }];
 
 var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
   scrollBehavior: function scrollBehavior() {
@@ -80793,7 +80793,12 @@ var render = function() {
           }),
           _vm._v(" "),
           _c("div", { staticClass: "about-photo" }, [
-            _c("img", { attrs: { src: "" + _vm.baseURL + _vm.general.dp } }),
+            _c("img", {
+              attrs: {
+                src: "" + _vm.baseURL + _vm.general.dp,
+                alt: "Amir's Photo"
+              }
+            }),
             _vm._v(" "),
             _c(
               "div",
@@ -81603,7 +81608,8 @@ var render = function() {
                                               src:
                                                 _vm.baseURL +
                                                 "images/" +
-                                                project.image
+                                                project.image,
+                                              alt: "work image"
                                             }
                                           }),
                                           _vm._v(" "),
@@ -82020,7 +82026,8 @@ var render = function() {
                                     _c("img", {
                                       attrs: {
                                         src:
-                                          _vm.baseURL + "images/" + page.image
+                                          _vm.baseURL + "images/" + page.image,
+                                        alt: "work image"
                                       }
                                     }),
                                     _vm._v(" "),

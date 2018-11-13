@@ -136,9 +136,11 @@ const routes = [
     path: '/contact', 
     component: Contacts,
     name: 'contact'
-  }
+  },
 
 
+
+  { path: "*", component: Home }
 ]
 
 const router = new VueRouter({
