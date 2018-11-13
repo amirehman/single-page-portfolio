@@ -11,8 +11,8 @@
                             <div class="content">
                                 <h1 class="title is-4 is-margin-less is-paddingless">LET'S HAVE A CHAT </h1>
                                 <p class="has-text-grey is-margin-less is-paddingless title is-size-7">Reach out and send me a friendly hello.</p>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum accusantium voluptatibus numquam minus dolor porro quisquam ratione quibusdam, labore, saepe est consequuntur reiciendis harum doloremque, esse dolore laudantium.
-                                    Non, exercitationem.</p>
+                                <!--<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum accusantium voluptatibus numquam minus dolor porro quisquam ratione quibusdam, labore, saepe est consequuntur reiciendis harum doloremque, esse dolore laudantium.
+                                    Non, exercitationem.</p>-->
                             </div>
                         </div>
     
