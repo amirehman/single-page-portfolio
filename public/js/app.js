@@ -80786,7 +80786,7 @@ var render = function() {
               })
             : _vm._e(),
           _vm._v(" "),
-          _c("h2", {
+          _c("h1", {
             staticClass: "info dynamic-content",
             domProps: { innerHTML: _vm._s(_vm.general.intro) },
             on: { click: _vm.handleClicks }
@@ -81011,6 +81011,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__TopNav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__TopNav__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_clazy_load__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_clazy_load___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue_clazy_load__);
+//
 //
 //
 //
@@ -81563,7 +81564,7 @@ var render = function() {
                                         [
                                           _vm._v(
                                             _vm._s(project.title) +
-                                              "\n                                            "
+                                              "\n                                                    "
                                           )
                                         ]
                                       ),
@@ -81667,7 +81668,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "content" }, [
               _c("p", { staticClass: "has-text-weight-normal is-size-6" }, [
                 _vm._v(
-                  "See my works below. all their back-end and front-end parts were completely done by me. Much of my most recent work using current technologies has been for internal enterprise web apps which naturally can't be shared with the public."
+                  "See my works below. all their back-end and front-end parts were completely done by me. Much of my most recent work using current technologies has been for internal enterprise web apps which naturally can't be shared with the\n                                public."
                 )
               ])
             ])
@@ -82173,7 +82174,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.arZxkKg-w3Qec3gGdgaPh_0 {\n    background-position: center center; \n    background-repeat: no-repeat; \n    background-size: cover; \n    background-attachment: fixed;\n}\n", ""]);
+exports.push([module.i, "\n.arZxkKg-w3Qec3gGdgaPh_0 {\n    background-position: center center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-attachment: fixed;\n}\n", ""]);
 
 // exports
 
@@ -82190,6 +82191,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__Footer__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__TopNav__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__TopNav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__TopNav__);
+//
+//
 //
 //
 //
@@ -83746,214 +83749,132 @@ var render = function() {
         _c("div", { staticClass: "container pad-col" }, [
           _c("div", { staticClass: "columns" }, [
             _c("div", { staticClass: "column is-8" }, [
-              _c(
-                "div",
-                { staticClass: "inner-wrapper" },
-                [
-                  _vm.loading
-                    ? _c("ball-pulse-sync-loader", {
-                        attrs: { color: "#e67e22", size: "5px" }
-                      })
-                    : _vm._e(),
+              _c("div", { staticClass: "inner-wrapper" }, [
+                _c(
+                  "div",
+                  { staticClass: "has-text-centered" },
+                  [
+                    _vm.loading
+                      ? _c("ball-pulse-sync-loader", {
+                          attrs: { color: "#e67e22", size: "5px" }
+                        })
+                      : _vm._e()
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "about-header about-section" }, [
+                  _c("div", { staticClass: "content" }, [
+                    _c(
+                      "h1",
+                      { staticClass: "is-size-5 button is-radiusless" },
+                      [_vm._v("BIOGRAPHY")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", {
+                      domProps: { innerHTML: _vm._s(_vm.profile.bio) }
+                    })
+                  ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "about-header about-section" }, [
+                  _c("div", {
+                    staticClass: "content-img about-section image1",
+                    staticStyle: {
+                      "background-position": "center",
+                      "background-repeat": "no-repeat",
+                      "background-size": "cover",
+                      "background-attachment": "fixed"
+                    },
+                    style: {
+                      "background-image":
+                        "url(" + _vm.backgroundImgUrl + _vm.profile.image + ")"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "about-skills about-section" }, [
                     _c("div", { staticClass: "content" }, [
                       _c(
                         "h1",
-                        { staticClass: "is-size-5 button is-radiusless" },
-                        [_vm._v("BIOGRAPHY")]
+                        { staticClass: "is-size-5 button is-radiusless\t" },
+                        [_vm._v("EXPERTISE")]
                       ),
                       _vm._v(" "),
-                      _c("div", {
-                        domProps: { innerHTML: _vm._s(_vm.profile.bio) }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", {
-                      staticClass: "content-img about-section image1",
-                      staticStyle: {
-                        "background-position": "center",
-                        "background-repeat": "no-repeat",
-                        "background-size": "cover",
-                        "background-attachment": "fixed"
-                      },
-                      style: {
-                        "background-image":
-                          "url(" +
-                          _vm.backgroundImgUrl +
-                          _vm.profile.image +
-                          ")"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "about-skills about-section" }, [
-                      _c("div", { staticClass: "content" }, [
-                        _c(
-                          "h1",
-                          { staticClass: "is-size-5 button is-radiusless\t" },
-                          [_vm._v("EXPERTISE")]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "about-skills-body" }, [
-                          _c(
-                            "div",
-                            { staticClass: "columns is-flex-mobile" },
-                            _vm._l(_vm.expertiesTypes, function(typeo) {
-                              return _c("div", { staticClass: "column is-3" }, [
-                                _c("aside", { staticClass: "menu" }, [
-                                  _c("p", { staticClass: "menu-label" }, [
-                                    _vm._v(
-                                      "\n                                                        " +
-                                        _vm._s(typeo) +
-                                        "\n                                                    "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "ul",
-                                    {
-                                      staticClass:
-                                        "is-paddingless is-marginless"
-                                    },
-                                    [
-                                      _vm._l(_vm.experties, function(expert) {
-                                        return [
-                                          expert.type == typeo
-                                            ? _c("li", [
-                                                _c("a", [
-                                                  _vm._v(_vm._s(expert.name))
-                                                ])
-                                              ])
-                                            : _vm._e()
-                                        ]
-                                      })
-                                    ],
-                                    2
-                                  )
-                                ])
-                              ])
-                            })
-                          )
-                        ])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "about-skills about-section" }, [
-                      _c("div", { staticClass: "content" }, [
-                        _c(
-                          "h1",
-                          { staticClass: "is-size-5 button is-radiusless\t" },
-                          [_vm._v("WORK EXPERIENCE")]
-                        ),
-                        _vm._v(" "),
+                      _c("div", { staticClass: "about-skills-body" }, [
                         _c(
                           "div",
-                          { staticClass: "timeline" },
-                          [
-                            _vm._m(0),
-                            _vm._v(" "),
-                            _vm._l(_vm.experiences, function(experience) {
-                              return _c(
-                                "div",
-                                { staticClass: "timeline-item" },
-                                [
-                                  _vm._m(1, true),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "timeline-content" },
-                                    [
-                                      _c("p", { staticClass: "heading" }, [
-                                        _vm._v(
-                                          _vm._s(
-                                            _vm._f("moment")(
-                                              experience.startdate,
-                                              "MMMM YYYY"
-                                            )
-                                          ) +
-                                            " - " +
-                                            _vm._s(
-                                              _vm._f("moment")(
-                                                experience.enddate,
-                                                "MMMM YYYY"
-                                              )
-                                            )
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("p", [
-                                        _c(
-                                          "strong",
-                                          {
-                                            staticClass:
-                                              "has-text-weight-semibold"
-                                          },
-                                          [_vm._v(_vm._s(experience.title))]
-                                        ),
-                                        _vm._v(
-                                          " -\n                                                    "
-                                        ),
-                                        _c(
-                                          "a",
-                                          {
-                                            staticClass:
-                                              "has-text-grey is-italic",
-                                            attrs: { href: "" }
-                                          },
-                                          [_vm._v(_vm._s(experience.company))]
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("p", [
-                                        _vm._v(_vm._s(experience.detail))
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("p", [
-                                        _c(
-                                          "ul",
-                                          _vm._l(experience.items, function(
-                                            item
-                                          ) {
-                                            return _c("li", [
-                                              _vm._v(_vm._s(item.item))
-                                            ])
-                                          })
-                                        )
-                                      ])
-                                    ]
+                          { staticClass: "columns is-flex-mobile" },
+                          _vm._l(_vm.expertiesTypes, function(typeo) {
+                            return _c("div", { staticClass: "column is-3" }, [
+                              _c("aside", { staticClass: "menu" }, [
+                                _c("p", { staticClass: "menu-label" }, [
+                                  _vm._v(
+                                    "\n                                                            " +
+                                      _vm._s(typeo) +
+                                      "\n                                                        "
                                   )
-                                ]
-                              )
-                            }),
-                            _vm._v(" "),
-                            _vm._m(2)
-                          ],
-                          2
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "ul",
+                                  {
+                                    staticClass: "is-paddingless is-marginless"
+                                  },
+                                  [
+                                    _vm._l(_vm.experties, function(expert) {
+                                      return [
+                                        expert.type == typeo
+                                          ? _c("li", [
+                                              _c("a", [
+                                                _vm._v(_vm._s(expert.name))
+                                              ])
+                                            ])
+                                          : _vm._e()
+                                      ]
+                                    })
+                                  ],
+                                  2
+                                )
+                              ])
+                            ])
+                          })
                         )
                       ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "about-section" }, [
-                      _c("div", { staticClass: "content" }, [
-                        _c(
-                          "h1",
-                          { staticClass: "is-size-5 button is-radiusless" },
-                          [_vm._v("EDUCATION")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "timeline" },
-                          _vm._l(_vm.educations, function(edu) {
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "about-skills about-section" }, [
+                    _c("div", { staticClass: "content" }, [
+                      _c(
+                        "h1",
+                        { staticClass: "is-size-5 button is-radiusless\t" },
+                        [_vm._v("WORK EXPERIENCE")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "timeline" },
+                        [
+                          _vm._m(0),
+                          _vm._v(" "),
+                          _vm._l(_vm.experiences, function(experience) {
                             return _c("div", { staticClass: "timeline-item" }, [
-                              _c("div", { staticClass: "timeline-marker" }),
+                              _vm._m(1, true),
                               _vm._v(" "),
                               _c("div", { staticClass: "timeline-content" }, [
                                 _c("p", { staticClass: "heading" }, [
                                   _vm._v(
                                     _vm._s(
-                                      _vm._f("moment")(edu.date, "MMMM YYYY")
-                                    )
+                                      _vm._f("moment")(
+                                        experience.startdate,
+                                        "MMMM YYYY"
+                                      )
+                                    ) +
+                                      " - " +
+                                      _vm._s(
+                                        _vm._f("moment")(
+                                          experience.enddate,
+                                          "MMMM YYYY"
+                                        )
+                                      )
                                   )
                                 ]),
                                 _vm._v(" "),
@@ -83961,40 +83882,104 @@ var render = function() {
                                   _c(
                                     "strong",
                                     { staticClass: "has-text-weight-semibold" },
-                                    [_vm._v(_vm._s(edu.name))]
+                                    [_vm._v(_vm._s(experience.title))]
                                   ),
-                                  _vm._v(" - " + _vm._s(edu.institue))
+                                  _vm._v(
+                                    " -\n                                                        "
+                                  ),
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "has-text-grey is-italic",
+                                      attrs: { href: "" }
+                                    },
+                                    [_vm._v(_vm._s(experience.company))]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("p", [_vm._v(_vm._s(experience.detail))]),
+                                _vm._v(" "),
+                                _c("p", [
+                                  _c(
+                                    "ul",
+                                    _vm._l(experience.items, function(item) {
+                                      return _c("li", [
+                                        _vm._v(_vm._s(item.item))
+                                      ])
+                                    })
+                                  )
                                 ])
                               ])
                             ])
-                          })
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "about-section" }, [
-                      _c("div", { staticClass: "content has-text-centered" }, [
-                        _c(
-                          "a",
-                          {
-                            staticClass:
-                              "button is-warning section-header is-medium",
-                            attrs: {
-                              href:
-                                _vm.backgroundImgUrl +
-                                "resume/" +
-                                _vm.profile.resume,
-                              download: ""
-                            }
-                          },
-                          [_vm._v("Download Resume")]
-                        )
-                      ])
+                          }),
+                          _vm._v(" "),
+                          _vm._m(2)
+                        ],
+                        2
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "about-section" }, [
+                    _c("div", { staticClass: "content" }, [
+                      _c(
+                        "h1",
+                        { staticClass: "is-size-5 button is-radiusless" },
+                        [_vm._v("EDUCATION")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "timeline" },
+                        _vm._l(_vm.educations, function(edu) {
+                          return _c("div", { staticClass: "timeline-item" }, [
+                            _c("div", { staticClass: "timeline-marker" }),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "timeline-content" }, [
+                              _c("p", { staticClass: "heading" }, [
+                                _vm._v(
+                                  _vm._s(
+                                    _vm._f("moment")(edu.date, "MMMM YYYY")
+                                  )
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("p", [
+                                _c(
+                                  "strong",
+                                  { staticClass: "has-text-weight-semibold" },
+                                  [_vm._v(_vm._s(edu.name))]
+                                ),
+                                _vm._v(" - " + _vm._s(edu.institue))
+                              ])
+                            ])
+                          ])
+                        })
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "about-section" }, [
+                    _c("div", { staticClass: "content has-text-centered" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass:
+                            "button is-warning section-header is-medium",
+                          attrs: {
+                            href:
+                              _vm.backgroundImgUrl +
+                              "resume/" +
+                              _vm.profile.resume,
+                            download: ""
+                          }
+                        },
+                        [_vm._v("Download Resume")]
+                      )
                     ])
                   ])
-                ],
-                1
-              )
+                ])
+              ])
             ]),
             _vm._v(" "),
             _vm._m(3)

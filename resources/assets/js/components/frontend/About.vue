@@ -1,15 +1,17 @@
 <template>
     <div>
     
-            <top-navbar></top-navbar>
-
+        <top-navbar></top-navbar>
+    
         <div class="about-wrapper">
             <div class="container pad-col">
                 <div class="columns">
                     <div class="column is-8">
                         <div class="inner-wrapper">
     
-                    <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="5px"></ball-pulse-sync-loader>
+                            <div class="has-text-centered">
+                                <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="5px"></ball-pulse-sync-loader>
+                            </div>
     
                             <div class="about-header about-section" v-cloak>
                                 <div class="content">
@@ -31,10 +33,10 @@
                                                         </p>
                                                         <ul class="is-paddingless is-marginless">
                                                             <template v-for="expert in experties">
-                                                                <li v-if="expert.type == typeo">
-                                                                    <a>{{expert.name}}</a>
-                                                                </li>
-                                                            </template>
+                                                                    <li v-if="expert.type == typeo">
+                                                                        <a>{{expert.name}}</a>
+                                                                    </li>
+</template>
                                                             
     
                                                         </ul>
@@ -152,7 +154,7 @@
     import uniq from 'lodash/uniq';
     import footer from "./Footer";
     import navbar from "./TopNav";
-
+    
     export default {
         data() {
             return {
@@ -188,7 +190,7 @@
                         this.expertiesTypes = uniq(response.data.data.map(e => e.type))
                     });
             },
-            getexperiences () {
+            getexperiences() {
                 axios.get('/api/experiences').then(response => {
                     this.experiences = response.data.data
                 });
@@ -212,9 +214,9 @@
 
 <style scropped>
     .arZxkKg-w3Qec3gGdgaPh_0 {
-        background-position: center center; 
-        background-repeat: no-repeat; 
-        background-size: cover; 
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
         background-attachment: fixed;
     }
 </style>

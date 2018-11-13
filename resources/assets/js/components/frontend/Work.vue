@@ -8,8 +8,9 @@
                 <div class="content text-center">
                     <div class="columns">
                         <div class="column is-12">
-                            <div class="content"> 
-                            <p class="has-text-weight-normal is-size-6">See my works below. all their back-end and front-end parts were completely done by me. Much of my most recent work using current technologies has been for internal enterprise web apps which naturally can't be shared with the public.</p>
+                            <div class="content">
+                                <p class="has-text-weight-normal is-size-6">See my works below. all their back-end and front-end parts were completely done by me. Much of my most recent work using current technologies has been for internal enterprise web apps which naturally can't be shared with the
+                                    public.</p>
                             </div>
                         </div>
     
@@ -21,45 +22,45 @@
             <div class="columns">
                 <div class="column">
                     <div class="work-wrapper">
-                       
+    
                         <div class="has-text-centered">
-                                <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="5px"></ball-pulse-sync-loader>
-                            </div>
+                            <ball-pulse-sync-loader v-if="loading" color="#e67e22" size="5px"></ball-pulse-sync-loader>
+                        </div>
                         <div class="work-row" v-cloak>
-                             
+    
                             <masonry :cols="{default: 3, 1399: 2, 550: 1}" :gutter="15">
-                            <div class="work-col" v-for="(project, index) in projects" :key="index">
-                                <router-link :to="`/work/${project.slug}`">
-                                    <div class="card">
-                                    
-                                        <div class="card-image">
-                                        <div class="card-content">
-                                            <div class="content">
-                                                <h1 class="title is-6 is-marginless is-paddingless">{{project.title}}
-                                                </h1>
-                                                <p class="elements">
-                                                    <span v-for="element in project.elements">{{element.name}}</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                            <figure class="image">
-                                                <clazy-load :src="`${baseURL}images/${project.image}`">
-                                                    <img :src="`${baseURL}images/${project.image}`">
-                                                    <div class="preloader" slot="placeholder">
-                                                        <div class="timeline-item">
-                                                            <div class="animated-background">
+                                <div class="work-col" v-for="(project, index) in projects" :key="index">
+                                    <router-link :to="`/work/${project.slug}`">
+                                        <div class="card">
+    
+                                            <div class="card-image">
+                                                <div class="card-content">
+                                                    <div class="content">
+                                                        <h1 class="title is-6 is-marginless is-paddingless">{{project.title}}
+                                                        </h1>
+                                                        <p class="elements">
+                                                            <span v-for="element in project.elements">{{element.name}}</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <figure class="image">
+                                                    <clazy-load :src="`${baseURL}images/${project.image}`">
+                                                        <img :src="`${baseURL}images/${project.image}`">
+                                                        <div class="preloader" slot="placeholder">
+                                                            <div class="timeline-item">
+                                                                <div class="animated-background">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </clazy-load>
-                                            </figure>
+                                                    </clazy-load>
+                                                </figure>
+                                            </div>
+    
                                         </div>
-                                        
-                                    </div>
-                                </router-link>
-                            </div>
-                            <!-- work-col -->
-                            </masonry>    
+                                    </router-link>
+                                </div>
+                                <!-- work-col -->
+                            </masonry>
     
     
                         </div>

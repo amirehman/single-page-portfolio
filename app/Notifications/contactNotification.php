@@ -45,7 +45,7 @@ class contactNotification extends Notification
         // return (new MailMessage)->view('mails.contact', ['contact' => $this->contact]);
         return (new MailMessage)
                 ->subject("Message from website about ". $this->contact->subject)
-                ->greeting("New message from amirrehman.com")
+                ->greeting("New message from amirr.net")
                 ->line($this->contact->name .", ". $this->contact->email)
                 ->line($this->contact->message);
             
