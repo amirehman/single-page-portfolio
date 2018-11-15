@@ -145,4 +145,20 @@ class ProjectPageController extends Controller
         return $page->project->slug;
         ;
     }
+
+    public function updateAll (Request $request) {
+
+        // $newProjects =  $request->project;
+        // $projects = Project::all();
+        // foreach ($projects as $project) {
+        //     foreach ($newProjects as $newProject) {
+        //         if($newProject['id']==$project->id){
+        //               $project->update(['priority'=>$newProject['priority']]);
+        //           }
+        //     }
+        // }
+
+    }
+
+
 }

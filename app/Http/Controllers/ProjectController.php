@@ -30,7 +30,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return ProjectResource::collection(Project::orderBy('datee', 'desc')->get());
+        return ProjectResource::collection(Project::orderBy('priority', 'asc')->get());
     }
 
     /**
@@ -158,6 +158,21 @@ class ProjectController extends Controller
         return response('null', Response::HTTP_NO_CONTENT);
     }
 
+
+
+    public function updateAll (Request $request) {
+
+        $newProjects =  $request->project;
+        $projects = Project::all();
+        foreach ($projects as $project) {
+            foreach ($newProjects as $newProject) {
+                if($newProject['id']==$project->id){
+                      $project->update(['priority'=>$newProject['priority']]);
+                  }
+            }
+        }
+
+    }
 
 
 

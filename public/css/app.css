@@ -39407,6 +39407,16 @@ label.panel-block:hover {
   color: black;
 }
 
+.tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.tbody tr {
+  cursor: move;
+}
+
 html {
   font-size: 1em;
 }

@@ -7,10 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
 
+
+
+
     public function getRouteKeyName () {
         return 'slug';
     } 
 
+
+    protected $fillable = ['priority'];
     // protected $fillable = ['title', 'slug', 'detail', 'thumbnail', 'datee'];
 
     public function elements () 

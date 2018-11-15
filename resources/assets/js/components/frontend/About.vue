@@ -33,12 +33,10 @@
                                                         </p>
                                                         <ul class="is-paddingless is-marginless">
                                                             <template v-for="expert in experties">
-                                                                    <li v-if="expert.type == typeo">
-                                                                        <a>{{expert.name}}</a>
-                                                                    </li>
-</template>
-                                                            
-    
+                                                                        <li v-if="expert.type == typeo">
+                                                                            <a>{{expert.name}}</a>
+                                                                        </li>
+                                                            </template>
                                                         </ul>
                                                     </aside>
                                                 </div>

@@ -1,6 +1,8 @@
 <?php
 
+Route::patch('/projects/update-all', 'ProjectController@updateAll');
 Route::apiResource('/projects', 'ProjectController');
+Route::patch('/projects/{project}/pages/update-all', 'ProjectPageController@updateAll');
 Route::apiResource('/projects/{project}/pages', 'ProjectPageController');
 Route::apiResource('/educations', 'EducationController');
 Route::apiResource('/elements', 'ElementController');

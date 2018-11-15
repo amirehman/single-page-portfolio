@@ -22,6 +22,7 @@ class CreateProjectsTable extends Migration
             $table->string('image');
             $table->integer('likes');
             $table->string('datee');
+            $table->string('priority');
             $table->timestamps();
         });
     }

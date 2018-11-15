@@ -14,14 +14,14 @@
                             <th>Action</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr v-for="project in projects">
-                            <td>{{project.id}}</td>
+                    <draggable class="tbody" v-model="projects" :options="{group:'projects'}" @start="drag=true" @end="drag=false" @change="onChnage">
+                        <tr v-for="(project, index) in projects">
+                            <td>{{index + 1}}</td>
                             <td>{{project.title}}</td>
-                            <td>{{project.date}}</td>
+                            <td>{{project.date | moment("Do, MMMM YYYY") }}</td>
                             <td><router-link :to="`/me/project/${project.slug}`" class="button is-small">View</router-link></td>
                         </tr>
-                    </tbody>
+                    </draggable>
                 </table>
                 <p class="subtitle has-text-grey">
                     <router-link to="/me/projects/new" class="is-small is-primary button is-pulled-right">Add New</router-link>
@@ -32,10 +32,11 @@
 </template>
 
 <script>
+    import draggable from 'vuedraggable'
     export default {
         data() {
             return {
-                projects: "",
+                projects: []
             }
         },
         created () {
@@ -53,8 +54,23 @@
                 axios.get('/api/projects').then(response => {
                     this.projects = response.data.data
                 });
+            },
+            onChnage(evt) {
+                let newProject = this.projects.map((project, index) => {
+                    project.priority = index + 1;
+                    return project;
+                })
+                axios.patch('/api/projects/update-all', {
+                        project: newProject
+                    })
+                    .then(response => {
+                        // console.log(response);
+                    })
             }
-        }
+        },
+        components: {
+            draggable,
+        },
     
     }
 </script>
