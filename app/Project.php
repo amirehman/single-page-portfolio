@@ -25,7 +25,7 @@ class Project extends Model
 
     public function pages () 
     {
-        return $this->hasMany(ProjectPage::class);
+        return $this->hasMany(ProjectPage::class)->orderBy('priority', 'asc');
     }
 
     public function getPathAttribute () {

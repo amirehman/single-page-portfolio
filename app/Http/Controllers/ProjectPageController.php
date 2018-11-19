@@ -19,7 +19,7 @@ class ProjectPageController extends Controller
     public function index($pid)
     {
         return response()->json([
-            "pages" => ProjectPage::where('project_id', '=', $pid)->latest()->get()
+            "pages" => ProjectPage::where('project_id', '=', $pid)->orderBy('priority', 'asc')->get()
         ]);
     }
 
@@ -148,15 +148,16 @@ class ProjectPageController extends Controller
 
     public function updateAll (Request $request) {
 
-        // $newProjects =  $request->project;
-        // $projects = Project::all();
-        // foreach ($projects as $project) {
-        //     foreach ($newProjects as $newProject) {
-        //         if($newProject['id']==$project->id){
-        //               $project->update(['priority'=>$newProject['priority']]);
-        //           }
-        //     }
-        // }
+        $newPages =  $request->page;
+        $project =  $request->project;
+        $pages = ProjectPage::where('project_id', '=', $project)->get();
+        foreach ($pages as $page) {
+            foreach ($newPages as $newPage) {
+                if($newPage['id']==$page->id){
+                      $page->update(['priority'=>$newPage['priority']]);
+                  }
+            }
+        }
 
     }
 

@@ -5,8 +5,8 @@
             <div class="column is-8">
                 <p class="subtitle has-text-grey">{{project.title}} Pages
                     <small>
-                                    <router-link :to="`/me/project/${projectId}/add-page`" class="button is-primary is-pulled-right is-small" >Add New Page</router-link>
-                                </small>
+                                        <router-link :to="`/me/project/${projectId}/add-page`" class="button is-primary is-pulled-right is-small" >Add New Page</router-link>
+                                    </small>
                 </p>
     
     
@@ -14,6 +14,8 @@
                     <div class="column is-3" v-if="pages.length == 0">
                         No pages fournd.
                     </div>
+                </div>
+                    <draggable class="columns is-multiline" v-model="pages" :options="{group:'pages'}" @start="drag=true" @end="drag=false" @change="onChnage">
                     <div class="column pages-index-card is-3" v-for="(page, key) in pages">
                         <span class="delete-page" @click="confirmdelete(key, page.id)">✕</span>
                         <div class="card">
@@ -26,7 +28,7 @@
                                 <div class="card-content">
                                     <div class="media">
                                         <div class="media-content">
-                                            <p class="title is-7">{{page.title}}</p>
+                                            <p class="title is-7">({{key + 1}}) {{page.title}}  </p>
                                         </div>
     
                                     </div>
@@ -35,8 +37,7 @@
                         </div>
     
                     </div>
-                </div>
-    
+                    </draggable>    
             </div>
         </div>
     
@@ -49,14 +50,18 @@
 </template>
 
 <script>
+    import draggable from 'vuedraggable'
     export default {
         props: ['projectId', 'projectSlug'],
         data() {
             return {
                 project: "",
-                pages: "",
+                pages: [],
                 baseURL: "https://www.amirr.net/"
             }
+        },
+        components: {
+            draggable,
         },
         created() {
             if (!User.loggedIn()) {
@@ -70,7 +75,16 @@
             }
         },
         methods: {
-    
+            onChnage(evt) {
+                let newPage = this.pages.map((page, index) => {
+                    page.priority = index + 1;
+                    return page;
+                })
+                axios.patch(`/api/projects/${this.projectId}/pages/update-all`, {
+                        page: newPage,
+                        project: this.project.id
+                    })
+            },
             getPages() {
                 axios.get(`/api/projects/${this.projectId}/pages`)
                     .then(response => {
